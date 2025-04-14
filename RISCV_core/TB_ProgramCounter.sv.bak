@@ -1,0 +1,20 @@
+module TB_ProgramCounter;
+reg enable, reset, clk;
+wire [31:0] pc_out;
+
+ProgramCounter PC1(enable, reset, clk, pc_out);
+
+initial begin
+clk = 0;
+enable = 1;
+end
+
+always #20 clk = ~clk;
+
+initial begin
+reset = 0; #30 reset = 1; #30 reset = 0;
+
+#150 reset = 1; #30 reset = 0;
+end
+
+endmodule

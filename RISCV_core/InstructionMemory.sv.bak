@@ -1,0 +1,15 @@
+module InstructionMemory(
+input logic [31:0] addr,
+output logic [31:0] data);
+
+reg [255:0][31:0] IMem;
+
+initial begin
+	IMem[0] = 32'h12345678; // Example instruction
+        IMem[1] = 32'h9ABCDEF0; // Example instruction
+        IMem[2] = 32'h11111111; // Example instruction
+end
+
+always @(*) data = IMem[addr];
+
+endmodule
