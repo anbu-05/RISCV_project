@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "04/26/2025 17:03:35"
+// DATE "04/26/2025 18:12:50"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -32,15 +32,33 @@
 module RISCV_core (
 	enable,
 	reset,
-	clk);
-input 	reg enable ;
-input 	reg reset ;
-input 	reg clk ;
+	clk,
+	LED_x31);
+input 	enable;
+input 	reset;
+input 	clk;
+output 	[15:0] LED_x31;
 
 // Design Ports Information
-// enable	=>  Location: PIN_K26,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// reset	=>  Location: PIN_L7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// clk	=>  Location: PIN_A10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// enable	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_R24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_M23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[0]	=>  Location: PIN_G19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[1]	=>  Location: PIN_F19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[2]	=>  Location: PIN_E19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[3]	=>  Location: PIN_F21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[4]	=>  Location: PIN_F18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[5]	=>  Location: PIN_E18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[6]	=>  Location: PIN_J19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[7]	=>  Location: PIN_H19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[8]	=>  Location: PIN_J17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[9]	=>  Location: PIN_G17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[10]	=>  Location: PIN_J15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[11]	=>  Location: PIN_H16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[12]	=>  Location: PIN_J16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[13]	=>  Location: PIN_H17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[14]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED_x31[15]	=>  Location: PIN_G15,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -57,6 +75,22 @@ tri1 devoe;
 wire \enable~input_o ;
 wire \reset~input_o ;
 wire \clk~input_o ;
+wire \LED_x31[0]~output_o ;
+wire \LED_x31[1]~output_o ;
+wire \LED_x31[2]~output_o ;
+wire \LED_x31[3]~output_o ;
+wire \LED_x31[4]~output_o ;
+wire \LED_x31[5]~output_o ;
+wire \LED_x31[6]~output_o ;
+wire \LED_x31[7]~output_o ;
+wire \LED_x31[8]~output_o ;
+wire \LED_x31[9]~output_o ;
+wire \LED_x31[10]~output_o ;
+wire \LED_x31[11]~output_o ;
+wire \LED_x31[12]~output_o ;
+wire \LED_x31[13]~output_o ;
+wire \LED_x31[14]~output_o ;
+wire \LED_x31[15]~output_o ;
 
 
 hard_block auto_generated_inst(
@@ -64,7 +98,215 @@ hard_block auto_generated_inst(
 	.devclrn(devclrn),
 	.devoe(devoe));
 
-// Location: IOIBUF_X115_Y55_N22
+// Location: IOOBUF_X69_Y73_N16
+cycloneive_io_obuf \LED_x31[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[0]~output .bus_hold = "false";
+defparam \LED_x31[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X94_Y73_N2
+cycloneive_io_obuf \LED_x31[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[1]~output .bus_hold = "false";
+defparam \LED_x31[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X94_Y73_N9
+cycloneive_io_obuf \LED_x31[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[2]~output .bus_hold = "false";
+defparam \LED_x31[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X107_Y73_N16
+cycloneive_io_obuf \LED_x31[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[3]~output .bus_hold = "false";
+defparam \LED_x31[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X87_Y73_N16
+cycloneive_io_obuf \LED_x31[4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[4]~output .bus_hold = "false";
+defparam \LED_x31[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X87_Y73_N9
+cycloneive_io_obuf \LED_x31[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[5]~output .bus_hold = "false";
+defparam \LED_x31[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X72_Y73_N9
+cycloneive_io_obuf \LED_x31[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[6]~output .bus_hold = "false";
+defparam \LED_x31[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X72_Y73_N2
+cycloneive_io_obuf \LED_x31[7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[7]~output .bus_hold = "false";
+defparam \LED_x31[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X69_Y73_N2
+cycloneive_io_obuf \LED_x31[8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[8]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[8]~output .bus_hold = "false";
+defparam \LED_x31[8]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X83_Y73_N23
+cycloneive_io_obuf \LED_x31[9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[9]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[9]~output .bus_hold = "false";
+defparam \LED_x31[9]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X60_Y73_N23
+cycloneive_io_obuf \LED_x31[10]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[10]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[10]~output .bus_hold = "false";
+defparam \LED_x31[10]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X65_Y73_N23
+cycloneive_io_obuf \LED_x31[11]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[11]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[11]~output .bus_hold = "false";
+defparam \LED_x31[11]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X65_Y73_N16
+cycloneive_io_obuf \LED_x31[12]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[12]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[12]~output .bus_hold = "false";
+defparam \LED_x31[12]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X67_Y73_N9
+cycloneive_io_obuf \LED_x31[13]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[13]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[13]~output .bus_hold = "false";
+defparam \LED_x31[13]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X58_Y73_N2
+cycloneive_io_obuf \LED_x31[14]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[14]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[14]~output .bus_hold = "false";
+defparam \LED_x31[14]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X65_Y73_N9
+cycloneive_io_obuf \LED_x31[15]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED_x31[15]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED_x31[15]~output .bus_hold = "false";
+defparam \LED_x31[15]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X115_Y17_N1
 cycloneive_io_ibuf \enable~input (
 	.i(enable),
 	.ibar(gnd),
@@ -74,7 +316,7 @@ defparam \enable~input .bus_hold = "false";
 defparam \enable~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y47_N15
+// Location: IOIBUF_X115_Y35_N22
 cycloneive_io_ibuf \reset~input (
 	.i(reset),
 	.ibar(gnd),
@@ -84,7 +326,7 @@ defparam \reset~input .bus_hold = "false";
 defparam \reset~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X38_Y73_N1
+// Location: IOIBUF_X115_Y40_N8
 cycloneive_io_ibuf \clk~input (
 	.i(clk),
 	.ibar(gnd),
@@ -93,6 +335,38 @@ cycloneive_io_ibuf \clk~input (
 defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
+
+assign LED_x31[0] = \LED_x31[0]~output_o ;
+
+assign LED_x31[1] = \LED_x31[1]~output_o ;
+
+assign LED_x31[2] = \LED_x31[2]~output_o ;
+
+assign LED_x31[3] = \LED_x31[3]~output_o ;
+
+assign LED_x31[4] = \LED_x31[4]~output_o ;
+
+assign LED_x31[5] = \LED_x31[5]~output_o ;
+
+assign LED_x31[6] = \LED_x31[6]~output_o ;
+
+assign LED_x31[7] = \LED_x31[7]~output_o ;
+
+assign LED_x31[8] = \LED_x31[8]~output_o ;
+
+assign LED_x31[9] = \LED_x31[9]~output_o ;
+
+assign LED_x31[10] = \LED_x31[10]~output_o ;
+
+assign LED_x31[11] = \LED_x31[11]~output_o ;
+
+assign LED_x31[12] = \LED_x31[12]~output_o ;
+
+assign LED_x31[13] = \LED_x31[13]~output_o ;
+
+assign LED_x31[14] = \LED_x31[14]~output_o ;
+
+assign LED_x31[15] = \LED_x31[15]~output_o ;
 
 endmodule
 

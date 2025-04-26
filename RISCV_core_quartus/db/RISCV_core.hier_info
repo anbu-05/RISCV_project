@@ -2,6 +2,22 @@
 enable => enable.IN1
 reset => reset.IN2
 clk => clk.IN2
+LED_x31[0] << RegisterFile:RF1.port11
+LED_x31[1] << RegisterFile:RF1.port11
+LED_x31[2] << RegisterFile:RF1.port11
+LED_x31[3] << RegisterFile:RF1.port11
+LED_x31[4] << RegisterFile:RF1.port11
+LED_x31[5] << RegisterFile:RF1.port11
+LED_x31[6] << RegisterFile:RF1.port11
+LED_x31[7] << RegisterFile:RF1.port11
+LED_x31[8] << RegisterFile:RF1.port11
+LED_x31[9] << RegisterFile:RF1.port11
+LED_x31[10] << RegisterFile:RF1.port11
+LED_x31[11] << RegisterFile:RF1.port11
+LED_x31[12] << RegisterFile:RF1.port11
+LED_x31[13] << RegisterFile:RF1.port11
+LED_x31[14] << RegisterFile:RF1.port11
+LED_x31[15] << RegisterFile:RF1.port11
 
 
 |RISCV_core|ProgramCounter:PC1
@@ -5080,6 +5096,38 @@ rd_data2[28] <= rd_data2.DB_MAX_OUTPUT_PORT_TYPE
 rd_data2[29] <= rd_data2.DB_MAX_OUTPUT_PORT_TYPE
 rd_data2[30] <= rd_data2.DB_MAX_OUTPUT_PORT_TYPE
 rd_data2[31] <= rd_data2.DB_MAX_OUTPUT_PORT_TYPE
+x31_data[0] <= registers[31][0].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[1] <= registers[31][1].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[2] <= registers[31][2].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[3] <= registers[31][3].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[4] <= registers[31][4].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[5] <= registers[31][5].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[6] <= registers[31][6].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[7] <= registers[31][7].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[8] <= registers[31][8].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[9] <= registers[31][9].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[10] <= registers[31][10].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[11] <= registers[31][11].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[12] <= registers[31][12].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[13] <= registers[31][13].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[14] <= registers[31][14].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[15] <= registers[31][15].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[16] <= registers[31][16].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[17] <= registers[31][17].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[18] <= registers[31][18].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[19] <= registers[31][19].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[20] <= registers[31][20].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[21] <= registers[31][21].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[22] <= registers[31][22].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[23] <= registers[31][23].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[24] <= registers[31][24].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[25] <= registers[31][25].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[26] <= registers[31][26].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[27] <= registers[31][27].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[28] <= registers[31][28].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[29] <= registers[31][29].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[30] <= registers[31][30].DB_MAX_OUTPUT_PORT_TYPE
+x31_data[31] <= registers[31][31].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |RISCV_core|ALU:ALU1

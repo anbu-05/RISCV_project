@@ -2,7 +2,8 @@ import TypesPkg::*;
 
 
 module RISCV_core(
-	input reg enable, reset, clk
+	input reg enable, reset, clk,
+	output logic [15:0] LED_x31
 	);
 	
 	logic [31:0] addr, instruction;
@@ -14,6 +15,7 @@ module RISCV_core(
 	logic [1:0] pc_jmp_Decoder;
 	logic rd_en1, rd_en2;
 	logic [2:0] wr_en;
+	logic [31:0] x31_data;
 
 	inst_type_t inst_type;
 	ALU_func_t ALU_func;
@@ -24,28 +26,14 @@ module RISCV_core(
 
 	Decoder D1(instruction, rd, rs1, rs2, imm, inst_type, rd_en1, rd_en2, wr_en, ALU_func, pc_jmp_Decoder);
 
-	RegisterFile RF1(clk, reset, wr_en[0], rd, wr_data, rd_en1, rs1, rd_data1, rd_en2, rs2, rd_data2);
+	RegisterFile RF1(clk, reset, wr_en[0], rd, wr_data, rd_en1, rs1, rd_data1, rd_en2, rs2, rd_data2, x31_data);
 
 	ALU ALU1(rd_data1, rd_data2, imm, ALU_func, rout);
 	
 	wr_data_mux wrmux(wr_en[2:1], rout, addr, imm, wr_data);
-
-	//always_comb begin
-	//	wr_data = wr_en[1] ? addr : rout;
-	//end
-
-	/*
-	always_comb begin
-		case(wr_en[2:1])
-			1: wr_data = rout;
-			2: wr_data = addr;
-			3: wr_data = imm;
-			default: wr_data = rout;
-		endcase
-	end
-	*/
-
-
+	
+	assign LED_x31 = x31_data[15:0];
+	
 endmodule
 
 module wr_data_mux(

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RISCV_core
-Sat Apr 26 17:03:09 2025
+Sat Apr 26 18:12:34 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -13,12 +13,14 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "Decoder:D1"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "RegisterFile:RF1"
+ 11. Port Connectivity Checks: "Decoder:D1"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -45,7 +47,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 26 17:03:09 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 26 18:12:34 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; RISCV_core                                      ;
 ; Top-level Entity Name              ; RISCV_core                                      ;
@@ -54,7 +56,7 @@ on the Quartus Prime software download page.
 ;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 3                                               ;
+; Total pins                         ; 19                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -199,13 +201,13 @@ on the Quartus Prime software download page.
 ;     -- Dedicated logic registers            ; 0      ;
 ;     -- I/O registers                        ; 0      ;
 ;                                             ;        ;
-; I/O pins                                    ; 3      ;
+; I/O pins                                    ; 19     ;
 ;                                             ;        ;
 ; Embedded Multiplier 9-bit elements          ; 0      ;
 ;                                             ;        ;
 ; Maximum fan-out node                        ; enable ;
 ; Maximum fan-out                             ; 1      ;
-; Total fan-out                               ; 3      ;
+; Total fan-out                               ; 19     ;
 ; Average fan-out                             ; 0.50   ;
 +---------------------------------------------+--------+
 
@@ -215,9 +217,1043 @@ on the Quartus Prime software download page.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |RISCV_core                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |RISCV_core         ; RISCV_core  ; work         ;
+; |RISCV_core                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |RISCV_core         ; RISCV_core  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                        ;
++------------------------------------------+------------------------------------------------+
+; Register name                            ; Reason for Removal                             ;
++------------------------------------------+------------------------------------------------+
+; RegisterFile:RF1|registers[0][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[30][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[29][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[28][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[27][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[26][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[25][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[24][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[23][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[22][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[21][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[20][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[19][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[18][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[17][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[16][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[15][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[14][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[13][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[12][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[11][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][31]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][30]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][29]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][28]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][27]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][26]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][25]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][24]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][23]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][22]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][21]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][20]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][19]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][18]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][17]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][16]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][15]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][14]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][13]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][12]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][11]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][10]       ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][9]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][8]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][7]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][6]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][5]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][4]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][3]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][2]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][1]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[10][0]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[9][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[8][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[7][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[6][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[5][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[4][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[3][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[2][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][1]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[1][0]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][31]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][30]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][29]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][28]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][27]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][26]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][25]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][24]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][23]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][22]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][21]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][20]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][19]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][18]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][17]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][16]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][15]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][14]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][13]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][12]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][11]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][10]        ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][9]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][8]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][7]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][6]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][5]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][4]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][3]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][2]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[0][1]         ; Lost fanout                                    ;
+; ProgramCounter:PC1|pc_reg[0..31]         ; Lost fanout                                    ;
+; RegisterFile:RF1|registers[31][0]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][1]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][2]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][3]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][4]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][5]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][6]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][7]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][8]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][9]        ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][10]       ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][11]       ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][12]       ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][13]       ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][14]       ; Merged with RegisterFile:RF1|registers[31][15] ;
+; RegisterFile:RF1|registers[31][15]       ; Stuck at GND due to stuck port data_in         ;
+; Total Number of Removed Registers = 1056 ;                                                ;
++------------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -235,6 +1271,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RegisterFile:RF1"                                                                               ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; x31_data[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Decoder:D1"                                                                              ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -246,14 +1291,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 3                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 19                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -271,13 +1319,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sat Apr 26 17:02:56 2025
+    Info: Processing started: Sat Apr 26 18:12:26 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISCV_core -c RISCV_core
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file riscv_core/riscv_core.sv
     Info (12023): Found entity 1: RISCV_core File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 4
-    Info (12023): Found entity 2: wr_data_mux File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 51
+    Info (12023): Found entity 2: wr_data_mux File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.sv
     Info (12023): Found entity 1: InstructionMemory File: D:/Z/projects/RISCV project/RISCV_core_quartus/InstructionMemory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter.sv
@@ -292,17 +1340,35 @@ Info (12021): Found 1 design units, including 0 entities, in source file types.s
     Info (12022): Found design unit 1: TypesPkg (SystemVerilog) File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 1
 Warning (12019): Can't analyze file -- file wr_data_mux.sv is missing
 Info (12127): Elaborating entity "RISCV_core" for the top level hierarchy
-Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 21
-Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IM1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 23
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 23
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IM1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 25
 Warning (10855): Verilog HDL warning at InstructionMemory.sv(48): initial value for variable IMem should be constant File: D:/Z/projects/RISCV project/RISCV_core_quartus/InstructionMemory.sv Line: 48
 Warning (10030): Net "IMem" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: D:/Z/projects/RISCV project/RISCV_core_quartus/InstructionMemory.sv Line: 5
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 25
-Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RF1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 27
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 29
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 27
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RF1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 29
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 31
 Warning (10764): Verilog HDL warning at ALU.sv(27): converting signed shift amount to unsigned File: D:/Z/projects/RISCV project/RISCV_core_quartus/ALU.sv Line: 27
 Warning (10764): Verilog HDL warning at ALU.sv(28): converting signed shift amount to unsigned File: D:/Z/projects/RISCV project/RISCV_core_quartus/ALU.sv Line: 28
 Warning (10764): Verilog HDL warning at ALU.sv(29): converting signed shift amount to unsigned File: D:/Z/projects/RISCV project/RISCV_core_quartus/ALU.sv Line: 29
-Info (12128): Elaborating entity "wr_data_mux" for hierarchy "wr_data_mux:wrmux" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 31
+Info (12128): Elaborating entity "wr_data_mux" for hierarchy "wr_data_mux:wrmux" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 33
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED_x31[0]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[1]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[2]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[3]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[4]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[5]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[6]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[7]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[8]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[9]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[10]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[11]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[12]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[13]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[14]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[15]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+Info (17049): 1040 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 7 assignments for entity "ProgramCounter.sv" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "Design Compiler" -entity ProgramCounter.sv was ignored
     Warning (20014): Assignment for entity set_global_assignment -name EDA_INPUT_GND_NAME GND -entity ProgramCounter.sv -section_id eda_design_synthesis was ignored
@@ -317,15 +1383,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "enable" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 5
     Warning (15610): No output dependent on input pin "reset" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 5
-    Warning (15610): No output dependent on input pin "clk" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
-Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "clk" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 5
+Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4753 megabytes
-    Info: Processing ended: Sat Apr 26 17:03:09 2025
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:35
+    Info (21059): Implemented 16 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 4745 megabytes
+    Info: Processing ended: Sat Apr 26 18:12:34 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +------------------------------------------+

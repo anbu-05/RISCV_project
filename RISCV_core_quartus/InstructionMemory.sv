@@ -46,12 +46,12 @@ module InstructionMemory(
 	
 	//example program 1
 	initial begin
-		write_instr(0, 32'h00000293);
+		write_instr(0, 32'h00000f93);
 		write_instr(4, 32'h00f00313);
-		write_instr(8, 32'h00128293);
-		write_instr(12, 32'hfe62cfe3);
-		write_instr(16, 32'hfff28293);
-		write_instr(20, 32'hfe029fe3);
+		write_instr(8, 32'h001f8f93);
+		write_instr(12, 32'hfe6fcfe3);
+		write_instr(16, 32'hffff8f93);
+		write_instr(20, 32'hfe0f9fe3);
 		write_instr(24, 32'h0040006f);
 	end
 	
