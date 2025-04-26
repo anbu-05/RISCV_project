@@ -31,7 +31,7 @@ module ProgramCounter(
 	always_comb begin
 		case(pc_jmp)
 			3'b110: pc_next = pc_reg + (imm << 1);
-			3'b010: pc_next = pc_reg + (imm << 1);
+			3'b011: pc_next = pc_reg + (imm << 1);		//this line is only for bne function
 			3'b001: pc_next = imm << 1;
 			default: pc_next = pc_reg + 4;
 		endcase

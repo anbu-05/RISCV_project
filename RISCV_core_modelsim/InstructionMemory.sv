@@ -3,7 +3,16 @@ module InstructionMemory(
 	output logic [31:0] data);
 
 	reg [1023:0][7:0] IMem;
-
+	
+	//int [31:0] Program;
+	
+	//assign Program = {32'h00c00093,
+	//				  32'h01000113
+	//				  }
+	
+	//first Program
+	/*
+	
 	initial begin
 		write_instr(0, 32'b00000000110000000000000010010011); 
 		
@@ -32,7 +41,36 @@ module InstructionMemory(
 		write_instr(88, 32'b00000001010000000000111111101111);
 		
 	end
+	
+	*/
+	
+	//example program 1
+	initial begin
+		write_instr(0, 32'h00000293);
+		write_instr(4, 32'h00f00313);
+		write_instr(8, 32'h00128293);
+		write_instr(12, 32'hfe62cfe3);
+		write_instr(16, 32'hfff28293);
+		write_instr(20, 32'hfe029fe3);
+		write_instr(24, 32'h0040006f);
+	end
+	
 
+	/*
+	task write_program(input int [31:0] Program);
+		for (int i = 0; i <= 1023; i++) begin
+			write_instr(i*4, Program[i]);
+		end
+	endtask
+	
+	task write_instr(input int addr, input int instr);
+		IMem[addr]     = instr[7:0];
+		IMem[addr + 1] = instr[15:8];
+		IMem[addr + 2] = instr[23:16];
+		IMem[addr + 3] = instr[31:24];
+	endtask
+	*/
+	
 	task write_instr(input int addr, input logic [31:0] instr);
 		IMem[addr]     = instr[7:0];
 		IMem[addr + 1] = instr[15:8];

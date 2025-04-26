@@ -1,3 +1,5 @@
+(OUTDATED: there is no x2 encoding)
+
 jump and branch instructions are encoded as x2. i.e., if you wanna jump to location 40, type 20. if you wanna offset by 32 locations, type 16
 
 lui function loads the imm value to the first 20 bits (i.e., it left shifts by 12).

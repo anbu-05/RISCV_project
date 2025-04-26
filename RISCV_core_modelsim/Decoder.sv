@@ -124,7 +124,7 @@ module Decoder(
 					end
 					bne: begin
 						ALU_func = EQL;
-						pc_jmp_Decoder = 2'b10;
+						pc_jmp_Decoder = 2'b11;
 					end
 					blt: begin
 						ALU_func = LT;

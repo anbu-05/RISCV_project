@@ -27,7 +27,7 @@ Z5 8D:/Z/projects/RISCV project/RISCV_core_modelsim/ALU.sv
 Z6 FD:/Z/projects/RISCV project/RISCV_core_modelsim/ALU.sv
 L0 4
 Z7 OV;L;10.5b;63
-Z8 !s108 1744995073.000000
+Z8 !s108 1745664050.000000
 Z9 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/ALU.sv|
 Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/ALU.sv|
 !i113 1
@@ -68,19 +68,19 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 UKGYCIGga[<Si>?3TJZEF2
-Ia7`5_=^7UOVm=6E53VcSd1
+!s100 73<b=M4c2K7Jm6[khAS[@2
+IzdVRXmE05PRcBXeJC3_QL1
 !s105 Decoder_sv_unit
 S1
 R3
-Z13 w1744984715
+Z13 w1745666177
 Z14 8D:/Z/projects/RISCV project/RISCV_core_modelsim/Decoder.sv
 Z15 FD:/Z/projects/RISCV project/RISCV_core_modelsim/Decoder.sv
 L0 4
 R7
-R8
-Z16 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/Decoder.sv|
-Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/Decoder.sv|
+Z16 !s108 1745666247.000000
+Z17 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/Decoder.sv|
+Z18 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/Decoder.sv|
 !i113 1
 R11
 R12
@@ -103,24 +103,24 @@ R14
 R15
 L0 1
 R7
-R8
 R16
 R17
+R18
 !i113 1
 R11
 R12
 n@decoder_sv_unit
 vInstructionMemory
 R0
-!s110 1744995073
+!s110 1745664735
 !i10b 1
-!s100 bMKL`?^^9Ul>`z]?4be?63
-Im5X;0^0AzzOZDlDhacECD1
+!s100 KS0B=MG;5NB=ek<mV2EC`0
+I8hiZSQ<hgH^QmG7BkHX`73
 R2
 !s105 InstructionMemory_sv_unit
 S1
 R3
-w1744754761
+w1745664728
 8D:/Z/projects/RISCV project/RISCV_core_modelsim/InstructionMemory.sv
 FD:/Z/projects/RISCV project/RISCV_core_modelsim/InstructionMemory.sv
 L0 1
@@ -128,7 +128,7 @@ R7
 r1
 !s85 0
 31
-R8
+!s108 1745664735.000000
 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/InstructionMemory.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/InstructionMemory.sv|
 !i113 1
@@ -137,15 +137,15 @@ R12
 n@instruction@memory
 vProgramCounter
 R0
-!s110 1744995072
+!s110 1745666247
 !i10b 1
-!s100 ;QBd;@<Ni]Z_nYPO5GbXT3
-IY5HQ4`;]JKllicE[]mbX60
+!s100 Nonc?_FYc8_FzW8NDN=zF0
+IKm6I?QIP0GXX4b2=;ZC:P3
 R2
 !s105 ProgramCounter_sv_unit
 S1
 R3
-w1744984249
+w1745666198
 8D:/Z/projects/RISCV project/RISCV_core_modelsim/ProgramCounter.sv
 FD:/Z/projects/RISCV project/RISCV_core_modelsim/ProgramCounter.sv
 L0 1
@@ -153,7 +153,7 @@ R7
 r1
 !s85 0
 31
-!s108 1744995072.000000
+R16
 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/ProgramCounter.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/ProgramCounter.sv|
 !i113 1
@@ -162,15 +162,15 @@ R12
 n@program@counter
 vRegisterFile
 R0
-Z18 !s110 1744995074
+!s110 1745664051
 !i10b 1
-!s100 _;4iF0n]XD9TVlPPKOk^D0
-IfALYh@VUNF:^83RX6oCiC2
+!s100 HUQ:M=hV`Pj:[`1FS7=YR0
+I:M<B`GHokHg@j31I7`6aE2
 R2
 !s105 RegisterFile_sv_unit
 S1
 R3
-w1744754797
+w1745664014
 8D:/Z/projects/RISCV project/RISCV_core_modelsim/RegisterFile.sv
 FD:/Z/projects/RISCV project/RISCV_core_modelsim/RegisterFile.sv
 L0 1
@@ -178,7 +178,7 @@ R7
 r1
 !s85 0
 31
-Z19 !s108 1744995074.000000
+Z19 !s108 1745664051.000000
 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/RegisterFile.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/RegisterFile.sv|
 !i113 1
@@ -194,19 +194,19 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 RD0<jj6PK];[<zz@6ci=83
-IEMTd]L>jSAT0G@=9KJgdn2
+!s100 ?AU?OMc0LLlWX`S0TPG8Z2
+InJ<gMeNg0aEE:?K57D`f10
 !s105 TB_Core_sv_unit
 S1
 R3
-Z20 w1744993329
+Z20 w1745664070
 Z21 8D:/Z/projects/RISCV project/RISCV_core_modelsim/TB_Core.sv
 Z22 FD:/Z/projects/RISCV project/RISCV_core_modelsim/TB_Core.sv
 L0 4
 R7
-R19
-Z23 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/TB_Core.sv|
-Z24 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/TB_Core.sv|
+Z23 !s108 1745664072.000000
+Z24 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/TB_Core.sv|
+Z25 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/TB_Core.sv|
 !i113 1
 R11
 R12
@@ -229,16 +229,16 @@ R21
 R22
 L0 1
 R7
-R19
 R23
 R24
+R25
 !i113 1
 R11
 R12
 n@t@b_@core_sv_unit
 vTB_ProgramCounter
 R0
-R18
+Z26 !s110 1745664052
 !i10b 1
 !s100 @hZWiI1D^jdd7ma82RKJd3
 ICOBQH`PS=e_43DBM7]@1l0
@@ -287,7 +287,7 @@ R11
 R12
 XTypesPkg
 R0
-!s110 1744995075
+R26
 !i10b 1
 !s100 @`S4BiI:DYUEgPiW@MO_l1
 Ia_;P7laFd[A<IkWg2V_T<0
@@ -302,7 +302,7 @@ R7
 r1
 !s85 0
 31
-!s108 1744995075.000000
+!s108 1745664052.000000
 !s107 D:/Z/projects/RISCV project/RISCV_core_modelsim/types.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Z/projects/RISCV project/RISCV_core_modelsim/types.sv|
 !i113 1

@@ -1,25 +1,9 @@
-{D:/Z/projects/RISCV project/RISCV_core_modelsim/Decoder.sv} {1 {vlog -work work -sv -stats=none {D:/Z/projects/RISCV project/RISCV_core_modelsim/Decoder.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling package Decoder_sv_unit
--- Importing package TypesPkg
--- Compiling module Decoder
-
-Top level modules:
-	Decoder
-
-} {} {}} D:/Z/projects/RISCV_core/TB_ProgramCounter.sv {1 {vlog -work work -sv -stats=none D:/Z/projects/RISCV_core/TB_ProgramCounter.sv
+D:/Z/projects/RISCV_core/TB_ProgramCounter.sv {1 {vlog -work work -sv -stats=none D:/Z/projects/RISCV_core/TB_ProgramCounter.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TB_ProgramCounter
 
 Top level modules:
 	TB_ProgramCounter
-
-} {} {}} {D:/Z/projects/RISCV project/RISCV_core_modelsim/ProgramCounter.sv} {1 {vlog -work work -sv -stats=none {D:/Z/projects/RISCV project/RISCV_core_modelsim/ProgramCounter.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ProgramCounter
-
-Top level modules:
-	ProgramCounter
 
 } {} {}} D:/Z/projects/RISCV_core/TB_Core.sv {1 {vlog -work work -sv -stats=none D:/Z/projects/RISCV_core/TB_Core.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -101,13 +85,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ALU
 
-} {} {}} {D:/Z/projects/RISCV project/RISCV_core_modelsim/types.sv} {1 {vlog -work work -sv -stats=none {D:/Z/projects/RISCV project/RISCV_core_modelsim/types.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling package TypesPkg
-
-Top level modules:
-	--none--
-
 } {} {}} {D:/Z/projects/RISCV project/RISCV_core_modelsim/RegisterFile.sv} {1 {vlog -work work -sv -stats=none {D:/Z/projects/RISCV project/RISCV_core_modelsim/RegisterFile.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module RegisterFile
@@ -121,5 +98,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	InstructionMemory
+
+} {} {}} {D:/Z/projects/RISCV project/RISCV_core_modelsim/types.sv} {1 {vlog -work work -sv -stats=none {D:/Z/projects/RISCV project/RISCV_core_modelsim/types.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package TypesPkg
+
+Top level modules:
+	--none--
 
 } {} {}}
