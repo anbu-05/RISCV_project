@@ -21,18 +21,13 @@ module ProgramCounter(
 		if (reset) pc_reg <= 32'b0;
 		else if (enable) pc_reg <= pc_next;
 	end
-
-	//always_comb begin
-	//	if (pc_jmp_ALU && pc_jmp_Decoder[0]) pc_next = pc_reg + (imm << 1);
-	//	else if (~pc_jmp_ALU && pc_jmp_Decoder[0]) pc_next = pc_reg + (imm << 1);
-	//	else pc_next = pc_reg + 4;
-	//end
-
+	
+	
 	always_comb begin
 		case(pc_jmp)
-			3'b110: pc_next = pc_reg + (imm << 1);
-			3'b011: pc_next = pc_reg + (imm << 1);		//this line is only for bne function
-			3'b001: pc_next = imm << 1;
+			3'b101: pc_next = pc_reg + (imm << 1);
+			3'b010: pc_next = pc_reg + (imm << 1);
+			3'b011: pc_next = imm << 1;
 			default: pc_next = pc_reg + 4;
 		endcase
 	end

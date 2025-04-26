@@ -1,5 +1,5 @@
 module RegisterFile(
-	input logic clk, reset, wr_en,
+	input logic reset, wr_en,
 	input logic [4:0] wr_index,
 	input logic [31:0] wr_data,
 
@@ -14,7 +14,7 @@ module RegisterFile(
 
 	logic [31:0][31:0] registers;
 
-	always_ff @(posedge clk or posedge reset) begin
+	always_ff @(*) begin
 		if (reset) begin
 			for (int i = 0; i < 32; i++) begin
 				registers[i] = 32'b0;

@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "04/26/2025 14:42:27"
+// DATE "04/26/2025 17:03:35"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -33,9 +33,9 @@ module RISCV_core (
 	enable,
 	reset,
 	clk);
-input 	enable;
-input 	reset;
-input 	clk;
+input 	reg enable ;
+input 	reg reset ;
+input 	reg clk ;
 
 // Design Ports Information
 // enable	=>  Location: PIN_K26,	 I/O Standard: 2.5 V,	 Current Strength: Default

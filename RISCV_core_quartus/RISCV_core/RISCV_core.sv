@@ -24,7 +24,7 @@ module RISCV_core(
 
 	Decoder D1(instruction, rd, rs1, rs2, imm, inst_type, rd_en1, rd_en2, wr_en, ALU_func, pc_jmp_Decoder);
 
-	RegisterFile RF1(reset, wr_en[0], rd, wr_data, rd_en1, rs1, rd_data1, rd_en2, rs2, rd_data2);
+	RegisterFile RF1(clk, reset, wr_en[0], rd, wr_data, rd_en1, rs1, rd_data1, rd_en2, rs2, rd_data2);
 
 	ALU ALU1(rd_data1, rd_data2, imm, ALU_func, rout);
 	

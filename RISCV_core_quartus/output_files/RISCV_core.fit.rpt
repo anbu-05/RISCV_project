@@ -1,5 +1,5 @@
 Fitter report for RISCV_core
-Sat Apr 26 14:42:15 2025
+Sat Apr 26 17:03:23 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -58,7 +58,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Apr 26 14:42:15 2025           ;
+; Fitter Status                      ; Successful - Sat Apr 26 17:03:23 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; RISCV_core                                      ;
 ; Top-level Entity Name              ; RISCV_core                                      ;
@@ -1384,7 +1384,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1392,10 +1392,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file D:/Z/projects/RISCV project/RISCV_core_quartus/output_files/RISCV_core.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5675 megabytes
-    Info: Processing ended: Sat Apr 26 14:42:15 2025
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 5673 megabytes
+    Info: Processing ended: Sat Apr 26 17:03:24 2025
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +----------------------------+

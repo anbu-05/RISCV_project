@@ -21,17 +21,8 @@ module ALU(
 			OR: rout = r1 | r2;
 			
 			ADDI: rout = r1 + imm;
-			ANDI: rout = r1 & imm;
-			ORI: rout = r1 | imm;
-			XORI: rout = r1 ^ imm;
-			SLLI: rout = r1 << imm;
-			SRLI: rout = r1 >> imm;
-			SRAI: rout = r1 >>> imm;
-			SLTI: rout = (r1 < imm) ? 1 : 0;
 			
 			EQL: rout = (r1 == r2) ? 1 : 0;
-			LT: rout = (r1 < r2) ? 1 : 0;
-			GE: rout = (r1 >= r2) ? 1 : 0;
 			default: rout = 0;
 		endcase
 	end

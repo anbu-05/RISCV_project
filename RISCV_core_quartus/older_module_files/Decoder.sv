@@ -89,62 +89,35 @@ module Decoder(
 			end
 			
 			I: begin
-				rd_en1 = 1; wr_en[0] = 1;
 				case(I_funct3)
 					addi: begin
 						ALU_func = ADDI;
-					end
-					slti: begin
-						ALU_func = SLTI;
-					end
-					xori: begin
-						ALU_func = XORI;
-					end
-					ori: begin
-						ALU_func = ORI;
-					end
-					andi: begin
-						ALU_func = ANDI;
-					end
-					slli: begin
-						ALU_func = SLLI;
-					end
-					srli_srai: begin
-						ALU_func = funct7[5] ? SRAI : SRLI;
+						rd_en1 = 1; wr_en[0] = 1;
 					end
 				endcase
 			end
 			
 			B: begin
-				rd_en1 = 1; rd_en2 = 1;
 				case(B_funct3)
 					beq: begin
 						ALU_func = EQL;
-						pc_jmp_Decoder = 2'b10;
+						pc_jmp_Decoder = 2'b01;
+						rd_en1 = 1; rd_en2 = 1;
 					end
 					bne: begin
 						ALU_func = EQL;
-						pc_jmp_Decoder = 2'b11;
-					end
-					blt: begin
-						ALU_func = LT;
 						pc_jmp_Decoder = 2'b10;
-					end
-					bge: begin
-						ALU_func = GE;
-						pc_jmp_Decoder = 2'b10;
+						rd_en1 = 1; rd_en2 = 1;
 					end
 				endcase
 			end
 			
 			J: begin
-				pc_jmp_Decoder = 2'b01;
-				wr_en[0] = 1;
+				pc_jmp_Decoder = 2'b11;
 				wr_en[2:1] = 2;
 			end
 			
 			U: begin
-				wr_en[0] = 1;
 				wr_en[2:1] = 3;
 			end
 		endcase

@@ -1,3 +1,8 @@
 Info (10281): Verilog HDL Declaration information at types.sv(5): object "SLL" differs only in case from object "sll" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 5
 Info (10281): Verilog HDL Declaration information at types.sv(5): object "SLT" differs only in case from object "slt" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 5
-Info (10281): Verilog HDL Declaration information at types.sv(5): object "ADDI" differs only in case from object "addi" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 5
+Info (10281): Verilog HDL Declaration information at types.sv(6): object "ADDI" differs only in case from object "addi" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 6
+Info (10281): Verilog HDL Declaration information at types.sv(6): object "SLTI" differs only in case from object "slti" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 6
+Info (10281): Verilog HDL Declaration information at types.sv(6): object "XORI" differs only in case from object "xori" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 6
+Info (10281): Verilog HDL Declaration information at types.sv(6): object "ORI" differs only in case from object "ori" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 6
+Info (10281): Verilog HDL Declaration information at types.sv(6): object "ANDI" differs only in case from object "andi" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 6
+Info (10281): Verilog HDL Declaration information at types.sv(6): object "SLLI" differs only in case from object "slli" in the same scope File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 6

@@ -2,9 +2,7 @@ package TypesPkg;
 
 	typedef enum logic [2:0] {R, I, B, J, U} inst_type_t;
 
-	typedef enum logic [4:0] {ADD, SUB, SLL, SLT, XOR, SRL, SRA, OR, AND, 
-							  ADDI, ANDI, ORI, XORI, SLLI, SRLI, SRAI, SLTI,
-							  EQL, LT, GE} ALU_func_t;
+	typedef enum logic [3:0] {ADD, SUB, SLL, SLT, XOR, SRL, SRA, OR, AND, ADDI, EQL} ALU_func_t;
 
 	typedef enum logic [2:0] {
 		addsub = 3'b000,
@@ -19,6 +17,7 @@ package TypesPkg;
 	typedef enum logic [2:0] {
 		addi   = 3'b000,
 		slti   = 3'b010,
+		sltiu  = 3'b011,
 		xori   = 3'b100,
 		ori    = 3'b110,
 		andi   = 3'b111,
