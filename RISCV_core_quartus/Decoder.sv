@@ -12,6 +12,7 @@ module Decoder(
 	output logic [2:0] wr_en,
 	output ALU_func_t ALU_func,
 	output logic [1:0] pc_jmp_Decoder
+	
 	);
 
 	logic [6:0] opcode;

@@ -1,6 +1,6 @@
 package TypesPkg;
 
-	typedef enum logic [2:0] {R, I, B, J, U} inst_type_t;
+	typedef enum logic [2:0] {R, I, B, J, U, S, L} inst_type_t;
 
 	typedef enum logic [4:0] {ADD, SUB, SLL, SLT, XOR, SRL, SRA, OR, AND, 
 							  ADDI, ANDI, ORI, XORI, SLLI, SRLI, SRAI, SLTI,
@@ -27,10 +27,16 @@ package TypesPkg;
 	} I_funct3_t;
 	
 	typedef enum logic [2:0] {
-    beq  = 3'b000,
-    bne  = 3'b001,
-    blt  = 3'b100,
-    bge  = 3'b101
+		beq  = 3'b000,
+		bne  = 3'b001,
+		blt  = 3'b100,
+		bge  = 3'b101
 	} B_funct3_t;
+	
+	typedef enum logic [2:0] {
+		sb  = 3'b000,
+		sh  = 3'b001,
+		sw  = 3'b010
+	} S_funct3_t;
 
 endpackage

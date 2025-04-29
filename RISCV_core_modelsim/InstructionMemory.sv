@@ -2,7 +2,7 @@ module InstructionMemory(
 	input logic [31:0] addr,
 	output logic [31:0] data);
 
-	reg [1023:0][7:0] IMem;
+	reg [7:0] IMem [1023:0];
 	
 	//int [31:0] Program;
 	
@@ -10,9 +10,8 @@ module InstructionMemory(
 	//				  32'h01000113
 	//				  }
 	
-	//first Program
 	/*
-	
+	//first Program
 	initial begin
 		write_instr(0, 32'b00000000110000000000000010010011); 
 		
@@ -41,8 +40,8 @@ module InstructionMemory(
 		write_instr(88, 32'b00000001010000000000111111101111);
 		
 	end
-	
 	*/
+	
 	
 	//example program 1
 	initial begin
@@ -54,6 +53,7 @@ module InstructionMemory(
 		write_instr(20, 32'hfe0f9fe3);
 		write_instr(24, 32'h0040006f);
 	end
+	
 	
 
 	/*

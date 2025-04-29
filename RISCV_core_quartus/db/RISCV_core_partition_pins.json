@@ -2,7 +2,20 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "debug_led",
+					"strict" : false
+				},
+				{
+					"name" : "debug_a",
+					"strict" : false
+				},
+				{
+					"name" : "debug_b",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

@@ -2,7 +2,7 @@ module InstructionMemory(
 	input logic [31:0] addr,
 	output logic [31:0] data);
 
-	reg [1023:0][7:0] IMem;
+	reg [7:0] IMem [1023:0];
 	
 	//int [31:0] Program;
 	

@@ -1,23 +1,36 @@
 |RISCV_core
 enable => enable.IN1
-reset => reset.IN2
-clk => clk.IN2
-LED_x31[0] << RegisterFile:RF1.port11
-LED_x31[1] << RegisterFile:RF1.port11
-LED_x31[2] << RegisterFile:RF1.port11
-LED_x31[3] << RegisterFile:RF1.port11
-LED_x31[4] << RegisterFile:RF1.port11
-LED_x31[5] << RegisterFile:RF1.port11
-LED_x31[6] << RegisterFile:RF1.port11
-LED_x31[7] << RegisterFile:RF1.port11
-LED_x31[8] << RegisterFile:RF1.port11
-LED_x31[9] << RegisterFile:RF1.port11
-LED_x31[10] << RegisterFile:RF1.port11
-LED_x31[11] << RegisterFile:RF1.port11
-LED_x31[12] << RegisterFile:RF1.port11
-LED_x31[13] << RegisterFile:RF1.port11
-LED_x31[14] << RegisterFile:RF1.port11
-LED_x31[15] << RegisterFile:RF1.port11
+reset => _.IN1
+reset => _.IN1
+reset => _.IN1
+clk => _.IN1
+clk => _.IN1
+clk => _.IN1
+LED_x31[0] <= RegisterFile:RF1.port11
+LED_x31[1] <= RegisterFile:RF1.port11
+LED_x31[2] <= RegisterFile:RF1.port11
+LED_x31[3] <= RegisterFile:RF1.port11
+LED_x31[4] <= RegisterFile:RF1.port11
+LED_x31[5] <= RegisterFile:RF1.port11
+LED_x31[6] <= RegisterFile:RF1.port11
+LED_x31[7] <= RegisterFile:RF1.port11
+LED_x31[8] <= RegisterFile:RF1.port11
+LED_x31[9] <= RegisterFile:RF1.port11
+LED_x31[10] <= RegisterFile:RF1.port11
+LED_x31[11] <= RegisterFile:RF1.port11
+LED_x31[12] <= RegisterFile:RF1.port11
+LED_x31[13] <= RegisterFile:RF1.port11
+LED_x31[14] <= RegisterFile:RF1.port11
+LED_x31[15] <= RegisterFile:RF1.port11
+debug_a => debug_a.IN1
+debug_b => debug_b.IN1
+debug_led <= RegisterFile:RF1.port14
+
+
+|RISCV_core|clk_divider:comb_3
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+clk_1Hz <= <GND>
 
 
 |RISCV_core|ProgramCounter:PC1
@@ -5128,6 +5141,9 @@ x31_data[28] <= registers[31][28].DB_MAX_OUTPUT_PORT_TYPE
 x31_data[29] <= registers[31][29].DB_MAX_OUTPUT_PORT_TYPE
 x31_data[30] <= registers[31][30].DB_MAX_OUTPUT_PORT_TYPE
 x31_data[31] <= registers[31][31].DB_MAX_OUTPUT_PORT_TYPE
+debug_a => debug_led.IN0
+debug_b => debug_led.IN1
+debug_led <= debug_led.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |RISCV_core|ALU:ALU1

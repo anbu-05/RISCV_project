@@ -11,10 +11,15 @@ module RegisterFile(
 	input logic [4:0] rd_index2,
 	output logic [31:0] rd_data2,
 	
-	output logic [31:0] x31_data
+	output logic [31:0] x31_data,
+	
+	input logic debug_a, debug_b,
+	output logic debug_led
 	);
+	
+	assign debug_led = debug_a && debug_b;
 
-	logic [31:0][31:0] registers;
+	logic [31:0] registers [31:0];
 
 	always_ff @(posedge clk or posedge reset) begin
 		if (reset) begin

@@ -9,10 +9,12 @@ module RegisterFile(
 
 	input logic rd_en2,
 	input logic [4:0] rd_index2,
-	output logic [31:0] rd_data2
+	output logic [31:0] rd_data2,
+	
+	output logic [31:0] x31_data
 	);
 
-	logic [31:0][31:0] registers;
+	logic [31:0] registers [31:0];
 
 	always_ff @(posedge clk or posedge reset) begin
 		if (reset) begin
@@ -25,6 +27,8 @@ module RegisterFile(
 			registers[wr_index] = wr_data;
 		end
 	end
+	
+	assign x31_data = registers[31];
 
 	always_comb begin
 		rd_data1 = (rd_en1) ? registers[rd_index1] : 32'b0;

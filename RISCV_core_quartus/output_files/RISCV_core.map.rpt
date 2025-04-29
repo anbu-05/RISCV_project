@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RISCV_core
-Sat Apr 26 18:12:34 2025
+Tue Apr 29 17:52:15 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -15,12 +15,14 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Port Connectivity Checks: "RegisterFile:RF1"
- 11. Port Connectivity Checks: "Decoder:D1"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+ 10. Parameter Settings for User Entity Instance: clk_divider:comb_3
+ 11. Port Connectivity Checks: "RegisterFile:RF1"
+ 12. Port Connectivity Checks: "Decoder:D1"
+ 13. Port Connectivity Checks: "clk_divider:comb_3"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,16 +49,16 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 26 18:12:34 2025           ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 29 17:52:15 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; RISCV_core                                      ;
 ; Top-level Entity Name              ; RISCV_core                                      ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
+; Total logic elements               ; 1                                               ;
+;     Total combinational functions  ; 1                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 19                                              ;
+; Total pins                         ; 22                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -181,44 +183,46 @@ on the Quartus Prime software download page.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-;                                             ;        ;
-; Total combinational functions               ; 0      ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 0      ;
-;     -- <=2 input functions                  ; 0      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 0      ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-;     -- Dedicated logic registers            ; 0      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 19     ;
-;                                             ;        ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; enable ;
-; Maximum fan-out                             ; 1      ;
-; Total fan-out                               ; 19     ;
-; Average fan-out                             ; 0.50   ;
-+---------------------------------------------+--------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimated Total logic elements              ; 1                          ;
+;                                             ;                            ;
+; Total combinational functions               ; 1                          ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 0                          ;
+;     -- 3 input functions                    ; 0                          ;
+;     -- <=2 input functions                  ; 1                          ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 1                          ;
+;     -- arithmetic mode                      ; 0                          ;
+;                                             ;                            ;
+; Total registers                             ; 0                          ;
+;     -- Dedicated logic registers            ; 0                          ;
+;     -- I/O registers                        ; 0                          ;
+;                                             ;                            ;
+; I/O pins                                    ; 22                         ;
+;                                             ;                            ;
+; Embedded Multiplier 9-bit elements          ; 0                          ;
+;                                             ;                            ;
+; Maximum fan-out node                        ; RegisterFile:RF1|debug_led ;
+; Maximum fan-out                             ; 1                          ;
+; Total fan-out                               ; 25                         ;
+; Average fan-out                             ; 0.56                       ;
++---------------------------------------------+----------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |RISCV_core                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |RISCV_core         ; RISCV_core  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+--------------+
+; |RISCV_core                ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |RISCV_core                  ; RISCV_core   ; work         ;
+;    |RegisterFile:RF1|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_core|RegisterFile:RF1 ; RegisterFile ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1271,6 +1275,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_divider:comb_3 ;
++----------------+----------+-------------------------------------+
+; Parameter Name ; Value    ; Type                                ;
++----------------+----------+-------------------------------------+
+; DIVISOR        ; 50000000 ; Signed Integer                      ;
++----------------+----------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "RegisterFile:RF1"                                                                               ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1289,18 +1303,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clk_divider:comb_3"                                                                    ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; clk_1Hz ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 19                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
+; boundary_port         ; 22                          ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
 ;         0 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.75                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1319,13 +1343,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sat Apr 26 18:12:26 2025
+    Info: Processing started: Tue Apr 29 17:52:07 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISCV_core -c RISCV_core
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 2 entities, in source file riscv_core/riscv_core.sv
+Info (12021): Found 3 design units, including 3 entities, in source file riscv_core/riscv_core.sv
     Info (12023): Found entity 1: RISCV_core File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 4
-    Info (12023): Found entity 2: wr_data_mux File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 39
+    Info (12023): Found entity 2: wr_data_mux File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 48
+    Info (12023): Found entity 3: clk_divider File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 63
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.sv
     Info (12023): Found entity 1: InstructionMemory File: D:/Z/projects/RISCV project/RISCV_core_quartus/InstructionMemory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter.sv
@@ -1339,35 +1364,42 @@ Info (12021): Found 1 design units, including 1 entities, in source file registe
 Info (12021): Found 1 design units, including 0 entities, in source file types.sv
     Info (12022): Found design unit 1: TypesPkg (SystemVerilog) File: D:/Z/projects/RISCV project/RISCV_core_quartus/types.sv Line: 1
 Warning (12019): Can't analyze file -- file wr_data_mux.sv is missing
+Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(89): created implicit net for "clk_1hz" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 89
+Critical Warning (10846): Verilog HDL Instantiation warning at RISCV_core.sv(28): instance has no name File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 28
 Info (12127): Elaborating entity "RISCV_core" for the top level hierarchy
-Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 23
-Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IM1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 25
+Info (12128): Elaborating entity "clk_divider" for hierarchy "clk_divider:comb_3" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 28
+Warning (10036): Verilog HDL or VHDL warning at RISCV_core.sv(89): object "clk_1hz" assigned a value but never read File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 89
+Warning (10034): Output port "clk_1Hz" at RISCV_core.sv(66) has no driver File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 66
+Warning (12158): Entity "clk_divider" contains only dangling pins File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 28
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 30
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IM1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 32
 Warning (10855): Verilog HDL warning at InstructionMemory.sv(48): initial value for variable IMem should be constant File: D:/Z/projects/RISCV project/RISCV_core_quartus/InstructionMemory.sv Line: 48
 Warning (10030): Net "IMem" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: D:/Z/projects/RISCV project/RISCV_core_quartus/InstructionMemory.sv Line: 5
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 27
-Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RF1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 29
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 31
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 34
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RF1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 36
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 38
 Warning (10764): Verilog HDL warning at ALU.sv(27): converting signed shift amount to unsigned File: D:/Z/projects/RISCV project/RISCV_core_quartus/ALU.sv Line: 27
 Warning (10764): Verilog HDL warning at ALU.sv(28): converting signed shift amount to unsigned File: D:/Z/projects/RISCV project/RISCV_core_quartus/ALU.sv Line: 28
 Warning (10764): Verilog HDL warning at ALU.sv(29): converting signed shift amount to unsigned File: D:/Z/projects/RISCV project/RISCV_core_quartus/ALU.sv Line: 29
-Info (12128): Elaborating entity "wr_data_mux" for hierarchy "wr_data_mux:wrmux" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 33
+Info (12128): Elaborating entity "wr_data_mux" for hierarchy "wr_data_mux:wrmux" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 40
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LED_x31[0]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[1]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[2]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[3]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[4]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[5]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[6]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[7]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[8]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[9]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[10]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[11]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[12]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[13]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[14]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
-    Warning (13410): Pin "LED_x31[15]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 7
+    Warning (13410): Pin "LED_x31[0]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[1]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[2]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[3]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[4]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[5]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[6]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[7]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[8]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[9]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[10]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[11]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[12]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[13]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[14]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+    Warning (13410): Pin "LED_x31[15]" is stuck at GND File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 6
+Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1040 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 7 assignments for entity "ProgramCounter.sv" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "Design Compiler" -entity ProgramCounter.sv was ignored
@@ -1384,14 +1416,15 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "enable" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 5
     Warning (15610): No output dependent on input pin "reset" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 5
     Warning (15610): No output dependent on input pin "clk" File: D:/Z/projects/RISCV project/RISCV_core_quartus/RISCV_core/RISCV_core.sv Line: 5
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 16 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
-    Info: Peak virtual memory: 4745 megabytes
-    Info: Processing ended: Sat Apr 26 18:12:34 2025
+Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 1 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 4763 megabytes
+    Info: Processing ended: Tue Apr 29 17:52:15 2025
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +------------------------------------------+

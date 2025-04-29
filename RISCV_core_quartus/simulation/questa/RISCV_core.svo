@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "04/26/2025 18:12:50"
+// DATE "04/29/2025 17:52:31"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -33,11 +33,17 @@ module RISCV_core (
 	enable,
 	reset,
 	clk,
-	LED_x31);
-input 	enable;
-input 	reset;
-input 	clk;
-output 	[15:0] LED_x31;
+	LED_x31,
+	debug_a,
+	debug_b,
+	debug_led);
+input 	reg enable ;
+input 	reg reset ;
+input 	reg clk ;
+output 	logic [15:0] LED_x31 ;
+input 	logic debug_a ;
+input 	logic debug_b ;
+output 	logic debug_led ;
 
 // Design Ports Information
 // enable	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -59,6 +65,9 @@ output 	[15:0] LED_x31;
 // LED_x31[13]	=>  Location: PIN_H17,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // LED_x31[14]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // LED_x31[15]	=>  Location: PIN_G15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// debug_led	=>  Location: PIN_H15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// debug_a	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// debug_b	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -91,6 +100,10 @@ wire \LED_x31[12]~output_o ;
 wire \LED_x31[13]~output_o ;
 wire \LED_x31[14]~output_o ;
 wire \LED_x31[15]~output_o ;
+wire \debug_led~output_o ;
+wire \debug_a~input_o ;
+wire \debug_b~input_o ;
+wire \RF1|debug_led~combout ;
 
 
 hard_block auto_generated_inst(
@@ -306,6 +319,56 @@ defparam \LED_x31[15]~output .bus_hold = "false";
 defparam \LED_x31[15]~output .open_drain_output = "false";
 // synopsys translate_on
 
+// Location: IOOBUF_X60_Y73_N16
+cycloneive_io_obuf \debug_led~output (
+	.i(\RF1|debug_led~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\debug_led~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \debug_led~output .bus_hold = "false";
+defparam \debug_led~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X115_Y13_N1
+cycloneive_io_ibuf \debug_a~input (
+	.i(debug_a),
+	.ibar(gnd),
+	.o(\debug_a~input_o ));
+// synopsys translate_off
+defparam \debug_a~input .bus_hold = "false";
+defparam \debug_a~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X115_Y14_N8
+cycloneive_io_ibuf \debug_b~input (
+	.i(debug_b),
+	.ibar(gnd),
+	.o(\debug_b~input_o ));
+// synopsys translate_off
+defparam \debug_b~input .bus_hold = "false";
+defparam \debug_b~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X114_Y14_N8
+cycloneive_lcell_comb \RF1|debug_led (
+// Equation(s):
+// \RF1|debug_led~combout  = (\debug_a~input_o  & \debug_b~input_o )
+
+	.dataa(\debug_a~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\debug_b~input_o ),
+	.cin(gnd),
+	.combout(\RF1|debug_led~combout ),
+	.cout());
+// synopsys translate_off
+defparam \RF1|debug_led .lut_mask = 16'hAA00;
+defparam \RF1|debug_led .sum_lutc_input = "datac";
+// synopsys translate_on
+
 // Location: IOIBUF_X115_Y17_N1
 cycloneive_io_ibuf \enable~input (
 	.i(enable),
@@ -367,6 +430,8 @@ assign LED_x31[13] = \LED_x31[13]~output_o ;
 assign LED_x31[14] = \LED_x31[14]~output_o ;
 
 assign LED_x31[15] = \LED_x31[15]~output_o ;
+
+assign debug_led = \debug_led~output_o ;
 
 endmodule
 
