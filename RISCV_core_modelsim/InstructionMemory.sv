@@ -4,12 +4,6 @@ module InstructionMemory(
 
 	reg [7:0] IMem [1023:0];
 	
-	//int [31:0] Program;
-	
-	//assign Program = {32'h00c00093,
-	//				  32'h01000113
-	//				  }
-	
 	/*
 	//first Program
 	initial begin
@@ -44,39 +38,19 @@ module InstructionMemory(
 	
 	
 	//example program 1
-	initial begin
-		write_instr(0, 32'h00000f93);
-		write_instr(4, 32'h00f00313);
-		write_instr(8, 32'h001f8f93);
-		write_instr(12, 32'hfe6fcfe3);
-		write_instr(16, 32'hffff8f93);
-		write_instr(20, 32'hfe0f9fe3);
-		write_instr(24, 32'h0040006f);
-	end
+	write_instr(0, 32'h00000f93);
+	write_instr(4, 32'h00f00313);
+	write_instr(8, 32'h001f8f93);
+	write_instr(12, 32'hfe6fcfe3);
+	write_instr(16, 32'hffff8f93);
+	write_instr(20, 32'hfe0f9fe3);
+	write_instr(24, 32'h0040006f);
 	
-	
-
-	/*
-	task write_program(input int [31:0] Program);
-		for (int i = 0; i <= 1023; i++) begin
-			write_instr(i*4, Program[i]);
-		end
-	endtask
-	
-	task write_instr(input int addr, input int instr);
-		IMem[addr]     = instr[7:0];
-		IMem[addr + 1] = instr[15:8];
-		IMem[addr + 2] = instr[23:16];
+	`define write_instr(addr, instr) \
+		IMem[addr]     = instr[7:0]; \
+		IMem[addr + 1] = instr[15:8]; \
+		IMem[addr + 2] = instr[23:16]; \
 		IMem[addr + 3] = instr[31:24];
-	endtask
-	*/
-	
-	task write_instr(input int addr, input logic [31:0] instr);
-		IMem[addr]     = instr[7:0];
-		IMem[addr + 1] = instr[15:8];
-		IMem[addr + 2] = instr[23:16];
-		IMem[addr + 3] = instr[31:24];
-	endtask
 
 	assign data = {IMem[addr + 3], IMem[addr + 2], IMem[addr + 1], IMem[addr]};
 
