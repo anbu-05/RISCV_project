@@ -37,6 +37,7 @@ module TB_core;
 	wr_data_mux wrmux(wr_en[3:1], rout, addr, imm, rd_data, wr_data);
 
 		
+		
 
 	initial begin
 	clk = 0;

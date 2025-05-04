@@ -9,7 +9,7 @@ module DataMemory(
 	output logic [31:0] rd_data
 	);
 
-	logic [31:0] registers [31:0];
+	logic [1023:0] registers [31:0];
 
 	always_ff @(posedge clk or posedge reset) begin
 		if (data_reset) begin
