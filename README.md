@@ -1,4 +1,3 @@
-
 # RISCV cpu core
 
 this is a personal project of mine where i try to make a RISCV cpu core. it started off from a assignment my professor gave me -and it's come a long way.
@@ -45,7 +44,7 @@ mostly all the components are the same in the implementation compared to the sim
 - the [core testbench](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_modelsim/TB_Core.sv) has been replaced with a synthesizable [core](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_quartus/RISCV_core/RISCV_core.sv)
 - in the implentation, the [instruction memory](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_quartus/InstructionMemory.sv) loads the instructions from a [hex file](https://github.com/boneman420/RISCV-CPU-core-project/tree/main/RISCV_core_quartus/programs)
 
-[[rtl map of the implementation]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/rtl%20view%201_page-0001.jpg)
+![[rtl map of the implementation]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/rtl%20view%201_page-0001.jpg)
 
 
 #### example programs
