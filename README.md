@@ -44,9 +44,9 @@ mostly all the components are the same in the implementation compared to the sim
 - the [core testbench](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_modelsim/TB_Core.sv) has been replaced with a synthesizable [core](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_quartus/RISCV_core/RISCV_core.sv)
 - in the implentation, the [instruction memory](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_quartus/InstructionMemory.sv) loads the instructions from a [hex file](https://github.com/boneman420/RISCV-CPU-core-project/tree/main/RISCV_core_quartus/programs)
 
-![[rtl map of the implementation]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/rtl%20view%201_page-0001.jpg)
+
 
 
 #### example programs
 1. up counter at x31 [[instruction]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/programs/example_program_1.txt) [[hex file]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_quartus/programs/example_program_1.hex)
-![up counter at x31](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/WhatsApp%20Video%202025-05-01%20at%2018.03.59_71232f9a.mp4)
+[[video]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/WhatsApp%20Video%202025-05-01%20at%2018.03.59_71232f9a.mp4)
