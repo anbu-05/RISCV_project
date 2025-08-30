@@ -16,7 +16,7 @@ i've also implemented it on an FPGA. i used an altera DE2-115 (my university all
 
 ## the core
 
-![dataflow diagram](#notes\images\RISCV_core_datapath.png)
+![dataflow diagram](#notes/images/RISCV_core_datapath.png)
 
 #### notes:
 there are a few differences between the simulation (modelsim) and FPGA (quartus) implementations. I am however trying to unify the modelsim and quartus implementations as much as possible (a few problems with quartus prime).
