@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED_x31[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[9]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[10]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[11]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[12]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[13]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[14]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_x31[15]",
+					"strict" : false
+				},
+				{
+					"name" : "debug_led",
+					"strict" : false
+				},
+				{
+					"name" : "debug_a",
+					"strict" : false
+				},
+				{
+					"name" : "debug_b",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

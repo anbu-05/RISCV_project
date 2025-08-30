@@ -1,0 +1,788 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 win64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do RISCV_core_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/24.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:11:19 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 03:11:19 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:11:19 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 03:11:19 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:11:19 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv 
+# -- Compiling package TypesPkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 03:11:19 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy/RISCV_core {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:11:19 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv 
+# -- Compiling package RISCV_core_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module RISCV_core
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	RISCV_core
+# End time: 03:11:19 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:11:20 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv 
+# -- Compiling module InstructionMemory
+# 
+# Top level modules:
+# 	InstructionMemory
+# End time: 03:11:20 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:11:20 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv 
+# -- Compiling package decoder_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module Decoder
+# 
+# Top level modules:
+# 	Decoder
+# End time: 03:11:20 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:11:20 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 03:11:20 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:11:20 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv 
+# -- Compiling module TB_RISCV_core
+# 
+# Top level modules:
+# 	TB_RISCV_core
+# End time: 03:11:20 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_RISCV_core
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_RISCV_core 
+# Start time: 03:11:20 on Jul 21,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint  \
+sim:/TB_RISCV_core/dut/PC1/pc_out
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/TB_RISCV_core/dut/PC1/pc_jmp
+add wave -position insertpoint  \
+sim:/TB_RISCV_core/dut/PC1/pc_next
+add wave -position insertpoint  \
+sim:/TB_RISCV_core/dut/PC1/pc_jmp
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do RISCV_core_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Anbu@NITRO.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:19:55 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 03:19:55 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:19:55 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 03:19:55 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:19:55 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv 
+# -- Compiling package TypesPkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 03:19:55 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy/RISCV_core {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:19:56 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv 
+# -- Compiling package RISCV_core_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module RISCV_core
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	RISCV_core
+# End time: 03:19:56 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:19:56 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv 
+# -- Compiling module InstructionMemory
+# 
+# Top level modules:
+# 	InstructionMemory
+# End time: 03:19:56 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:19:56 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv 
+# -- Compiling package decoder_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module Decoder
+# 
+# Top level modules:
+# 	Decoder
+# End time: 03:19:56 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:19:56 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 03:19:56 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:19:56 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv 
+# -- Compiling module TB_RISCV_core
+# 
+# Top level modules:
+# 	TB_RISCV_core
+# End time: 03:19:56 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_RISCV_core
+# End time: 03:19:58 on Jul 21,2025, Elapsed time: 0:08:38
+# Errors: 0, Warnings: 2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_RISCV_core 
+# Start time: 03:19:58 on Jul 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+add wave -position insertpoint  \
+sim:/TB_RISCV_core/dut/PC1/pc_out
+add wave -position insertpoint  \
+sim:/TB_RISCV_core/dut/PC1/pc_next
+add wave -position insertpoint  \
+sim:/TB_RISCV_core/dut/PC1/pc_jmp
+# Causality operation skipped due to absence of debug database file
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/simulation/questa/wave.do}
+do RISCV_core_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Anbu@NITRO.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:26:35 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 03:26:35 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:26:35 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 03:26:35 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:26:35 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv 
+# -- Compiling package TypesPkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 03:26:35 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy/RISCV_core {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:26:35 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv 
+# -- Compiling package RISCV_core_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module RISCV_core
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	RISCV_core
+# End time: 03:26:35 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:26:35 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv 
+# -- Compiling module InstructionMemory
+# 
+# Top level modules:
+# 	InstructionMemory
+# End time: 03:26:35 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:26:36 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv 
+# -- Compiling package decoder_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module Decoder
+# 
+# Top level modules:
+# 	Decoder
+# End time: 03:26:36 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:26:36 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 03:26:36 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:26:36 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv 
+# -- Compiling module TB_RISCV_core
+# 
+# Top level modules:
+# 	TB_RISCV_core
+# End time: 03:26:36 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_RISCV_core
+# End time: 03:26:37 on Jul 21,2025, Elapsed time: 0:06:39
+# Errors: 0, Warnings: 1
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_RISCV_core 
+# Start time: 03:26:38 on Jul 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+do {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/simulation/questa/wave.do}
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do RISCV_core_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Anbu@NITRO.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:38:02 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 03:38:02 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:38:02 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 03:38:02 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:38:03 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv 
+# -- Compiling package TypesPkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 03:38:03 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy/RISCV_core {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:38:03 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv 
+# -- Compiling package RISCV_core_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module RISCV_core
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	RISCV_core
+# End time: 03:38:03 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:38:03 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv 
+# -- Compiling module InstructionMemory
+# 
+# Top level modules:
+# 	InstructionMemory
+# End time: 03:38:03 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:38:03 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv 
+# -- Compiling package decoder_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module Decoder
+# 
+# Top level modules:
+# 	Decoder
+# End time: 03:38:03 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:38:03 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 03:38:03 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus\ -\ Copy {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:38:03 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy" D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv 
+# -- Compiling module TB_RISCV_core
+# 
+# Top level modules:
+# 	TB_RISCV_core
+# End time: 03:38:04 on Jul 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_RISCV_core
+# End time: 03:38:05 on Jul 21,2025, Elapsed time: 0:11:27
+# Errors: 0, Warnings: 1
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_RISCV_core 
+# Start time: 03:38:05 on Jul 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.TB_RISCV_core(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.RISCV_core_sv_unit(fast)
+# Loading work.RISCV_core(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'x31_data'. The port definition is at: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_RISCV_core/dut/RF1 File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+do {D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/simulation/questa/wave.do}
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 21:50:57 on Jul 21,2025, Elapsed time: 18:12:52
+# Errors: 0, Warnings: 1

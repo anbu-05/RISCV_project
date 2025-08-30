@@ -4,6 +4,8 @@ this is a personal project of mine where i try to make a RISCV cpu core. it star
 
 #### the progress so far
 
+### note: the project is undergoing major restructuring
+
 i've made a cpu core using SystemVerilog, based on the RISCV32E ISA (future plans to use RISCV32I). it includes a program counter, decoder, registerfile, ALU, instruction memory, and data memory.
 
 i've simulated everything on intel modelsim. there are a few bugs to fix, more tests to run, but it works pretty well
@@ -14,7 +16,7 @@ i've also implemented it on an FPGA. i used an altera DE2-115 (my university all
 
 ## the core
 
-![dataflow diagram](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/RISCV_core_datapath.png)
+![dataflow diagram](#notes\images\RISCV_core_datapath.png)
 
 #### notes:
 there are a few differences between the simulation (modelsim) and FPGA (quartus) implementations. I am however trying to unify the modelsim and quartus implementations as much as possible (a few problems with quartus prime).

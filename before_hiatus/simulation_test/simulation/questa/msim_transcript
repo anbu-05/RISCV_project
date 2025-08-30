@@ -1,0 +1,112 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 win64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do simple_counter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/24.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV\ project/simulation_test {D:/Z/projects/RISCV project/simulation_test/simple_counter.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:19:05 on Jul 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV project/simulation_test" D:/Z/projects/RISCV project/simulation_test/simple_counter.sv 
+# -- Compiling module simple_counter
+# 
+# Top level modules:
+# 	simple_counter
+# End time: 23:19:05 on Jul 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Z/projects/RISCV\ project/simulation_test {D:/Z/projects/RISCV project/simulation_test/simple_counter_tb.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:19:05 on Jul 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Z/projects/RISCV project/simulation_test" D:/Z/projects/RISCV project/simulation_test/simple_counter_tb.sv 
+# -- Compiling module simple_counter_tb
+# 
+# Top level modules:
+# 	simple_counter_tb
+# End time: 23:19:05 on Jul 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  simple_counter_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" simple_counter_tb 
+# Start time: 23:19:05 on Jul 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.simple_counter_tb(fast)
+# Loading work.simple_counter(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time=0, clk=0, reset=1, count= 0
+# Time=5000, clk=1, reset=1, count= 0
+# Time=10000, clk=0, reset=1, count= 0
+# Time=15000, clk=1, reset=1, count= 0
+# Time=20000, clk=0, reset=0, count= 0
+# Time=25000, clk=1, reset=0, count= 1
+# Time=30000, clk=0, reset=0, count= 1
+# Time=35000, clk=1, reset=0, count= 2
+# Time=40000, clk=0, reset=0, count= 2
+# Time=45000, clk=1, reset=0, count= 3
+# Time=50000, clk=0, reset=0, count= 3
+# Time=55000, clk=1, reset=0, count= 4
+# Time=60000, clk=0, reset=0, count= 4
+# Time=65000, clk=1, reset=0, count= 5
+# Time=70000, clk=0, reset=0, count= 5
+# Time=75000, clk=1, reset=0, count= 6
+# Time=80000, clk=0, reset=0, count= 6
+# Time=85000, clk=1, reset=0, count= 7
+# Time=90000, clk=0, reset=0, count= 7
+# Time=95000, clk=1, reset=0, count= 8
+# Time=100000, clk=0, reset=0, count= 8
+# Time=105000, clk=1, reset=0, count= 9
+# Time=110000, clk=0, reset=0, count= 9
+# Time=115000, clk=1, reset=0, count=10
+# Time=120000, clk=0, reset=1, count= 0
+# Time=125000, clk=1, reset=1, count= 0
+# Time=130000, clk=0, reset=0, count= 0
+# Time=135000, clk=1, reset=0, count= 1
+# Time=140000, clk=0, reset=0, count= 1
+# Time=145000, clk=1, reset=0, count= 2
+# Time=150000, clk=0, reset=0, count= 2
+# Time=155000, clk=1, reset=0, count= 3
+# Time=160000, clk=0, reset=0, count= 3
+# Time=165000, clk=1, reset=0, count= 4
+# Time=170000, clk=0, reset=0, count= 4
+# Time=175000, clk=1, reset=0, count= 5
+# Time=180000, clk=0, reset=0, count= 5
+# Time=185000, clk=1, reset=0, count= 6
+# Time=190000, clk=0, reset=0, count= 6
+# Time=195000, clk=1, reset=0, count= 7
+# Time=200000, clk=0, reset=0, count= 7
+# Time=205000, clk=1, reset=0, count= 8
+# ** Note: $finish    : D:/Z/projects/RISCV project/simulation_test/simple_counter_tb.sv(46)
+#    Time: 210 ns  Iteration: 0  Instance: /simple_counter_tb
+# 1
+# Break in Module simple_counter_tb at D:/Z/projects/RISCV project/simulation_test/simple_counter_tb.sv line 46
+# End time: 23:25:29 on Jul 13,2025, Elapsed time: 0:06:24
+# Errors: 0, Warnings: 1
