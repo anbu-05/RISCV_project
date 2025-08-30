@@ -27,3 +27,5 @@
 
 - i am using vscode for running the commands. need to dualboot linux asap to move to that
 - trying to simulate the testbench: [questa testbench simulation](https://chatgpt.com/c/68b350fe-cd4c-832f-a9e0-d57896a86450)
+
+- need to fix README.md

@@ -16,7 +16,7 @@ i've also implemented it on an FPGA. i used an altera DE2-115 (my university all
 
 ## the core
 
-![dataflow diagram](/#notes/images/RISCV_core_datapath.png)
+![dataflow diagram](notes/images/RISCV_core_datapath.png)
 
 #### notes:
 there are a few differences between the simulation (modelsim) and FPGA (quartus) implementations. I am however trying to unify the modelsim and quartus implementations as much as possible (a few problems with quartus prime).
@@ -27,7 +27,7 @@ there are a few differences between the simulation (modelsim) and FPGA (quartus)
 ## simulation
 
 i use intel modelsim to simulate the CPU.
-you can find it [here](https://github.com/boneman420/RISCV-CPU-core-project/tree/main/RISCV_core_modelsim)
+you can find it [here](before_hiatus\RISCV_core_modelsim)
 
 #### example programs:
 
