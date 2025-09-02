@@ -15,7 +15,7 @@
 - tried example_program_3 -the program works fine but there are some problems with my implementation of branch and jump instructions compared to the RISCV32I ISA. i need to check, and make notes, and redo all the branch and jump instructions
 
 ----
-### 31 Aug
+### 30 Aug
 - there's been a second hiatus. great
 - met with professor. now there's some direction to this project
 - started restructuring the entire project. since i learnt about testbench automation/testcases/running scripts, CLI simulation and stuff, i am gonna follow that
@@ -29,3 +29,19 @@
 - trying to simulate the testbench: [questa testbench simulation](https://chatgpt.com/c/68b350fe-cd4c-832f-a9e0-d57896a86450)
 
 - need to fix README.md
+
+### 31 Aug
+- setting up simulation environment: https://chatgpt.com/s/t_68b3e52e1d888191bf106327f6f85d1a, https://chatgpt.com/s/t_68b3ee2b9c18819189ade1abd3c0ceaf
+- `vsim` to run modelsim/questa (`vsim -c` doesnt work for the next command for some reason)
+- `do sim/run.do` to run simulation
+- finally got a .do file working to initiate modelsim for simulation
+
+(need to include a way to program the IMem when making it)
+
+
+### 1 Sep
+- added more testcases to ProgramCounter module
+
+### 2 Sep
+- finished the first fully functional testbench with logging
+- need to discuss the core specs with saravana

@@ -1,0 +1,418 @@
+pwd
+# D:/Z/projects/RISCV_project/RISCV_core
+do /sim/run.do
+# Cannot open macro file: /sim/run.do
+do sim/run.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:18:24 on Aug 31,2025
+# vlog -reportprogress 300 ../src/ProgramCounter.sv 
+# ** Error: (vlog-7) Failed to open design unit file "../src/ProgramCounter.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 12:18:24 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim/run.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../src/ProgramCounter.sv"
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:18:56 on Aug 31,2025
+# vlog -reportprogress 300 ../src/*.sv 
+# ** Error: (vlog-7) Failed to open design unit file "../src/*.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 12:18:56 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim/run.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../src/*.sv"
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:19:45 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# -- Compiling module RISCV_core
+# ** Error: (vlog-13069) src/RISCV_core.sv(4): near "EOF": syntax error, unexpected end of source code.
+# End time: 12:19:45 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim/run.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog src/*.sv"
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:21:42 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:21:42 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:21:42 on Aug 31,2025
+# vlog -reportprogress 300 ProgramCounter_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "ProgramCounter_tb.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 12:21:42 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim/run.do line 8
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ProgramCounter_tb.sv"
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:21:55 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:21:55 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:21:55 on Aug 31,2025
+# vlog -reportprogress 300 ProgramCounter_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "ProgramCounter_tb.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 12:21:55 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim/run.do line 8
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ProgramCounter_tb.sv"
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:22:31 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:22:31 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:22:31 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module tb_ProgramCounter
+# ** Error: (vlog-13069) sim/ProgramCounter_tb.sv(29): near "initial": syntax error, unexpected initial, expecting ';'.
+# ** Error: sim/ProgramCounter_tb.sv(32): (vlog-13205) Syntax error found in the scope following 'clk'. Is there a missing '::'?
+# End time: 12:22:31 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim/run.do line 8
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog sim/*_tb.sv"
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:23:11 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:23:11 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:23:11 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module tb_ProgramCounter
+# 
+# Top level modules:
+# 	tb_ProgramCounter
+# End time: 12:23:11 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim ProgramCounter_tb 
+# Start time: 12:23:11 on Aug 31,2025
+# ** Error: (vsim-3170) Could not find 'ProgramCounter_tb'.
+#         Searched libraries:
+#             D:/Z/projects/RISCV_project/RISCV_core/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./sim/run.do PAUSED at line 11
+do /sim/run.do
+# Cannot open macro file: /sim/run.do
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:26:49 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:26:49 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:26:49 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module ProgramCounter_tb
+# 
+# Top level modules:
+# 	ProgramCounter_tb
+# End time: 12:26:49 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim ProgramCounter_tb 
+# Start time: 12:23:11 on Aug 31,2025
+# Loading sv_std.std
+# Loading work.ProgramCounter_tb
+# Loading work.ProgramCounter
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fgets'.
+#    Time: 0 ps  Iteration: 0  Instance: /ProgramCounter_tb File: sim/ProgramCounter_tb.sv Line: 42
+# ** Error (suppressible): (vsim-PLI-3069) $fdisplay : Argument number 1 is invalid.
+#    Time: 0 ps  Iteration: 0  Instance: /ProgramCounter_tb File: sim/ProgramCounter_tb.sv Line: 43
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./sim/run.do PAUSED at line 11
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:29:51 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:29:51 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:29:51 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module ProgramCounter_tb
+# 
+# Top level modules:
+# 	ProgramCounter_tb
+# End time: 12:29:51 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim ProgramCounter_tb 
+# Start time: 12:23:11 on Aug 31,2025
+# Loading sv_std.std
+# Loading work.ProgramCounter_tb
+# Loading work.ProgramCounter
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:30:35 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:30:35 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:30:35 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module ProgramCounter_tb
+# 
+# Top level modules:
+# 	ProgramCounter_tb
+# End time: 12:30:36 on Aug 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:30:36 on Aug 31,2025, Elapsed time: 0:07:25
+# Errors: 2, Warnings: 1
+# vsim ProgramCounter_tb 
+# Start time: 12:30:36 on Aug 31,2025
+# Loading sv_std.std
+# Loading work.ProgramCounter_tb
+# Loading work.ProgramCounter
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:30:50 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:30:50 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:30:50 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module ProgramCounter_tb
+# 
+# Top level modules:
+# 	ProgramCounter_tb
+# End time: 12:30:50 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:30:51 on Aug 31,2025, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0
+# vsim ProgramCounter_tb 
+# Start time: 12:30:51 on Aug 31,2025
+# Loading sv_std.std
+# Loading work.ProgramCounter_tb
+# Loading work.ProgramCounter
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:31:42 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:31:42 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:31:42 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module ProgramCounter_tb
+# 
+# Top level modules:
+# 	ProgramCounter_tb
+# End time: 12:31:42 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:31:43 on Aug 31,2025, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 0
+# vsim ProgramCounter_tb 
+# Start time: 12:31:43 on Aug 31,2025
+# Loading sv_std.std
+# Loading work.ProgramCounter_tb
+# Loading work.ProgramCounter
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:32:13 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:32:13 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:32:13 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module ProgramCounter_tb
+# 
+# Top level modules:
+# 	ProgramCounter_tb
+# End time: 12:32:13 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:32:14 on Aug 31,2025, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0
+# vsim ProgramCounter_tb 
+# Start time: 12:32:14 on Aug 31,2025
+# Loading sv_std.std
+# Loading work.ProgramCounter_tb
+# Loading work.ProgramCounter
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:33:00 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:33:00 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:33:00 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module ProgramCounter_tb
+# 
+# Top level modules:
+# 	ProgramCounter_tb
+# End time: 12:33:01 on Aug 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:33:01 on Aug 31,2025, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 0
+# vsim ProgramCounter_tb 
+# Start time: 12:33:01 on Aug 31,2025
+# Loading sv_std.std
+# Loading work.ProgramCounter_tb
+# Loading work.ProgramCounter
+do sim/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:33:25 on Aug 31,2025
+# vlog -reportprogress 300 src/ProgramCounter.sv src/RISCV_core.sv 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:33:25 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:33:25 on Aug 31,2025
+# vlog -reportprogress 300 sim/ProgramCounter_tb.sv 
+# -- Compiling module ProgramCounter_tb
+# 
+# Top level modules:
+# 	ProgramCounter_tb
+# End time: 12:33:25 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:33:26 on Aug 31,2025, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0
+# vsim ProgramCounter_tb 
+# Start time: 12:33:26 on Aug 31,2025
+# Loading sv_std.std
+# Loading work.ProgramCounter_tb
+# Loading work.ProgramCounter
+# End time: 16:20:31 on Aug 31,2025, Elapsed time: 3:47:05
+# Errors: 0, Warnings: 0

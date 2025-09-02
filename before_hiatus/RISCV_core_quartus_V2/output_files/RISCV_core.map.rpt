@@ -1,5 +1,5 @@
-Analysis & Elaboration report for RISCV_core
-Mon Jul 21 03:01:11 2025
+Analysis & Synthesis report for RISCV_core
+Sun Aug 31 03:37:53 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -7,13 +7,19 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "RegisterFile:RF1"
-  6. Port Connectivity Checks: "Decoder:D1"
-  7. Analysis & Elaboration Messages
-  8. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "RegisterFile:RF1"
+ 10. Port Connectivity Checks: "Decoder:D1"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -38,43 +44,27 @@ on the Quartus Prime software download page.
 
 
 +--------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                       ;
+; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Jul 21 03:01:11 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sun Aug 31 03:37:53 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; RISCV_core                                      ;
 ; Top-level Entity Name              ; RISCV_core                                      ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 3                                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -159,6 +149,94 @@ on the Quartus Prime software download page.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; RISCV_core/RISCV_core.sv         ; yes             ; User SystemVerilog HDL File                 ; D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv       ;         ;
+; InstructionMemory.sv             ; yes             ; User SystemVerilog HDL File                 ; D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv           ;         ;
+; ProgramCounter.sv                ; yes             ; User SystemVerilog HDL File                 ; D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ProgramCounter.sv              ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File                 ; D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/decoder.sv                     ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File                 ; D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv                         ;         ;
+; RegisterFile.sv                  ; yes             ; User SystemVerilog HDL File                 ; D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RegisterFile.sv                ;         ;
+; types.sv                         ; yes             ; User SystemVerilog HDL File                 ; D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/types.sv                       ;         ;
+; programs/example_program_3.hex   ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/programs/example_program_3.hex ;         ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+;                                             ;        ;
+; Total combinational functions               ; 0      ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 0      ;
+;     -- 3 input functions                    ; 0      ;
+;     -- <=2 input functions                  ; 0      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 0      ;
+;     -- arithmetic mode                      ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 3      ;
+;                                             ;        ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+;                                             ;        ;
+; Maximum fan-out node                        ; enable ;
+; Maximum fan-out                             ; 1      ;
+; Total fan-out                               ; 3      ;
+; Average fan-out                             ; 0.50   ;
++---------------------------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |RISCV_core                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |RISCV_core         ; RISCV_core  ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "RegisterFile:RF1"                                                                                                                  ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
@@ -179,52 +257,73 @@ on the Quartus Prime software download page.
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 3                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Mon Jul 21 03:01:05 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISCV_core -c RISCV_core --analysis_and_elaboration
+    Info: Processing started: Sun Aug 31 03:37:46 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISCV_core -c RISCV_core
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file riscv_core/riscv_core.sv
-    Info (12023): Found entity 1: RISCV_core File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 4
-    Info (12023): Found entity 2: wr_data_mux File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 42
+    Info (12023): Found entity 1: RISCV_core File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 4
+    Info (12023): Found entity 2: wr_data_mux File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.sv
-    Info (12023): Found entity 1: InstructionMemory File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv Line: 1
+    Info (12023): Found entity 1: InstructionMemory File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter.sv
-    Info (12023): Found entity 1: ProgramCounter File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv Line: 1
+    Info (12023): Found entity 1: ProgramCounter File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ProgramCounter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: Decoder File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv Line: 4
+    Info (12023): Found entity 1: Decoder File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/decoder.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv Line: 4
+    Info (12023): Found entity 1: ALU File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file registerfile.sv
-    Info (12023): Found entity 1: RegisterFile File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv Line: 1
+    Info (12023): Found entity 1: RegisterFile File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RegisterFile.sv Line: 1
 Info (12021): Found 1 design units, including 0 entities, in source file types.sv
-    Info (12022): Found design unit 1: TypesPkg (SystemVerilog) File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv Line: 1
+    Info (12022): Found design unit 1: TypesPkg (SystemVerilog) File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/types.sv Line: 1
 Warning (12019): Can't analyze file -- file wr_data_mux.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file tb_riscv_core.sv
-    Info (12023): Found entity 1: TB_RISCV_core File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(30): created implicit net for "x31_data" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(30): created implicit net for "debug_a" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(30): created implicit net for "debug_b" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(30): created implicit net for "debug_led" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
+    Info (12023): Found entity 1: TB_RISCV_core File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/TB_RISCV_core.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(30): created implicit net for "x31_data" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(30): created implicit net for "debug_a" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(30): created implicit net for "debug_b" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at RISCV_core.sv(30): created implicit net for "debug_led" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 30
 Info (12127): Elaborating entity "RISCV_core" for the top level hierarchy
-Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC1" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 24
-Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IM1" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 26
-Warning (10850): Verilog HDL warning at InstructionMemory.sv(8): number of words (9) in memory file does not match the number of elements in the address range [0:255] File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv Line: 8
-Warning (10030): Net "IMem.data_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv Line: 5
-Warning (10030): Net "IMem.waddr_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv Line: 5
-Warning (10030): Net "IMem.we_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv Line: 5
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 28
-Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RF1" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 30
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 32
-Warning (10764): Verilog HDL warning at ALU.sv(27): converting signed shift amount to unsigned File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv Line: 27
-Warning (10764): Verilog HDL warning at ALU.sv(28): converting signed shift amount to unsigned File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv Line: 28
-Warning (10764): Verilog HDL warning at ALU.sv(29): converting signed shift amount to unsigned File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv Line: 29
-Info (12128): Elaborating entity "wr_data_mux" for hierarchy "wr_data_mux:wrmux" File: D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv Line: 34
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC1" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 24
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IM1" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 26
+Warning (10850): Verilog HDL warning at InstructionMemory.sv(8): number of words (9) in memory file does not match the number of elements in the address range [0:255] File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv Line: 8
+Warning (10030): Net "IMem.data_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv Line: 5
+Warning (10030): Net "IMem.waddr_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv Line: 5
+Warning (10030): Net "IMem.we_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv Line: 5
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 28
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RF1" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 30
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 32
+Warning (10764): Verilog HDL warning at ALU.sv(27): converting signed shift amount to unsigned File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv Line: 27
+Warning (10764): Verilog HDL warning at ALU.sv(28): converting signed shift amount to unsigned File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv Line: 28
+Warning (10764): Verilog HDL warning at ALU.sv(29): converting signed shift amount to unsigned File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv Line: 29
+Info (12128): Elaborating entity "wr_data_mux" for hierarchy "wr_data_mux:wrmux" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 34
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (20013): Ignored 7 assignments for entity "ProgramCounter.sv" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "Design Compiler" -entity ProgramCounter.sv was ignored
@@ -234,17 +333,26 @@ Warning (20013): Ignored 7 assignments for entity "ProgramCounter.sv" -- entity 
     Warning (20014): Assignment for entity set_global_assignment -name EDA_LMF_FILE altsyn.lmf -entity ProgramCounter.sv -section_id eda_design_synthesis was ignored
     Warning (20014): Assignment for entity set_global_assignment -name EDA_SHOW_LMF_MAPPING_MESSAGES OFF -entity ProgramCounter.sv -section_id eda_design_synthesis was ignored
     Warning (20014): Assignment for entity set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY OFF -entity ProgramCounter.sv -section_id eda_design_synthesis was ignored
-Info (144001): Generated suppressed messages file D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/output_files/RISCV_core.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4743 megabytes
-    Info: Processing ended: Mon Jul 21 03:01:11 2025
-    Info: Elapsed time: 00:00:06
+Info (144001): Generated suppressed messages file D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/output_files/RISCV_core.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "enable" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 5
+    Warning (15610): No output dependent on input pin "reset" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 5
+    Warning (15610): No output dependent on input pin "clk" File: D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv Line: 5
+Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4757 megabytes
+    Info: Processing ended: Sun Aug 31 03:37:53 2025
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:17
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/output_files/RISCV_core.map.smsg.
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/output_files/RISCV_core.map.smsg.
 
 

@@ -10,12 +10,12 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 dD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/simulation/questa
+Z1 dD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/simulation/questa
 T_opt
-!s110 1753047681
-VE59[52_PA;@D>[W2NhS7Q0
+!s110 1756702218
+VXgHR]b3A_J^Td3h=:PN^?0
 04 13 4 work TB_RISCV_core fast 0
-=1-74d4ddbd96fb-687d6281-15c-21308
+=1-74d4ddbd96fb-68b52609-12b-16040
 R0
 !s12f OEM100
 !s12b OEM100
@@ -25,35 +25,34 @@ o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L
 Z2 tCvgOpt 0
 n@_opt
 OL;O;2024.3;79
-R1
 vALU
-Z3 2D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv
+Z3 2D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv
 Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z5 DXx4 work 8 TypesPkg 0 22 m;b_@3F8@YeI`onHfTda61
-DXx4 work 11 ALU_sv_unit 0 22 m0z7E@3JAW35PdkV5XNWF1
-Z6 !s110 1753049283
+Z5 DXx4 work 8 TypesPkg 0 22 U4J;D[KN2f8@?d0JL<L7F1
+DXx4 work 11 ALU_sv_unit 0 22 1:ccP8S]NHc5S=5PM3SPQ2
+Z6 !s110 1756702216
 Z7 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 !i10b 1
 !s100 d;QOG[Rae<WU5?]Eo1mac3
-I2ULb4^@52Zl9D2dh6=8U<0
+I>Vm4JX^iTdRAWoo8LzTMC1
 !s105 ALU_sv_unit
 S1
 R1
 Z8 w1744984740
-Z9 8D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv
-Z10 FD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv
+Z9 8D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv
+Z10 FD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv
 !i122 6
 L0 4 35
 Z11 OL;L;2024.3;79
 31
-Z12 !s108 1753049283.000000
-Z13 !s107 D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv|
-Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy|D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ALU.sv|
+Z12 !s108 1756702216.000000
+Z13 !s107 D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv|
+Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2|D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ALU.sv|
 !i113 0
 Z15 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z16 !s92 -sv -work work {+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z16 !s92 -sv -work work +incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 n@a@l@u
 XALU_sv_unit
@@ -61,12 +60,12 @@ R3
 R4
 R5
 R6
-Vm0z7E@3JAW35PdkV5XNWF1
+V1:ccP8S]NHc5S=5PM3SPQ2
 r1
 !s85 0
 !i10b 1
 !s100 jEPlG2PI?@M;W9D]=AHjW0
-Im0z7E@3JAW35PdkV5XNWF1
+I1:ccP8S]NHc5S=5PM3SPQ2
 !i103 1
 S1
 R1
@@ -86,30 +85,30 @@ R16
 R2
 n@a@l@u_sv_unit
 vDecoder
-Z18 2D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv
+Z18 2D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/decoder.sv
 R4
 R5
-DXx4 work 15 decoder_sv_unit 0 22 [HL1a>]1l:cPRhhIoCZ`70
+DXx4 work 15 decoder_sv_unit 0 22 EYKE=gMJXA0nQ1]j<^XP23
 R6
 R7
 r1
 !s85 0
 !i10b 1
 !s100 :?k`o60^MUfjzkW;k36aQ2
-I]`o05C^0Fo=PE2Uh_Qe062
+I7bNGeJKj@iim3kI=M?VSZ2
 !s105 decoder_sv_unit
 S1
 R1
 Z19 w1745920925
-Z20 8D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv
-Z21 FD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv
+Z20 8D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/decoder.sv
+Z21 FD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/decoder.sv
 !i122 5
 L0 4 151
 R11
 31
 R12
-Z22 !s107 D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv|
-Z23 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy|D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/decoder.sv|
+Z22 !s107 D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/decoder.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2|D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/decoder.sv|
 !i113 0
 R15
 R16
@@ -120,12 +119,12 @@ R18
 R4
 R5
 R6
-V[HL1a>]1l:cPRhhIoCZ`70
+VEYKE=gMJXA0nQ1]j<^XP23
 r1
 !s85 0
 !i10b 1
 !s100 <CYYJKkm3nT0X`mX6H[oO1
-I[HL1a>]1l:cPRhhIoCZ`70
+IEYKE=gMJXA0nQ1]j<^XP23
 !i103 1
 S1
 R1
@@ -144,17 +143,17 @@ R15
 R16
 R2
 vInstructionMemory
-2D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv
+2D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv
 R4
-R6
+Z24 !s110 1756702215
 !i10b 1
-!s100 PEd?CZ>dWJF@IG;:m_;]A2
-Iek`4eT@_YEaLG6DS=IIQC1
+!s100 Ez4:TO^NZA087XG36i:VA0
+IzZ4FCQNckcNK<`7;QdHF61
 S1
 R1
-w1753047236
-8D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv
-FD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv
+w1756591661
+8D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv
+FD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv
 !i122 4
 L0 1 14
 R7
@@ -162,26 +161,26 @@ R11
 r1
 !s85 0
 31
-R12
-!s107 D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy|D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/InstructionMemory.sv|
+Z25 !s108 1756702215.000000
+!s107 D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2|D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/InstructionMemory.sv|
 !i113 0
 R15
 R16
 R2
 n@instruction@memory
 vProgramCounter
-2D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv
+2D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ProgramCounter.sv
 R4
-Z24 !s110 1753049282
+R24
 !i10b 1
 !s100 Hh0Ed44A8N<<PYJ:L`nMS0
-IVicoHWgNjJIW]RIaI>8@]3
+IhbKCXKS0]_;gamX:lISKB0
 S1
 R1
 w1753044690
-8D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv
-FD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv
+8D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ProgramCounter.sv
+FD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ProgramCounter.sv
 !i122 0
 L0 1 42
 R7
@@ -189,26 +188,26 @@ R11
 r1
 !s85 0
 31
-Z25 !s108 1753049282.000000
-!s107 D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy|D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/ProgramCounter.sv|
+!s108 1756702214.000000
+!s107 D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ProgramCounter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2|D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/ProgramCounter.sv|
 !i113 0
 R15
 R16
 R2
 n@program@counter
 vRegisterFile
-2D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv
+2D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RegisterFile.sv
 R4
 R24
 !i10b 1
 !s100 HmWjcSChHi`NJQFW>`bo90
-In`kX]I<GFW;kToG]4OV0<1
+IhVhW?=ZUNoa;O`n8HBdWJ1
 S1
 R1
 w1753044717
-8D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv
-FD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv
+8D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RegisterFile.sv
+FD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RegisterFile.sv
 !i122 1
 L0 1 44
 R7
@@ -217,54 +216,54 @@ r1
 !s85 0
 31
 R25
-!s107 D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy|D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RegisterFile.sv|
+!s107 D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RegisterFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2|D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RegisterFile.sv|
 !i113 0
 R15
 R16
 R2
 n@register@file
 vRISCV_core
-Z26 2D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv
+Z26 2D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv
 R4
 R5
-Z27 DXx4 work 18 RISCV_core_sv_unit 0 22 63DOz9nJnJabX0V2;Y]iJ0
-R6
+Z27 DXx4 work 18 RISCV_core_sv_unit 0 22 5WfzZ[d3R5MiKW:;L3JjF1
+R24
 R7
 r1
 !s85 0
 !i10b 1
 !s100 o;Xg:f7EgR=l6OQ3g`S[C1
-IHJH>gWSeBRnSWhNM@a]<;0
+IBDDJ:BOWUjDQ?oT1nb5k?3
 Z28 !s105 RISCV_core_sv_unit
 S1
 R1
 Z29 w1753044504
-Z30 8D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv
-Z31 FD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv
+Z30 8D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv
+Z31 FD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv
 !i122 3
 L0 4 37
 R11
 31
-R12
-Z32 !s107 D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv|
-Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core|D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core/RISCV_core.sv|
+R25
+Z32 !s107 D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core|D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core/RISCV_core.sv|
 !i113 0
 R15
-Z34 !s92 -sv -work work {+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/RISCV_core} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z34 !s92 -sv -work work +incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/RISCV_core -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 n@r@i@s@c@v_core
 XRISCV_core_sv_unit
 R26
 R4
 R5
-R6
-V63DOz9nJnJabX0V2;Y]iJ0
+R24
+V5WfzZ[d3R5MiKW:;L3JjF1
 r1
 !s85 0
 !i10b 1
 !s100 SeHak@W1M>_a`BPhHiI=03
-I63DOz9nJnJabX0V2;Y]iJ0
+I5WfzZ[d3R5MiKW:;L3JjF1
 !i103 1
 S1
 R1
@@ -275,7 +274,7 @@ R31
 R17
 R11
 31
-R12
+R25
 R32
 R33
 !i113 0
@@ -284,17 +283,17 @@ R34
 R2
 n@r@i@s@c@v_core_sv_unit
 vTB_RISCV_core
-2D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv
+2D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/TB_RISCV_core.sv
 R4
-!s110 1753049284
+R6
 !i10b 1
 !s100 jYBT2X>Rz7Heznl]9Yfh90
-IC]gCh55X:W`X_jed]B7o92
+IGShMF;oDI[M>DMo8]oZXb1
 S1
 R1
 w1753046425
-8D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv
-FD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv
+8D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/TB_RISCV_core.sv
+FD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/TB_RISCV_core.sv
 !i122 7
 L0 1 20
 R7
@@ -303,35 +302,35 @@ r1
 !s85 0
 31
 R12
-!s107 D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy|D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/TB_RISCV_core.sv|
+!s107 D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/TB_RISCV_core.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2|D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/TB_RISCV_core.sv|
 !i113 0
 R15
 R16
 R2
 n@t@b_@r@i@s@c@v_core
 XTypesPkg
-2D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv
+2D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/types.sv
 R4
-R6
+R24
 !i10b 1
 !s100 _7o3Vf9i]NGHE4:`GRobA1
-Im;b_@3F8@YeI`onHfTda61
+IU4J;D[KN2f8@?d0JL<L7F1
 S1
 R1
 w1744984710
-8D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv
-FD:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv
+8D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/types.sv
+FD:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/types.sv
 !i122 2
 R17
-Vm;b_@3F8@YeI`onHfTda61
+VU4J;D[KN2f8@?d0JL<L7F1
 R11
 r1
 !s85 0
 31
-R12
-!s107 D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy|D:/Z/projects/RISCV_project/RISCV_core_quartus - Copy/types.sv|
+R25
+!s107 D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/types.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2|D:/Z/projects/RISCV_project/before_hiatus/RISCV_core_quartus_V2/types.sv|
 !i113 0
 R15
 R16
@@ -342,13 +341,13 @@ R26
 R4
 R5
 R27
-R6
+R24
 R7
 r1
 !s85 0
 !i10b 1
 !s100 RW7PhPWjm2aNSZzjN:ahM3
-IG1Zl3IAzeRP>:BmW7i]mA2
+Ii=L^kCU>9A;MMJMeO^XXC3
 R28
 S1
 R1
@@ -359,7 +358,7 @@ R31
 L0 42 14
 R11
 31
-R12
+R25
 R32
 R33
 !i113 0
