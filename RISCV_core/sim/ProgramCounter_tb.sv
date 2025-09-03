@@ -52,7 +52,7 @@ module ProgramCounter_tb;
     always #5 clk = ~clk;
 
     initial begin
-        log = $fopen("sim/Testcase_results.log", "w");
+        log = $fopen("sim/ProgramCounter_TestResults.log", "w");
 
         clk = 0;
         rst = 1;

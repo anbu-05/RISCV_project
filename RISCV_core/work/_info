@@ -11,76 +11,76 @@ cModel Technology
 Z0 dD:/Z/projects/RISCV_project/RISCV_core
 vProgramCounter
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1756834771
+!s110 1756896858
 !i10b 1
 !s100 29]Iz8120[dZOV843lRXZ3
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I9S32GETziTI`EWM5<Y19C1
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 w1756817510
 8src/ProgramCounter.sv
 Fsrc/ProgramCounter.sv
-!i122 59
+!i122 65
 L0 1 25
-Z5 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1756834771.000000
+!s108 1756896858.000000
 !s107 src/RISCV_core.sv|src/ProgramCounter.sv|
 !s90 src/ProgramCounter.sv|src/RISCV_core.sv|
 !i113 1
-Z7 tCvgOpt 0
+Z5 tCvgOpt 0
 n@program@counter
 vProgramCounter_tb
 R1
-R2
+!s110 1756896859
 !i10b 1
-!s100 VRBYR=eDFQ>6Kb4_52a=_0
+!s100 _0zPSI8hZ_d9ak]ShzSzJ1
+R2
+IL0c_7]0`i;R@?K3Yi8cJP1
 R3
-I2TFo;5SX=PIXz]Ne9dQad0
-R4
 S1
 R0
-w1756834129
-Z8 8sim/ProgramCounter_tb.sv
-Z9 Fsim/ProgramCounter_tb.sv
-!i122 60
+w1756885176
+Z6 8sim/ProgramCounter_tb.sv
+Z7 Fsim/ProgramCounter_tb.sv
+!i122 66
 L0 34 77
-R5
+R4
 r1
 !s85 0
 31
-R6
-Z10 !s107 sim/ProgramCounter_tb.sv|
+!s108 1756896859.000000
+Z8 !s107 sim/ProgramCounter_tb.sv|
 !s90 sim/ProgramCounter_tb.sv|
 !i113 1
-R7
+R5
 n@program@counter_tb
 vtb_ProgramCounter
 R1
 !s110 1756623191
 !i10b 1
 !s100 8nHleg3P34bjXCJc;K0BY3
-R3
+R2
 IAV;bef7l1N_Q77PCS@7733
-R4
+R3
 S1
 R0
 w1756623189
-R8
-R9
+R6
+R7
 !i122 5
 L0 14 34
-R5
+R4
 r1
 !s85 0
 31
 !s108 1756623191.000000
-R10
+R8
 !s90 -reportprogress|300|sim/ProgramCounter_tb.sv|
 !i113 1
-R7
+R5
 ntb_@program@counter
