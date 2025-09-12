@@ -1,5 +1,5 @@
 Analysis & Synthesis report for picorv32-DE2115
-Fri Sep 12 12:39:43 2025
+Sat Sep 13 01:57:32 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -10,8 +10,32 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. State Machine - |top|picorv32:cpu|mem_wordsize
+ 10. State Machine - |top|picorv32:cpu|cpu_state
+ 11. State Machine - |top|countdown_timer:cdt|delay_state
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Registers Added for RAM Pass-Through Logic
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Source assignments for picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_trd1:auto_generated
+ 18. Source assignments for picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_trd1:auto_generated
+ 19. Parameter Settings for User Entity Instance: Top-level Entity: |top
+ 20. Parameter Settings for User Entity Instance: uart_wrap:uart|simpleuart:uart
+ 21. Parameter Settings for User Entity Instance: sram:memory
+ 22. Parameter Settings for User Entity Instance: picorv32:cpu
+ 23. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_0
+ 24. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_1
+ 25. altsyncram Parameter Settings by Entity Instance
+ 26. Port Connectivity Checks: "picorv32:cpu"
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
+ 30. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -38,20 +62,20 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Sep 12 12:39:43 2025               ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 13 01:57:31 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; picorv32-DE2115                                 ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 113,833                                         ;
+;     Total combinational functions  ; 55,268                                          ;
+;     Dedicated logic registers      ; 66,477                                          ;
+; Total registers                    ; 66477                                           ;
+; Total pins                         ; 10                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 2,048                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -149,12 +173,683 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Average used               ; 1.06        ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.6%      ;
+;     Processor 3            ;   0.6%      ;
+;     Processor 4            ;   0.5%      ;
+;     Processor 5            ;   0.5%      ;
+;     Processor 6            ;   0.5%      ;
+;     Processor 7            ;   0.5%      ;
+;     Processor 8            ;   0.4%      ;
+;     Processors 9-16        ;   0.4%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+---------------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+---------------------------------------------+---------------------------------------------------------------------------------+---------+
+; src/sram_infer.v                 ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram_infer.v              ;         ;
+; src/uart_wrap.v                  ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/uart_wrap.v               ;         ;
+; src/top.v                        ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v                     ;         ;
+; src/tang_nano_9k_leds.v          ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/tang_nano_9k_leds.v       ;         ;
+; src/simpleuart.v                 ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v              ;         ;
+; src/reset.v                      ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/reset.v                   ;         ;
+; src/picorv32.v                   ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v                ;         ;
+; src/countdown_timer.v            ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/countdown_timer.v         ;         ;
+; src/mem_init.hex                 ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/mem_init.hex              ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal241.inc                   ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                                ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_trd1.tdf           ; yes             ; Auto-Generated Megafunction                 ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/db/altsyncram_trd1.tdf        ;         ;
++----------------------------------+-----------------+---------------------------------------------+---------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 113,833   ;
+;                                             ;           ;
+; Total combinational functions               ; 55268     ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 46079     ;
+;     -- 3 input functions                    ; 1692      ;
+;     -- <=2 input functions                  ; 7497      ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 54674     ;
+;     -- arithmetic mode                      ; 594       ;
+;                                             ;           ;
+; Total registers                             ; 66477     ;
+;     -- Dedicated logic registers            ; 66477     ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 10        ;
+; Total memory bits                           ; 2048      ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 66541     ;
+; Total fan-out                               ; 397833    ;
+; Average fan-out                             ; 3.27      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                               ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name     ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
+; |top                                      ; 55268 (104)         ; 66477 (0)                 ; 2048        ; 0            ; 0       ; 0         ; 10   ; 0            ; |top                                                                      ; top             ; work         ;
+;    |countdown_timer:cdt|                  ; 82 (82)             ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|countdown_timer:cdt                                                  ; countdown_timer ; work         ;
+;    |picorv32:cpu|                         ; 1925 (1925)         ; 730 (730)                 ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu                                                         ; picorv32        ; work         ;
+;       |altsyncram:cpuregs_rtl_0|          ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu|altsyncram:cpuregs_rtl_0                                ; altsyncram      ; work         ;
+;          |altsyncram_trd1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_trd1:auto_generated ; altsyncram_trd1 ; work         ;
+;       |altsyncram:cpuregs_rtl_1|          ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu|altsyncram:cpuregs_rtl_1                                ; altsyncram      ; work         ;
+;          |altsyncram_trd1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_trd1:auto_generated ; altsyncram_trd1 ; work         ;
+;    |reset_control:reset_controller|       ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|reset_control:reset_controller                                       ; reset_control   ; work         ;
+;    |sram:memory|                          ; 52893 (52893)       ; 65569 (65569)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sram:memory                                                          ; sram            ; work         ;
+;    |tang_leds:soc_leds|                   ; 1 (1)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|tang_leds:soc_leds                                                   ; tang_leds       ; work         ;
+;    |uart_wrap:uart|                       ; 255 (4)             ; 131 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|uart_wrap:uart                                                       ; uart_wrap       ; work         ;
+;       |simpleuart:uart|                   ; 251 (251)           ; 131 (131)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|uart_wrap:uart|simpleuart:uart                                       ; simpleuart      ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                    ;
++---------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                            ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++---------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_trd1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; None ;
+; picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_trd1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; None ;
++---------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------+
+; State Machine - |top|picorv32:cpu|mem_wordsize                        ;
++-----------------+-----------------+-----------------+-----------------+
+; Name            ; mem_wordsize.00 ; mem_wordsize.10 ; mem_wordsize.01 ;
++-----------------+-----------------+-----------------+-----------------+
+; mem_wordsize.00 ; 0               ; 0               ; 0               ;
+; mem_wordsize.01 ; 1               ; 0               ; 1               ;
+; mem_wordsize.10 ; 1               ; 1               ; 0               ;
++-----------------+-----------------+-----------------+-----------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|picorv32:cpu|cpu_state                                                                                                                                                                                                                ;
++----------------------------+--------------------------+---------------------------+----------------------------+----------------------------+--------------------------+---------------------------+---------------------------+---------------------------+
+; Name                       ; cpu_state.cpu_state_trap ; cpu_state.cpu_state_fetch ; cpu_state.cpu_state_ld_rs1 ; cpu_state.cpu_state_ld_rs2 ; cpu_state.cpu_state_exec ; cpu_state.cpu_state_shift ; cpu_state.cpu_state_stmem ; cpu_state.cpu_state_ldmem ;
++----------------------------+--------------------------+---------------------------+----------------------------+----------------------------+--------------------------+---------------------------+---------------------------+---------------------------+
+; cpu_state.cpu_state_ldmem  ; 0                        ; 0                         ; 0                          ; 0                          ; 0                        ; 0                         ; 0                         ; 0                         ;
+; cpu_state.cpu_state_stmem  ; 0                        ; 0                         ; 0                          ; 0                          ; 0                        ; 0                         ; 1                         ; 1                         ;
+; cpu_state.cpu_state_shift  ; 0                        ; 0                         ; 0                          ; 0                          ; 0                        ; 1                         ; 0                         ; 1                         ;
+; cpu_state.cpu_state_exec   ; 0                        ; 0                         ; 0                          ; 0                          ; 1                        ; 0                         ; 0                         ; 1                         ;
+; cpu_state.cpu_state_ld_rs2 ; 0                        ; 0                         ; 0                          ; 1                          ; 0                        ; 0                         ; 0                         ; 1                         ;
+; cpu_state.cpu_state_ld_rs1 ; 0                        ; 0                         ; 1                          ; 0                          ; 0                        ; 0                         ; 0                         ; 1                         ;
+; cpu_state.cpu_state_fetch  ; 0                        ; 1                         ; 0                          ; 0                          ; 0                        ; 0                         ; 0                         ; 1                         ;
+; cpu_state.cpu_state_trap   ; 1                        ; 0                         ; 0                          ; 0                          ; 0                        ; 0                         ; 0                         ; 1                         ;
++----------------------------+--------------------------+---------------------------+----------------------------+----------------------------+--------------------------+---------------------------+---------------------------+---------------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------+
+; State Machine - |top|countdown_timer:cdt|delay_state                               ;
++----------------+----------------+----------------+----------------+----------------+
+; Name           ; delay_state.11 ; delay_state.10 ; delay_state.01 ; delay_state.00 ;
++----------------+----------------+----------------+----------------+----------------+
+; delay_state.00 ; 0              ; 0              ; 0              ; 0              ;
+; delay_state.01 ; 0              ; 0              ; 1              ; 1              ;
+; delay_state.10 ; 0              ; 1              ; 0              ; 1              ;
+; delay_state.11 ; 1              ; 0              ; 0              ; 1              ;
++----------------+----------------+----------------+----------------+----------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++------------------------------------------------+--------------------------------------------+
+; Register name                                  ; Reason for Removal                         ;
++------------------------------------------------+--------------------------------------------+
+; picorv32:cpu|decoded_imm_j[0]                  ; Stuck at GND due to stuck port data_in     ;
+; picorv32:cpu|compressed_instr                  ; Stuck at GND due to stuck port data_in     ;
+; picorv32:cpu|instr_getq                        ; Stuck at GND due to stuck port data_in     ;
+; picorv32:cpu|instr_setq                        ; Stuck at GND due to stuck port data_in     ;
+; picorv32:cpu|mem_addr[0,1]                     ; Stuck at GND due to stuck port data_in     ;
+; picorv32:cpu|latched_compr                     ; Stuck at GND due to stuck port data_in     ;
+; picorv32:cpu|decoded_imm_j[20..30]             ; Merged with picorv32:cpu|decoded_imm_j[31] ;
+; picorv32:cpu|decoded_rs2[0]                    ; Merged with picorv32:cpu|decoded_imm_j[11] ;
+; picorv32:cpu|decoded_rs2[4]                    ; Merged with picorv32:cpu|decoded_imm_j[4]  ;
+; picorv32:cpu|decoded_rs2[3]                    ; Merged with picorv32:cpu|decoded_imm_j[3]  ;
+; picorv32:cpu|decoded_rs2[2]                    ; Merged with picorv32:cpu|decoded_imm_j[2]  ;
+; picorv32:cpu|decoded_rs2[1]                    ; Merged with picorv32:cpu|decoded_imm_j[1]  ;
+; picorv32:cpu|reg_next_pc[0]                    ; Merged with picorv32:cpu|reg_pc[0]         ;
+; picorv32:cpu|irq_pending[3..31]                ; Stuck at GND due to stuck port data_in     ;
+; picorv32:cpu|latched_is_lu                     ; Lost fanout                                ;
+; picorv32:cpu|is_lbu_lhu_lw                     ; Lost fanout                                ;
+; uart_wrap:uart|simpleuart:uart|send_pattern[9] ; Stuck at VCC due to stuck port data_in     ;
+; picorv32:cpu|reg_pc[0]                         ; Stuck at GND due to stuck port data_in     ;
+; countdown_timer:cdt|delay_state.11             ; Lost fanout                                ;
+; picorv32:cpu|cpu_state.cpu_state_ld_rs2        ; Lost fanout                                ;
+; countdown_timer:cdt|delay_state~6              ; Lost fanout                                ;
+; countdown_timer:cdt|delay_state~7              ; Lost fanout                                ;
+; Total Number of Removed Registers = 61         ;                                            ;
++------------------------------------------------+--------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                        ;
++-------------------------------+---------------------------+--------------------------------------------------------+
+; Register name                 ; Reason for Removal        ; Registers Removed due to This Register                 ;
++-------------------------------+---------------------------+--------------------------------------------------------+
+; picorv32:cpu|mem_addr[1]      ; Stuck at GND              ; picorv32:cpu|latched_is_lu, picorv32:cpu|is_lbu_lhu_lw ;
+;                               ; due to stuck port data_in ;                                                        ;
+; picorv32:cpu|compressed_instr ; Stuck at GND              ; picorv32:cpu|latched_compr                             ;
+;                               ; due to stuck port data_in ;                                                        ;
++-------------------------------+---------------------------+--------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 66477 ;
+; Number of registers using Synchronous Clear  ; 328   ;
+; Number of registers using Synchronous Load   ; 88    ;
+; Number of registers using Asynchronous Clear ; 41    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 66121 ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------+
+; Registers Added for RAM Pass-Through Logic                         ;
++---------------------------------------+----------------------------+
+; Register Name                         ; RAM Name                   ;
++---------------------------------------+----------------------------+
+; picorv32:cpu|cpuregs_rtl_0_bypass[0]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[1]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[2]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[3]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[4]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[5]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[6]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[7]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[8]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[9]  ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[10] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[11] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[12] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[13] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[14] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[15] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[16] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[17] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[18] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[19] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[20] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[21] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[22] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[23] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[24] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[25] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[26] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[27] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[28] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[29] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[30] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[31] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[32] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[33] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[34] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[35] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[36] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[37] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[38] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[39] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[40] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[41] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_0_bypass[42] ; picorv32:cpu|cpuregs_rtl_0 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[0]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[1]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[2]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[3]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[4]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[5]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[6]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[7]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[8]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[9]  ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[10] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[11] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[12] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[13] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[14] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[15] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[16] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[17] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[18] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[19] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[20] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[21] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[22] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[23] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[24] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[25] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[26] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[27] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[28] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[29] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[30] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[31] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[32] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[33] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[34] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[35] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[36] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[37] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[38] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[39] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[40] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[41] ; picorv32:cpu|cpuregs_rtl_1 ;
+; picorv32:cpu|cpuregs_rtl_1_bypass[42] ; picorv32:cpu|cpuregs_rtl_1 ;
++---------------------------------------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top|picorv32:cpu|reg_pc[0]                          ;
+; 3:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; Yes        ; |top|picorv32:cpu|instr_andi                         ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |top|picorv32:cpu|mem_addr[19]                       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|picorv32:cpu|mem_wstrb[2]                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|cfg_divider[30]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|cfg_divider[18]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|cfg_divider[10]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|cfg_divider[7]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top|picorv32:cpu|irq_mask[28]                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|recv_buf_data[5] ;
+; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |top|picorv32:cpu|count_instr[20]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|recv_pattern[7]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|picorv32:cpu|mem_wdata[31]                      ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top|picorv32:cpu|timer[26]                          ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top|sram:memory|read_reg[30]                        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|countdown_timer:cdt|counter[6]                  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|countdown_timer:cdt|counter[26]                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|countdown_timer:cdt|counter[19]                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|countdown_timer:cdt|counter[8]                  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|picorv32:cpu|reg_op2[0]                         ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|send_pattern[0]  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|send_pattern[3]  ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|send_divcnt[10]  ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|picorv32:cpu|decoded_imm[10]                    ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |top|picorv32:cpu|decoded_imm[13]                    ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 60 LEs               ; 60 LEs                 ; Yes        ; |top|picorv32:cpu|reg_next_pc[29]                    ;
+; 5:1                ; 31 bits   ; 93 LEs        ; 93 LEs               ; 0 LEs                  ; Yes        ; |top|picorv32:cpu|alu_out_q[18]                      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|picorv32:cpu|decoded_imm[4]                     ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |top|picorv32:cpu|latched_rd[3]                      ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|picorv32:cpu|latched_rd[2]                      ;
+; 5:1                ; 27 bits   ; 81 LEs        ; 54 LEs               ; 27 LEs                 ; Yes        ; |top|picorv32:cpu|reg_op2[20]                        ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|recv_divcnt[9]   ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|uart_wrap:uart|simpleuart:uart|recv_state[2]    ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 6 LEs                ; 8 LEs                  ; Yes        ; |top|picorv32:cpu|mem_state[1]                       ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |top|picorv32:cpu|reg_sh[0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |top|picorv32:cpu|reg_sh[2]                          ;
+; 12:1               ; 3 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|picorv32:cpu|reg_op1[28]                        ;
+; 13:1               ; 3 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|picorv32:cpu|reg_op1[2]                         ;
+; 13:1               ; 24 bits   ; 192 LEs       ; 120 LEs              ; 72 LEs                 ; Yes        ; |top|picorv32:cpu|reg_op1[15]                        ;
+; 13:1               ; 7 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |top|picorv32:cpu|reg_out[9]                         ;
+; 15:1               ; 16 bits   ; 160 LEs       ; 128 LEs              ; 32 LEs                 ; Yes        ; |top|picorv32:cpu|reg_out[29]                        ;
+; 15:1               ; 4 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |top|picorv32:cpu|reg_out[3]                         ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 22 LEs               ; -2 LEs                 ; Yes        ; |top|picorv32:cpu|reg_out[1]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|picorv32:cpu|cpuregs_rs1[18]                    ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |top|picorv32:cpu|cpuregs_rs2[1]                     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|picorv32:cpu|Selector9                          ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|picorv32:cpu|Selector11                         ;
+; 6:1                ; 24 bits   ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; No         ; |top|mem_rdata[17]                                   ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |top|picorv32:cpu|Selector118                        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|picorv32:cpu|Selector123                        ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top|picorv32:cpu|mem_wordsize                       ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|mem_rdata[6]                                    ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |top|mem_rdata[5]                                    ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |top|picorv32:cpu|cpu_state                          ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |top|picorv32:cpu|cpu_state                          ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |top|picorv32:cpu|cpu_state                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Source assignments for picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_trd1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------+
+; Assignment                      ; Value              ; From ; To                            ;
++---------------------------------+--------------------+------+-------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                             ;
++---------------------------------+--------------------+------+-------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Source assignments for picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_trd1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------+
+; Assignment                      ; Value              ; From ; To                            ;
++---------------------------------+--------------------+------+-------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                             ;
++---------------------------------+--------------------+------+-------------------------------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top    ;
++-------------------+----------------------------------+-----------------+
+; Parameter Name    ; Value                            ; Type            ;
++-------------------+----------------------------------+-----------------+
+; BARREL_SHIFTER    ; 0                                ; Unsigned Binary ;
+; ENABLE_MUL        ; 0                                ; Unsigned Binary ;
+; ENABLE_DIV        ; 0                                ; Unsigned Binary ;
+; ENABLE_FAST_MUL   ; 0                                ; Unsigned Binary ;
+; ENABLE_COMPRESSED ; 0                                ; Unsigned Binary ;
+; ENABLE_IRQ_QREGS  ; 0                                ; Unsigned Binary ;
+; MEMBYTES          ; 8192                             ; Signed Integer  ;
+; STACKADDR         ; 00000000000000000010000000000000 ; Unsigned Binary ;
+; PROGADDR_RESET    ; 00000000000000000000000000000000 ; Unsigned Binary ;
+; PROGADDR_IRQ      ; 00000000000000000000000000000000 ; Unsigned Binary ;
++-------------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart_wrap:uart|simpleuart:uart ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; DEFAULT_DIV    ; 1     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sram:memory ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; ADDRWIDTH      ; 13    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: picorv32:cpu                 ;
++----------------------+----------------------------------+-----------------+
+; Parameter Name       ; Value                            ; Type            ;
++----------------------+----------------------------------+-----------------+
+; ENABLE_COUNTERS      ; 1                                ; Unsigned Binary ;
+; ENABLE_COUNTERS64    ; 1                                ; Unsigned Binary ;
+; ENABLE_REGS_16_31    ; 1                                ; Unsigned Binary ;
+; ENABLE_REGS_DUALPORT ; 1                                ; Unsigned Binary ;
+; LATCHED_MEM_RDATA    ; 0                                ; Unsigned Binary ;
+; TWO_STAGE_SHIFT      ; 1                                ; Unsigned Binary ;
+; BARREL_SHIFTER       ; 0                                ; Unsigned Binary ;
+; TWO_CYCLE_COMPARE    ; 0                                ; Unsigned Binary ;
+; TWO_CYCLE_ALU        ; 0                                ; Unsigned Binary ;
+; COMPRESSED_ISA       ; 0                                ; Unsigned Binary ;
+; CATCH_MISALIGN       ; 1                                ; Unsigned Binary ;
+; CATCH_ILLINSN        ; 1                                ; Unsigned Binary ;
+; ENABLE_PCPI          ; 0                                ; Unsigned Binary ;
+; ENABLE_MUL           ; 0                                ; Unsigned Binary ;
+; ENABLE_FAST_MUL      ; 0                                ; Unsigned Binary ;
+; ENABLE_DIV           ; 0                                ; Unsigned Binary ;
+; ENABLE_IRQ           ; 1                                ; Signed Integer  ;
+; ENABLE_IRQ_QREGS     ; 0                                ; Unsigned Binary ;
+; ENABLE_IRQ_TIMER     ; 1                                ; Unsigned Binary ;
+; ENABLE_TRACE         ; 0                                ; Unsigned Binary ;
+; REGS_INIT_ZERO       ; 0                                ; Unsigned Binary ;
+; MASKED_IRQ           ; 00000000000000000000000000000000 ; Unsigned Binary ;
+; LATCHED_IRQ          ; 11111111111111111111111111111111 ; Unsigned Binary ;
+; PROGADDR_RESET       ; 00000000000000000000000000000000 ; Unsigned Binary ;
+; PROGADDR_IRQ         ; 00000000000000000000000000000000 ; Unsigned Binary ;
+; STACKADDR            ; 00000000000000000010000000000000 ; Unsigned Binary ;
++----------------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_0 ;
++------------------------------------+----------------------+----------------------------+
+; Parameter Name                     ; Value                ; Type                       ;
++------------------------------------+----------------------+----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                    ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE             ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                    ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                    ;
+; WIDTH_A                            ; 32                   ; Untyped                    ;
+; WIDTHAD_A                          ; 5                    ; Untyped                    ;
+; NUMWORDS_A                         ; 32                   ; Untyped                    ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                    ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                    ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WIDTH_B                            ; 32                   ; Untyped                    ;
+; WIDTHAD_B                          ; 5                    ; Untyped                    ;
+; NUMWORDS_B                         ; 32                   ; Untyped                    ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                    ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                    ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                    ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                    ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                    ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                    ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                    ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                    ;
+; BYTE_SIZE                          ; 8                    ; Untyped                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; INIT_FILE                          ; UNUSED               ; Untyped                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                    ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                    ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                    ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                    ;
+; CBXI_PARAMETER                     ; altsyncram_trd1      ; Untyped                    ;
++------------------------------------+----------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_1 ;
++------------------------------------+----------------------+----------------------------+
+; Parameter Name                     ; Value                ; Type                       ;
++------------------------------------+----------------------+----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                    ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE             ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                    ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                    ;
+; WIDTH_A                            ; 32                   ; Untyped                    ;
+; WIDTHAD_A                          ; 5                    ; Untyped                    ;
+; NUMWORDS_A                         ; 32                   ; Untyped                    ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                    ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                    ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WIDTH_B                            ; 32                   ; Untyped                    ;
+; WIDTHAD_B                          ; 5                    ; Untyped                    ;
+; NUMWORDS_B                         ; 32                   ; Untyped                    ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                    ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                    ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                    ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                    ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                    ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                    ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                    ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                    ;
+; BYTE_SIZE                          ; 8                    ; Untyped                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; INIT_FILE                          ; UNUSED               ; Untyped                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                    ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                    ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                    ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                    ;
+; CBXI_PARAMETER                     ; altsyncram_trd1      ; Untyped                    ;
++------------------------------------+----------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                  ;
++-------------------------------------------+---------------------------------------+
+; Name                                      ; Value                                 ;
++-------------------------------------------+---------------------------------------+
+; Number of entity instances                ; 2                                     ;
+; Entity Instance                           ; picorv32:cpu|altsyncram:cpuregs_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                             ;
+;     -- WIDTH_A                            ; 32                                    ;
+;     -- NUMWORDS_A                         ; 32                                    ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                          ;
+;     -- WIDTH_B                            ; 32                                    ;
+;     -- NUMWORDS_B                         ; 32                                    ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                          ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                             ;
+; Entity Instance                           ; picorv32:cpu|altsyncram:cpuregs_rtl_1 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                             ;
+;     -- WIDTH_A                            ; 32                                    ;
+;     -- NUMWORDS_A                         ; 32                                    ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                          ;
+;     -- WIDTH_B                            ; 32                                    ;
+;     -- NUMWORDS_B                         ; 32                                    ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                          ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                             ;
++-------------------------------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "picorv32:cpu"                                                                                                                                        ;
++--------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                                                      ;
++--------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; mem_instr    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; irq          ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
+; trap         ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; mem_la_read  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; mem_la_write ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; mem_la_addr  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; mem_la_wdata ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; mem_la_wstrb ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; pcpi_valid   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; pcpi_insn    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; pcpi_rs1     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; pcpi_rs2     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; pcpi_wr      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; pcpi_rd      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; pcpi_wait    ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; pcpi_ready   ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; eoi          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; trace_valid  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; trace_data   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++--------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 10                          ;
+; cycloneiii_ff         ; 66477                       ;
+;     CLR               ; 3                           ;
+;     ENA               ; 65871                       ;
+;     ENA CLR           ; 38                          ;
+;     ENA SCLR          ; 152                         ;
+;     ENA SLD           ; 60                          ;
+;     SCLR              ; 154                         ;
+;     SCLR SLD          ; 22                          ;
+;     SLD               ; 6                           ;
+;     plain             ; 171                         ;
+; cycloneiii_lcell_comb ; 55274                       ;
+;     arith             ; 594                         ;
+;         2 data inputs ; 287                         ;
+;         3 data inputs ; 307                         ;
+;     normal            ; 54680                       ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 7086                        ;
+;         2 data inputs ; 129                         ;
+;         3 data inputs ; 1385                        ;
+;         4 data inputs ; 46079                       ;
+; cycloneiii_ram_block  ; 64                          ;
+;                       ;                             ;
+; Max LUT depth         ; 13.00                       ;
+; Average LUT depth     ; 10.65                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:02:04     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -163,21 +858,19 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Fri Sep 12 12:39:26 2025
+    Info: Processing started: Sat Sep 13 01:55:12 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off picorv32-DE2115 -c picorv32-DE2115
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/sram_infer.v
+    Info (12023): Found entity 1: sram File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram_infer.v Line: 20
 Info (12021): Found 0 design units, including 0 entities, in source file src/mem_init.sv
-Info (12021): Found 1 design units, including 1 entities, in source file src/gowin_sp/gowin_sp.v
-    Info (12023): Found entity 1: Gowin_SP File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/gowin_sp/gowin_sp.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file src/uart_wrap.v
     Info (12023): Found entity 1: uart_wrap File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/uart_wrap.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/top.v
     Info (12023): Found entity 1: top File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file src/tang_nano_9k_leds.v
     Info (12023): Found entity 1: tang_leds File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/tang_nano_9k_leds.v Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file src/sram.v
-    Info (12023): Found entity 1: sram File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file src/simpleuart.v
     Info (12023): Found entity 1: simpleuart File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file src/reset.v
@@ -231,10 +924,6 @@ Warning (10230): Verilog HDL assignment warning at simpleuart.v(120): truncated 
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(132): truncated value with size 32 to match size of target (4) File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v Line: 132
 Info (12128): Elaborating entity "countdown_timer" for hierarchy "countdown_timer:cdt" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 153
 Info (12128): Elaborating entity "sram" for hierarchy "sram:memory" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 165
-Info (12128): Elaborating entity "Gowin_SP" for hierarchy "sram:memory|Gowin_SP:gmem3" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram.v Line: 102
-Info (12128): Elaborating entity "Gowin_SP" for hierarchy "sram:memory|Gowin_SP:gmem2" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram.v Line: 180
-Info (12128): Elaborating entity "Gowin_SP" for hierarchy "sram:memory|Gowin_SP:gmem1" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram.v Line: 258
-Info (12128): Elaborating entity "Gowin_SP" for hierarchy "sram:memory|Gowin_SP:gmem0" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram.v Line: 336
 Info (12128): Elaborating entity "tang_leds" for hierarchy "tang_leds:soc_leds" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 176
 Info (12128): Elaborating entity "picorv32" for hierarchy "picorv32:cpu" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 202
 Warning (10036): Verilog HDL or VHDL warning at picorv32.v(181): object "dbg_insn_addr" assigned a value but never read File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v Line: 181
@@ -284,16 +973,76 @@ Warning (10208): Verilog HDL Case Statement warning at picorv32.v(1885): honored
 Warning (10763): Verilog HDL warning at picorv32.v(1902): case statement has overlapping case item expressions with non-constant or don't care bits - unable to check case statement for completeness File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v Line: 1902
 Warning (10208): Verilog HDL Case Statement warning at picorv32.v(1902): honored full_case synthesis attribute - differences between design synthesis and simulation may occur File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v Line: 1902
 Warning (10034): Output port "pcpi_insn" at picorv32.v(111) has no driver File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v Line: 111
-Error (12006): Node instance "sp_inst_0" instantiates undefined entity "SP". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/gowin_sp/gowin_sp.v Line: 169
-Error (12006): Node instance "sp_inst_0" instantiates undefined entity "SP". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/gowin_sp/gowin_sp.v Line: 169
-Error (12006): Node instance "sp_inst_0" instantiates undefined entity "SP". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/gowin_sp/gowin_sp.v Line: 169
-Error (12006): Node instance "sp_inst_0" instantiates undefined entity "SP". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/gowin_sp/gowin_sp.v Line: 169
+Warning (276020): Inferred RAM node "picorv32:cpu|cpuregs_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning (276020): Inferred RAM node "picorv32:cpu|cpuregs_rtl_1" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "sram:memory|mem" is uninferred due to asynchronous read logic File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram_infer.v Line: 36
+Warning (276002): Cannot convert all sets of registers into RAM megafunctions when creating nodes; therefore, the resulting number of registers remaining in design can cause longer compilation time or result in insufficient memory to complete Analysis and Synthesis
+Info (19000): Inferred 2 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "picorv32:cpu|cpuregs_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 32
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 32
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "picorv32:cpu|cpuregs_rtl_1" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 32
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 32
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+Info (12130): Elaborated megafunction instantiation "picorv32:cpu|altsyncram:cpuregs_rtl_0"
+Info (12133): Instantiated megafunction "picorv32:cpu|altsyncram:cpuregs_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "5"
+    Info (12134): Parameter "NUMWORDS_A" = "32"
+    Info (12134): Parameter "WIDTH_B" = "32"
+    Info (12134): Parameter "WIDTHAD_B" = "5"
+    Info (12134): Parameter "NUMWORDS_B" = "32"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_trd1.tdf
+    Info (12023): Found entity 1: altsyncram_trd1 File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/db/altsyncram_trd1.tdf Line: 28
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/Z/projects/RISCV_project/pico/picorv32-quartus/output_files/picorv32-DE2115.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 80 warnings
-    Error: Peak virtual memory: 4744 megabytes
-    Error: Processing ended: Fri Sep 12 12:39:43 2025
-    Error: Elapsed time: 00:00:17
-    Error: Total CPU time (on all processors): 00:00:17
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 114019 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 113945 logic cells
+    Info (21064): Implemented 64 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 84 warnings
+    Info: Peak virtual memory: 5514 megabytes
+    Info: Processing ended: Sat Sep 13 01:57:32 2025
+    Info: Elapsed time: 00:02:20
+    Info: Total CPU time (on all processors): 00:02:33
 
 
 +------------------------------------------+

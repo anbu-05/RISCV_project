@@ -60,12 +60,11 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE src/sram_infer.v
 set_global_assignment -name SYSTEMVERILOG_FILE src/mem_init.sv
-set_global_assignment -name VERILOG_FILE src/gowin_sp/gowin_sp.v
 set_global_assignment -name VERILOG_FILE src/uart_wrap.v
 set_global_assignment -name VERILOG_FILE src/top.v
 set_global_assignment -name VERILOG_FILE src/tang_nano_9k_leds.v
-set_global_assignment -name VERILOG_FILE src/sram.v
 set_global_assignment -name VERILOG_FILE src/simpleuart.v
 set_global_assignment -name VERILOG_FILE src/reset.v
 set_global_assignment -name VERILOG_FILE src/picorv32.v

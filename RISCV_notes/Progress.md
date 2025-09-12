@@ -52,3 +52,40 @@
 - restructured RISCV_core based on a structure taught in SLV class
 - going through grug huhler's picoRV32. his goals are very aligned to ours
 - read the notes [here](Team/notes.md)
+- need to look into adding a submodule
+`hint: You've added another git repository inside your current repository.`
+`hint: Clones of the outer repository will not contain the contents of`
+`hint: the embedded repository and will not know how to obtain it.`
+`hint: If you meant to add a submodule, use:`
+`hint:`
+`hint:   git submodule add <url> pico/picorv32`
+`hint:`
+`hint: If you added this path by mistake, you can remove it from the`
+`hint: index with:`
+`hint:`
+`hint:   git rm --cached pico/picorv32`
+`hint:`
+`hint: See "git help submodule" for more information.`
+`hint: Disable this message with "git config set advice.addEmbeddedRepo false"`
+
+---
+- trying to modify grug huhler's picorv32 to get it working on a DE2-115
+- everything else is fine, only top.v, sram.v, and gowin_sp.v are creating problems
+- when compiling in quartus, Quartus expects a different name for the top level entitiy: fix for that:
+## ✅ Fix
+You need to **tell Quartus the correct top-level entity**:
+1. Open your `.qsf` (project settings file) in a text editor or Quartus GUI.
+2. Find the line:
+    `set_global_assignment -name TOP_LEVEL_ENTITY picorv32-DE2115`
+3. Change it to:
+    `set_global_assignment -name TOP_LEVEL_ENTITY top`
+(or whichever module you want as the FPGA top — probably `top` in `top.v`).
+
+- sram.v and gowin_sp.v are causing problems because they are files designed for the tang nano 9k FPGA. read about it [RISCV_core - Compare RISCV cores (last prompt)](https://chatgpt.com/g/g-p-68c2b3f837f88191bf603055f1e243ba/c/68c2b6be-b6d4-832e-8d5e-baee84fe72a3)
+- since quartus prefers inferred ram, i will be changing gowin_sp to inferred ram. quartus will automatically map this to it's M9K memory
+- i will need to change mem_init.sv to mem_init.hex as well
+
+- made the changes. now the sram problem is probably fixed and everything compiles.
+
+tomorrow:
+- need to figure out what this program that ive loaded in mem_init.hex actually does + need to change the LED init file as that also changes for DE2-115
