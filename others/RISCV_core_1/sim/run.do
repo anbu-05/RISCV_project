@@ -2,10 +2,10 @@ vlib work
 vmap work work
 
 # Compile design RTL
-vlog ../rtl/*.sv
+vlog src/*.sv
 
 # Compile testbench
-vlog ../tb/*_tb.sv
+vlog sim/*_tb.sv
 
 # Simulate
 vsim ProgramCounter_tb

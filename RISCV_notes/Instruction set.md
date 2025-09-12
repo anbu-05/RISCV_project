@@ -1,6 +1,6 @@
 | Instruction | Type | Implemented (Y/N) | Notes         |
 | ----------- | ---- | ----------------- | ------------- |
-| ADD         | R    | N                 | needs testing |
+| ADD         | R    | Y                 | needs testing |
 | SUB         | R    | Y                 | needs testing |
 | SLL         | R    | Y                 | needs testing |
 | SLT         | R    | Y                 | needs testing |

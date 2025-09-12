@@ -46,3 +46,9 @@
 - finished the first fully functional testbench with logging
 - [Fixing testbench errors](https://chatgpt.com/c/68b6e851-c094-8325-b1d8-841f7c2958e3)
 - need to discuss the core specs with saravana
+
+---
+### 12 Sep
+- restructured RISCV_core based on a structure taught in SLV class
+- going through grug huhler's picoRV32. his goals are very aligned to ours
+- read the notes [here](Team/notes.md)
