@@ -1,5 +1,5 @@
 Analysis & Synthesis report for picorv32-DE2115
-Sat Sep 13 01:57:32 2025
+Sat Sep 13 11:15:25 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -27,15 +27,16 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
  19. Parameter Settings for User Entity Instance: Top-level Entity: |top
  20. Parameter Settings for User Entity Instance: uart_wrap:uart|simpleuart:uart
  21. Parameter Settings for User Entity Instance: sram:memory
- 22. Parameter Settings for User Entity Instance: picorv32:cpu
- 23. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_0
- 24. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_1
- 25. altsyncram Parameter Settings by Entity Instance
- 26. Port Connectivity Checks: "picorv32:cpu"
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
- 30. Analysis & Synthesis Suppressed Messages
+ 22. Parameter Settings for User Entity Instance: fpga_leds:soc_leds
+ 23. Parameter Settings for User Entity Instance: picorv32:cpu
+ 24. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_0
+ 25. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_1
+ 26. altsyncram Parameter Settings by Entity Instance
+ 27. Port Connectivity Checks: "picorv32:cpu"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
+ 31. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -62,16 +63,16 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 13 01:57:31 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 13 11:15:22 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; picorv32-DE2115                                 ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 113,833                                         ;
-;     Total combinational functions  ; 55,268                                          ;
-;     Dedicated logic registers      ; 66,477                                          ;
-; Total registers                    ; 66477                                           ;
-; Total pins                         ; 10                                              ;
+; Total logic elements               ; 113,840                                         ;
+;     Total combinational functions  ; 55,273                                          ;
+;     Dedicated logic registers      ; 66,479                                          ;
+; Total registers                    ; 66479                                           ;
+; Total pins                         ; 12                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 2,048                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -173,19 +174,19 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
+; Average used               ; 1.05        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
-;     Processor 3            ;   0.6%      ;
-;     Processor 4            ;   0.5%      ;
-;     Processor 5            ;   0.5%      ;
-;     Processor 6            ;   0.5%      ;
-;     Processor 7            ;   0.5%      ;
-;     Processor 8            ;   0.4%      ;
-;     Processors 9-16        ;   0.4%      ;
+;     Processor 2            ;   0.5%      ;
+;     Processor 3            ;   0.4%      ;
+;     Processor 4            ;   0.4%      ;
+;     Processor 5            ;   0.4%      ;
+;     Processor 6            ;   0.3%      ;
+;     Processor 7            ;   0.3%      ;
+;     Processor 8            ;   0.3%      ;
+;     Processors 9-16        ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -194,10 +195,10 @@ on the Quartus Prime software download page.
 +----------------------------------+-----------------+---------------------------------------------+---------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                    ; Library ;
 +----------------------------------+-----------------+---------------------------------------------+---------------------------------------------------------------------------------+---------+
+; src/fpga_leds.v                  ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/fpga_leds.v               ;         ;
 ; src/sram_infer.v                 ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram_infer.v              ;         ;
 ; src/uart_wrap.v                  ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/uart_wrap.v               ;         ;
 ; src/top.v                        ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v                     ;         ;
-; src/tang_nano_9k_leds.v          ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/tang_nano_9k_leds.v       ;         ;
 ; src/simpleuart.v                 ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v              ;         ;
 ; src/reset.v                      ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/reset.v                   ;         ;
 ; src/picorv32.v                   ; yes             ; User Verilog HDL File                       ; D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v                ;         ;
@@ -221,30 +222,30 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 113,833   ;
+; Estimated Total logic elements              ; 113,840   ;
 ;                                             ;           ;
-; Total combinational functions               ; 55268     ;
+; Total combinational functions               ; 55273     ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 46079     ;
-;     -- 3 input functions                    ; 1692      ;
-;     -- <=2 input functions                  ; 7497      ;
+;     -- 4 input functions                    ; 46078     ;
+;     -- 3 input functions                    ; 1687      ;
+;     -- <=2 input functions                  ; 7508      ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 54674     ;
+;     -- normal mode                          ; 54679     ;
 ;     -- arithmetic mode                      ; 594       ;
 ;                                             ;           ;
-; Total registers                             ; 66477     ;
-;     -- Dedicated logic registers            ; 66477     ;
+; Total registers                             ; 66479     ;
+;     -- Dedicated logic registers            ; 66479     ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 10        ;
+; I/O pins                                    ; 12        ;
 ; Total memory bits                           ; 2048      ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 66541     ;
-; Total fan-out                               ; 397833    ;
+; Maximum fan-out                             ; 66543     ;
+; Total fan-out                               ; 397848    ;
 ; Average fan-out                             ; 3.27      ;
 +---------------------------------------------+-----------+
 
@@ -254,16 +255,16 @@ on the Quartus Prime software download page.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
-; |top                                      ; 55268 (104)         ; 66477 (0)                 ; 2048        ; 0            ; 0       ; 0         ; 10   ; 0            ; |top                                                                      ; top             ; work         ;
+; |top                                      ; 55273 (107)         ; 66479 (0)                 ; 2048        ; 0            ; 0       ; 0         ; 12   ; 0            ; |top                                                                      ; top             ; work         ;
 ;    |countdown_timer:cdt|                  ; 82 (82)             ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|countdown_timer:cdt                                                  ; countdown_timer ; work         ;
-;    |picorv32:cpu|                         ; 1925 (1925)         ; 730 (730)                 ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu                                                         ; picorv32        ; work         ;
+;    |fpga_leds:soc_leds|                   ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|fpga_leds:soc_leds                                                   ; fpga_leds       ; work         ;
+;    |picorv32:cpu|                         ; 1927 (1927)         ; 730 (730)                 ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu                                                         ; picorv32        ; work         ;
 ;       |altsyncram:cpuregs_rtl_0|          ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu|altsyncram:cpuregs_rtl_0                                ; altsyncram      ; work         ;
 ;          |altsyncram_trd1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_trd1:auto_generated ; altsyncram_trd1 ; work         ;
 ;       |altsyncram:cpuregs_rtl_1|          ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu|altsyncram:cpuregs_rtl_1                                ; altsyncram      ; work         ;
 ;          |altsyncram_trd1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_trd1:auto_generated ; altsyncram_trd1 ; work         ;
 ;    |reset_control:reset_controller|       ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|reset_control:reset_controller                                       ; reset_control   ; work         ;
 ;    |sram:memory|                          ; 52893 (52893)       ; 65569 (65569)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sram:memory                                                          ; sram            ; work         ;
-;    |tang_leds:soc_leds|                   ; 1 (1)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|tang_leds:soc_leds                                                   ; tang_leds       ; work         ;
 ;    |uart_wrap:uart|                       ; 255 (4)             ; 131 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|uart_wrap:uart                                                       ; uart_wrap       ; work         ;
 ;       |simpleuart:uart|                   ; 251 (251)           ; 131 (131)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|uart_wrap:uart|simpleuart:uart                                       ; simpleuart      ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
@@ -370,12 +371,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 66477 ;
+; Total registers                              ; 66479 ;
 ; Number of registers using Synchronous Clear  ; 328   ;
 ; Number of registers using Synchronous Load   ; 88    ;
-; Number of registers using Asynchronous Clear ; 41    ;
+; Number of registers using Asynchronous Clear ; 43    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 66121 ;
+; Number of registers using Clock Enable       ; 66123 ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -530,8 +531,7 @@ Encoding Type:  One-Hot
 ; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |top|picorv32:cpu|Selector118                        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|picorv32:cpu|Selector123                        ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top|picorv32:cpu|mem_wordsize                       ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|mem_rdata[6]                                    ;
-; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |top|mem_rdata[5]                                    ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |top|mem_rdata[5]                                    ;
 ; 15:1               ; 2 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |top|picorv32:cpu|cpu_state                          ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |top|picorv32:cpu|cpu_state                          ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |top|picorv32:cpu|cpu_state                          ;
@@ -567,6 +567,7 @@ Encoding Type:  One-Hot
 ; ENABLE_FAST_MUL   ; 0                                ; Unsigned Binary ;
 ; ENABLE_COMPRESSED ; 0                                ; Unsigned Binary ;
 ; ENABLE_IRQ_QREGS  ; 0                                ; Unsigned Binary ;
+; LED_COUNT         ; 8                                ; Signed Integer  ;
 ; MEMBYTES          ; 8192                             ; Signed Integer  ;
 ; STACKADDR         ; 00000000000000000010000000000000 ; Unsigned Binary ;
 ; PROGADDR_RESET    ; 00000000000000000000000000000000 ; Unsigned Binary ;
@@ -592,6 +593,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; ADDRWIDTH      ; 13    ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpga_leds:soc_leds ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; LED_COUNT      ; 8     ; Signed Integer                         ;
+; ACTIVE_LOW     ; 0     ; Unsigned Binary                        ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -815,27 +827,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 66477                       ;
+; boundary_port         ; 12                          ;
+; cycloneiii_ff         ; 66479                       ;
 ;     CLR               ; 3                           ;
 ;     ENA               ; 65871                       ;
-;     ENA CLR           ; 38                          ;
+;     ENA CLR           ; 40                          ;
 ;     ENA SCLR          ; 152                         ;
 ;     ENA SLD           ; 60                          ;
 ;     SCLR              ; 154                         ;
 ;     SCLR SLD          ; 22                          ;
 ;     SLD               ; 6                           ;
 ;     plain             ; 171                         ;
-; cycloneiii_lcell_comb ; 55274                       ;
+; cycloneiii_lcell_comb ; 55273                       ;
 ;     arith             ; 594                         ;
 ;         2 data inputs ; 287                         ;
 ;         3 data inputs ; 307                         ;
-;     normal            ; 54680                       ;
+;     normal            ; 54679                       ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 7086                        ;
-;         2 data inputs ; 129                         ;
-;         3 data inputs ; 1385                        ;
-;         4 data inputs ; 46079                       ;
+;         1 data inputs ; 7080                        ;
+;         2 data inputs ; 140                         ;
+;         3 data inputs ; 1380                        ;
+;         4 data inputs ; 46078                       ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 13.00                       ;
@@ -848,7 +860,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:02:04     ;
+; Top            ; 00:03:41     ;
 +----------------+--------------+
 
 
@@ -858,10 +870,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sat Sep 13 01:55:12 2025
+    Info: Processing started: Sat Sep 13 11:11:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off picorv32-DE2115 -c picorv32-DE2115
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/fpga_leds.v
+    Info (12023): Found entity 1: fpga_leds File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/fpga_leds.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file src/sram_infer.v
     Info (12023): Found entity 1: sram File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/sram_infer.v Line: 20
 Info (12021): Found 0 design units, including 0 entities, in source file src/mem_init.sv
@@ -869,8 +883,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/uar
     Info (12023): Found entity 1: uart_wrap File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/uart_wrap.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/top.v
     Info (12023): Found entity 1: top File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 33
-Info (12021): Found 1 design units, including 1 entities, in source file src/tang_nano_9k_leds.v
-    Info (12023): Found entity 1: tang_leds File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/tang_nano_9k_leds.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file src/simpleuart.v
     Info (12023): Found entity 1: simpleuart File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file src/reset.v
@@ -912,20 +924,20 @@ Info (12021): Found 8 design units, including 8 entities, in source file src/pic
     Info (12023): Found entity 8: picorv32_wb File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v Line: 2815
 Info (12021): Found 1 design units, including 1 entities, in source file src/countdown_timer.v
     Info (12023): Found entity 1: countdown_timer File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/countdown_timer.v Line: 16
-Warning (10236): Verilog HDL Implicit Net warning at top.v(194): created implicit net for "mem_valid" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 194
-Warning (10236): Verilog HDL Implicit Net warning at top.v(195): created implicit net for "mem_instr" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 195
+Warning (10236): Verilog HDL Implicit Net warning at top.v(202): created implicit net for "mem_valid" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 202
+Warning (10236): Verilog HDL Implicit Net warning at top.v(203): created implicit net for "mem_instr" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 203
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "reset_control" for hierarchy "reset_control:reset_controller" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 128
-Info (12128): Elaborating entity "uart_wrap" for hierarchy "uart_wrap:uart" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 142
+Info (12128): Elaborating entity "reset_control" for hierarchy "reset_control:reset_controller" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 133
+Info (12128): Elaborating entity "uart_wrap" for hierarchy "uart_wrap:uart" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 147
 Info (12128): Elaborating entity "simpleuart" for hierarchy "uart_wrap:uart|simpleuart:uart" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/uart_wrap.v Line: 41
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(99): truncated value with size 32 to match size of target (4) File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v Line: 99
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(114): truncated value with size 32 to match size of target (10) File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v Line: 114
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(120): truncated value with size 32 to match size of target (10) File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v Line: 120
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(132): truncated value with size 32 to match size of target (4) File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/simpleuart.v Line: 132
-Info (12128): Elaborating entity "countdown_timer" for hierarchy "countdown_timer:cdt" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 153
-Info (12128): Elaborating entity "sram" for hierarchy "sram:memory" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 165
-Info (12128): Elaborating entity "tang_leds" for hierarchy "tang_leds:soc_leds" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 176
-Info (12128): Elaborating entity "picorv32" for hierarchy "picorv32:cpu" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 202
+Info (12128): Elaborating entity "countdown_timer" for hierarchy "countdown_timer:cdt" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 158
+Info (12128): Elaborating entity "sram" for hierarchy "sram:memory" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 170
+Info (12128): Elaborating entity "fpga_leds" for hierarchy "fpga_leds:soc_leds" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 182
+Info (12128): Elaborating entity "picorv32" for hierarchy "picorv32:cpu" File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/top.v Line: 210
 Warning (10036): Verilog HDL or VHDL warning at picorv32.v(181): object "dbg_insn_addr" assigned a value but never read File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v Line: 181
 Warning (10036): Verilog HDL or VHDL warning at picorv32.v(183): object "dbg_mem_valid" assigned a value but never read File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v Line: 183
 Warning (10036): Verilog HDL or VHDL warning at picorv32.v(184): object "dbg_mem_instr" assigned a value but never read File: D:/Z/projects/RISCV_project/pico/picorv32-quartus/src/picorv32.v Line: 184
@@ -1033,16 +1045,16 @@ Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/Z/projects/RISCV_project/pico/picorv32-quartus/output_files/picorv32-DE2115.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 114019 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 114029 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 113945 logic cells
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 113953 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 5514 megabytes
-    Info: Processing ended: Sat Sep 13 01:57:32 2025
-    Info: Elapsed time: 00:02:20
-    Info: Total CPU time (on all processors): 00:02:33
+    Info: Peak virtual memory: 5501 megabytes
+    Info: Processing ended: Sat Sep 13 11:15:25 2025
+    Info: Elapsed time: 00:04:09
+    Info: Total CPU time (on all processors): 00:04:27
 
 
 +------------------------------------------+

@@ -50,7 +50,7 @@ module top (
             output wire       b00,
             output wire [3:0] mem_wstrb,
 `endif
-            output wire [5:0] leds
+            output wire [LED_COUNT-1:0] leds
             );
 
    parameter [0:0] BARREL_SHIFTER = 0;
@@ -59,6 +59,9 @@ module top (
    parameter [0:0] ENABLE_FAST_MUL = 0;
    parameter [0:0] ENABLE_COMPRESSED = 0;
    parameter [0:0] ENABLE_IRQ_QREGS = 0;
+
+  parameter integer LED_COUNT = 8; // DE2-115 user LEDs (change to actual count on board)
+
 
    parameter integer          MEMBYTES = 8192;      // This is not easy to change
    parameter [31:0] STACKADDR = (MEMBYTES);         // Grows down.  Software should set it.
@@ -118,7 +121,9 @@ module top (
                       uart_sel ? uart_data_o :
                       cdt_sel  ? cdt_data_o  : 32'h0;
 
-   assign leds = ~leds_data_o[5:0]; // Connect to the LEDs off the FPGA
+  // leds is driven by fpga_leds via .led_pins connection above
+  // (so no additional assign is required)
+
 
    reset_control reset_controller
      (
@@ -164,16 +169,19 @@ module top (
       .sram_data_o(sram_data_o)
       );
    
-   tang_leds soc_leds
-     (
+   fpga_leds #(.LED_COUNT(LED_COUNT), .ACTIVE_LOW(1'b0)) soc_leds
+     (                                    // set ACTIVE_LOW appropriately
       .clk(clk),
       .reset_n(reset_n),
       .leds_sel(leds_sel),
-      .leds_data_i(mem_wdata[5:0]),
+      .leds_data_i(mem_wdata),            // pass full 32-bit; low bits used
       .we(mem_wstrb[0]),
       .leds_ready(leds_ready),
-      .leds_data_o(leds_data_o)
+      .leds_data_o(leds_data_o),
+      .led_pins(leds)                     // wire internal led pins to top-level outputs
       );
+
+
 
    picorv32
      #(
