@@ -1,0 +1,286 @@
+do run.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:36:45 on Sep 17,2025
+# vlog -reportprogress 300 ../rtl/countdown_timer.sv ../rtl/fpga_leds.sv ../rtl/mem_init.sv ../rtl/picorv32.sv ../rtl/reset.sv ../rtl/simpleuart.sv ../rtl/sram.sv ../rtl/sram_infer.sv ../rtl/top.sv ../rtl/uart_wrap.sv 
+# -- Compiling module countdown_timer
+# -- Compiling module fpga_leds
+# -- Compiling package mem_init_sv_unit
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# -- Compiling module reset_control
+# -- Compiling module simpleuart
+# -- Compiling module sram
+# ** Warning: ../rtl/sram_infer.sv(20): (vlog-2275) Existing module 'sram' will be overwritten.
+# -- Compiling module sram
+# -- Compiling module top
+# ** Error: ../rtl/top.sv(53): (vlog-2730) Undefined variable: 'LED_COUNT'.
+# ** Error (suppressible): ../rtl/top.sv(54): (vlog-2388) 'leds' already declared in this scope (top) at ../rtl/top.sv(53).
+# ** Error: ../rtl/top.sv(63): (vlog-13282) 'LED_COUNT' already declared in this scope.
+# ** Error: ../rtl/top.sv(109): (vlog-2730) Undefined variable: 'mem_valid'.
+# ** Error: ../rtl/top.sv(53): (vlog-13294) Identifier must be declared with a port mode: leds.
+# -- Compiling module uart_wrap
+# End time: 10:36:45 on Sep 17,2025, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 1
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./run.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../rtl/*.sv"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:37:31 on Sep 17,2025
+# vlog -reportprogress 300 ../rtl/countdown_timer.sv ../rtl/fpga_leds.sv ../rtl/mem_init.sv ../rtl/picorv32.sv ../rtl/reset.sv ../rtl/simpleuart.sv ../rtl/sram.sv ../rtl/top.sv ../rtl/uart_wrap.sv 
+# -- Compiling module countdown_timer
+# -- Compiling module fpga_leds
+# -- Compiling package mem_init_sv_unit
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# -- Compiling module reset_control
+# -- Compiling module simpleuart
+# -- Compiling module sram
+# -- Compiling module top
+# ** Error: ../rtl/top.sv(53): (vlog-2730) Undefined variable: 'LED_COUNT'.
+# ** Error (suppressible): ../rtl/top.sv(54): (vlog-2388) 'leds' already declared in this scope (top) at ../rtl/top.sv(53).
+# ** Error: ../rtl/top.sv(63): (vlog-13282) 'LED_COUNT' already declared in this scope.
+# ** Error: ../rtl/top.sv(109): (vlog-2730) Undefined variable: 'mem_valid'.
+# ** Error: ../rtl/top.sv(53): (vlog-13294) Identifier must be declared with a port mode: leds.
+# -- Compiling module uart_wrap
+# End time: 10:37:32 on Sep 17,2025, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./run.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../rtl/*.sv"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:44:32 on Sep 17,2025
+# vlog -reportprogress 300 ../rtl/countdown_timer.sv ../rtl/fpga_leds.sv ../rtl/mem_init.sv ../rtl/picorv32.sv ../rtl/reset.sv ../rtl/simpleuart.sv ../rtl/sram.sv ../rtl/top.sv ../rtl/uart_wrap.sv 
+# -- Compiling module countdown_timer
+# -- Compiling module fpga_leds
+# -- Compiling package mem_init_sv_unit
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# -- Compiling module reset_control
+# -- Compiling module simpleuart
+# -- Compiling module sram
+# -- Compiling module top
+# -- Compiling module uart_wrap
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# 	top
+# End time: 10:44:33 on Sep 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim top.sv 
+# Start time: 10:44:33 on Sep 17,2025
+# ** Error (suppressible): (vsim-19) Failed to access library 'top' at "top".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 12
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:44:57 on Sep 17,2025
+# vlog -reportprogress 300 ../rtl/countdown_timer.sv ../rtl/fpga_leds.sv ../rtl/mem_init.sv ../rtl/picorv32.sv ../rtl/reset.sv ../rtl/simpleuart.sv ../rtl/sram.sv ../rtl/top.sv ../rtl/uart_wrap.sv 
+# -- Compiling module countdown_timer
+# -- Compiling module fpga_leds
+# -- Compiling package mem_init_sv_unit
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# -- Compiling module reset_control
+# -- Compiling module simpleuart
+# -- Compiling module sram
+# -- Compiling module top
+# -- Compiling module uart_wrap
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# 	top
+# End time: 10:44:57 on Sep 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim top 
+# Start time: 10:44:33 on Sep 17,2025
+# Loading sv_std.std
+# Loading work.top
+# Loading work.reset_control
+# Loading work.uart_wrap
+# Loading work.simpleuart
+# Loading work.countdown_timer
+# Loading work.sram
+# Loading work.fpga_leds
+# Loading work.picorv32
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'cpu'.  Expected 27, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /top/cpu File: ../rtl/top.sv Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'irq'. The port definition is at: ../rtl/picorv32.sv(120).
+#    Time: 0 ps  Iteration: 0  Instance: /top/cpu File: ../rtl/top.sv Line: 168
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trap'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: (vsim-7) Failed to open readmem file "mem_init.hex" in read mode.
+# No such file or directory. (errno = ENOENT)    : ../rtl/sram.sv(41)
+#    Time: 0 ps  Iteration: 0  Instance: /top/memory
+exit
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:53:06 on Sep 17,2025
+# vlog -reportprogress 300 ../rtl/countdown_timer.sv ../rtl/fpga_leds.sv ../rtl/mem_init.sv ../rtl/picorv32.sv ../rtl/reset.sv ../rtl/simpleuart.sv ../rtl/sram.sv ../rtl/top.sv ../rtl/uart_wrap.sv 
+# -- Compiling module countdown_timer
+# -- Compiling module fpga_leds
+# -- Compiling package mem_init_sv_unit
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# -- Compiling module reset_control
+# -- Compiling module simpleuart
+# -- Compiling module sram
+# -- Compiling module top
+# -- Compiling module uart_wrap
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# 	top
+# End time: 10:53:07 on Sep 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 10:53:09 on Sep 17,2025, Elapsed time: 0:08:36
+# Errors: 1, Warnings: 20
+# vsim top 
+# Start time: 10:53:09 on Sep 17,2025
+# Loading sv_std.std
+# Loading work.top
+# Loading work.reset_control
+# Loading work.uart_wrap
+# Loading work.simpleuart
+# Loading work.countdown_timer
+# Loading work.sram
+# Loading work.fpga_leds
+# Loading work.picorv32
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'cpu'.  Expected 27, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /top/cpu File: ../rtl/top.sv Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'irq'. The port definition is at: ../rtl/picorv32.sv(120).
+#    Time: 0 ps  Iteration: 0  Instance: /top/cpu File: ../rtl/top.sv Line: 168
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trap'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trace_data'.
+add wave -position insertpoint sim:/top/memory/*
+vsim top
+# End time: 10:54:19 on Sep 17,2025, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 19
+# vsim top 
+# Start time: 10:54:19 on Sep 17,2025
+# Loading sv_std.std
+# Loading work.top
+# Loading work.reset_control
+# Loading work.uart_wrap
+# Loading work.simpleuart
+# Loading work.countdown_timer
+# Loading work.sram
+# Loading work.fpga_leds
+# Loading work.picorv32
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'cpu'.  Expected 27, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /top/cpu File: ../rtl/top.sv Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'irq'. The port definition is at: ../rtl/picorv32.sv(120).
+#    Time: 0 ps  Iteration: 0  Instance: /top/cpu File: ../rtl/top.sv Line: 168
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trap'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: (vsim-3722) ../rtl/top.sv(168): [TFMPC] - Missing connection for port 'trace_data'.
+# End time: 21:50:28 on Sep 17,2025, Elapsed time: 10:56:09
+# Errors: 0, Warnings: 19

@@ -51,22 +51,24 @@
 ### 12 Sep
 - restructured RISCV_core based on a structure taught in SLV class
 - going through grug huhler's picoRV32. his goals are very aligned to ours
-- read the notes [here](Team/notes.md)
+- read the [[notes]]
 - need to look into adding a submodule
-`hint: You've added another git repository inside your current repository.`
-`hint: Clones of the outer repository will not contain the contents of`
-`hint: the embedded repository and will not know how to obtain it.`
-`hint: If you meant to add a submodule, use:`
-`hint:`
-`hint:   git submodule add <url> pico/picorv32`
-`hint:`
-`hint: If you added this path by mistake, you can remove it from the`
-`hint: index with:`
-`hint:`
-`hint:   git rm --cached pico/picorv32`
-`hint:`
-`hint: See "git help submodule" for more information.`
-`hint: Disable this message with "git config set advice.addEmbeddedRepo false"`
+```
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> pico/picorv32
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached pico/picorv32
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+```
 
 ---
 - trying to modify grug huhler's picorv32 to get it working on a DE2-115
@@ -93,7 +95,7 @@ tomorrow:
 
 ### 13 Sep
 
-- meeting:
+- meeting [[MoM 13 Sep]]:
 	- looked into picorv32 implementation by grug huhler (https://github.com/grughuhler/picorv32/tree/main)
 	- we need to split into two teams
 		- implement this on different synthesis tool like cadence/synopsis
@@ -105,3 +107,34 @@ tomorrow:
 	- we are looking for a new person -we need confirmation by wednesday
 - did pin assignments for all input and output of top module
 - need to check sda file, and probably add a clock module to reduce 50mhz to 27mhz
+
+### 17 Sep
+- i put a pause on running it on FPGA
+- trying to run this on a simulator because they want this on a synthesis tool.
+- converting all the files into something that can be run on modelsim
+- made a new copy of the picorv32 project (as picorv32-sim)
+- started learning about systemverilog testbenches and UVM testbench framework
+- started making a top_tb.sv
+---
+- paused work on testbenches, because i forgot to change sram and mem_init -working rn to change sram and meminit to work on modelsim
+- when changing from the grug pico to modelsim pico.
+	- i want to keep this file structure: top.sv, sram.sv and mem_init.sv
+
+- what im gonna do now:
+	- restructure mem_init.sv to be simulator friendly
+	- make a python script to convert grug's mem_init.sv to sim mem_init.sv
+	- change sram.sv to use this new mem_init.sv while functioning the same way in top.sv
+---
+- ive given up on trying to use chatgpt to make it for me. ill go through sram.sv and do it myself. ill compile and reformat the c code myself.
+---
+- i am researching on this sram.v module ([ELI5 SRAM behavior](https://chatgpt.com/c/68cbf088-0d80-8322-92fd-6f1e1352348d)), and a few things are coming to my notice
+	- if you want a single cycle cpu, whatever premade SRAM module we're using will need to be async/combinational. 
+### 19 Sep
+- here's my decisions for the sram.v module
+	- read: i will implement both sync and async, and have a compiler directive to pick between the two.
+	- read during write: write-through
+	- it will have 32-bit aligned addresses. a 13 bit address line, but also a 4 bit wstrb.
+	- the data itself will be in a hex file and we will load it onto memory using `$readmemh`
+- started work on the sram.sv file
+	- made async mem read behavior -need to verify using chatgpt
+	- working on mem write behavior

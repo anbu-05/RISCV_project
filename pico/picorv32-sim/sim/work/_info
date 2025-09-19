@@ -1,0 +1,396 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Z/projects/RISCV_project/pico/picorv32-sim/sim
+vcountdown_timer
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1758086587
+!i10b 1
+!s100 B0=Z@CTL[]zEFz@Q=a`bU3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;a[Wl^e7gU@97HjFFWdWc1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1757498288
+8../rtl/countdown_timer.sv
+F../rtl/countdown_timer.sv
+!i122 4
+L0 16 67
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1758086586.000000
+!s107 ..\rtl\mem_init.sv|../rtl/uart_wrap.sv|../rtl/top.sv|../rtl/sram.sv|../rtl/simpleuart.sv|../rtl/reset.sv|../rtl/picorv32.sv|../rtl/mem_init.sv|../rtl/fpga_leds.sv|../rtl/countdown_timer.sv|
+Z8 !s90 -reportprogress|300|../rtl/countdown_timer.sv|../rtl/fpga_leds.sv|../rtl/mem_init.sv|../rtl/picorv32.sv|../rtl/reset.sv|../rtl/simpleuart.sv|../rtl/sram.sv|../rtl/top.sv|../rtl/uart_wrap.sv|
+!i113 1
+Z9 tCvgOpt 0
+vfpga_leds
+R1
+R2
+!i10b 1
+!s100 TSn470PG4]BmER<1MX]He0
+R3
+IYSb8N@Hk4X@jVGOjdSRh`2
+R4
+S1
+R0
+w1757741725
+8../rtl/fpga_leds.sv
+F../rtl/fpga_leds.sv
+!i122 4
+L0 4 43
+R6
+r1
+!s85 0
+31
+R7
+Z10 !s107 ..\rtl\mem_init.sv|../rtl/uart_wrap.sv|../rtl/top.sv|../rtl/sram.sv|../rtl/simpleuart.sv|../rtl/reset.sv|../rtl/picorv32.sv|../rtl/mem_init.sv|../rtl/fpga_leds.sv|../rtl/countdown_timer.sv|
+R8
+!i113 1
+R9
+Xmem_init_sv_unit
+R1
+R2
+VSWK17lz6mhRObX@X5BCoO0
+r1
+!s85 0
+!i10b 1
+!s100 91NHXO4h;I0JLKAIK=QQT0
+ISWK17lz6mhRObX@X5BCoO0
+!i103 1
+S1
+R0
+R5
+8../rtl/mem_init.sv
+F../rtl/mem_init.sv
+!i122 4
+L0 2 0
+R6
+31
+R7
+R10
+R8
+!i113 1
+R9
+vpicorv32
+R1
+R2
+!i10b 1
+!s100 WQ1=kk56keUlX>LMOme0F0
+R3
+IU=@9>G_z0N1Wb5Jj^=JZ70
+R4
+S1
+R0
+R5
+Z11 8../rtl/picorv32.sv
+Z12 F../rtl/picorv32.sv
+!i122 4
+L0 62 2106
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vpicorv32_axi
+R1
+R2
+!i10b 1
+!s100 FXQgGdOan1:NeFIc;JE_n2
+R3
+IcA=J8[B2chZYUna3@:AJb2
+R4
+S1
+R0
+R5
+R11
+R12
+!i122 4
+L0 2517 208
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vpicorv32_axi_adapter
+R1
+R2
+!i10b 1
+!s100 N@;CVc[NmTWS@TSaQW:O80
+R3
+ICi=[nWmz?eUIoih9BN;GJ1
+R4
+S1
+R0
+R5
+R11
+R12
+!i122 4
+L0 2731 78
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vpicorv32_pcpi_div
+R1
+R2
+!i10b 1
+!s100 [n;lg]dc;YAA00Nje1z>e1
+R3
+IEbno:Y^E=NBMieAP5Q@^A0
+R4
+S1
+R0
+R5
+R11
+R12
+!i122 4
+L0 2420 91
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vpicorv32_pcpi_fast_mul
+R1
+R2
+!i10b 1
+!s100 FJY]9e89Gj2ZbYlAg:5Dm0
+R3
+I;>hbn]TkgA00OMT]D@MeG1
+R4
+S1
+R0
+R5
+R11
+R12
+!i122 4
+L0 2318 96
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vpicorv32_pcpi_mul
+R1
+R2
+!i10b 1
+!s100 W>><hLUXfR[HHOHSkeM011
+R3
+IlGXMm<9BH9d76hR7RFHlE0
+R4
+S1
+R0
+R5
+R11
+R12
+!i122 4
+L0 2197 120
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vpicorv32_regs
+R1
+R2
+!i10b 1
+!s100 UC[n`NhORlB6dU=EYlQW^2
+R3
+IC4d0kL7]GT:7k`f6C0=5k1
+R4
+S1
+R0
+R5
+R11
+R12
+!i122 4
+L0 2174 17
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vpicorv32_wb
+R1
+R2
+!i10b 1
+!s100 <4`KdWjeF5IOZGhIQg0m]2
+R3
+I0Po;6LnFR8o4OEiH4c>AE3
+R4
+S1
+R0
+R5
+R11
+R12
+!i122 4
+L0 2815 235
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vreset_control
+R1
+R2
+!i10b 1
+!s100 V5QHQO][JN;`i<jJzS1D^2
+R3
+IKMbLH=Y]QEFzi^i]<Ve=11
+R4
+S1
+R0
+R5
+8../rtl/reset.sv
+F../rtl/reset.sv
+!i122 4
+L0 3 20
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vsimpleuart
+R1
+R2
+!i10b 1
+!s100 jOl0Rf5lEiL^W;O_Fe?HS2
+R3
+IC@nPOh0S[0CHdJa>H1I`F3
+R4
+S1
+R0
+R5
+8../rtl/simpleuart.sv
+F../rtl/simpleuart.sv
+!i122 4
+L0 20 118
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vsram
+R1
+R2
+!i10b 1
+!s100 >IoHJ2egkAYW6RZKjKhkC1
+R3
+I<Md<9Q]JKc6gRZBBRNW6^0
+R4
+S1
+R0
+w1758086579
+8../rtl/sram.sv
+F../rtl/sram.sv
+F..\rtl\mem_init.sv
+!i122 4
+L0 20 330
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vtop
+R1
+R2
+!i10b 1
+!s100 @NKjITMn[YDVNRn5Peh_90
+R3
+I<IDbhn<EC6SSiP=oH;kfk0
+R4
+S1
+R0
+w1758086066
+8../rtl/top.sv
+F../rtl/top.sv
+!i122 4
+L0 6 176
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vuart_wrap
+R1
+R2
+!i10b 1
+!s100 ^U_EDjWmY7`>V`];beg8A2
+R3
+IMlMkHjUB=^Q0AiM?kVM9S1
+R4
+S1
+R0
+R5
+8../rtl/uart_wrap.sv
+F../rtl/uart_wrap.sv
+!i122 4
+L0 1 43
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9

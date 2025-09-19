@@ -1,5 +1,5 @@
 Analysis & Synthesis report for picorv32-DE2115
-Sat Sep 13 11:15:25 2025
+Sun Sep 14 16:40:12 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -63,7 +63,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 13 11:15:22 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 14 16:40:10 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; picorv32-DE2115                                 ;
 ; Top-level Entity Name              ; top                                             ;
@@ -174,18 +174,18 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.05        ;
+; Average used               ; 1.06        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.5%      ;
-;     Processor 3            ;   0.4%      ;
-;     Processor 4            ;   0.4%      ;
-;     Processor 5            ;   0.4%      ;
-;     Processor 6            ;   0.3%      ;
-;     Processor 7            ;   0.3%      ;
-;     Processor 8            ;   0.3%      ;
+;     Processor 2            ;   0.6%      ;
+;     Processor 3            ;   0.5%      ;
+;     Processor 4            ;   0.5%      ;
+;     Processor 5            ;   0.5%      ;
+;     Processor 6            ;   0.5%      ;
+;     Processor 7            ;   0.4%      ;
+;     Processor 8            ;   0.4%      ;
 ;     Processors 9-16        ;   0.3%      ;
 +----------------------------+-------------+
 
@@ -860,7 +860,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:03:41     ;
+; Top            ; 00:02:42     ;
 +----------------+--------------+
 
 
@@ -870,7 +870,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sat Sep 13 11:11:16 2025
+    Info: Processing started: Sun Sep 14 16:37:11 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off picorv32-DE2115 -c picorv32-DE2115
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -1051,10 +1051,10 @@ Info (21057): Implemented 114029 device resources after synthesis - the final re
     Info (21061): Implemented 113953 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 5501 megabytes
-    Info: Processing ended: Sat Sep 13 11:15:25 2025
-    Info: Elapsed time: 00:04:09
-    Info: Total CPU time (on all processors): 00:04:27
+    Info: Peak virtual memory: 5558 megabytes
+    Info: Processing ended: Sun Sep 14 16:40:12 2025
+    Info: Elapsed time: 00:03:01
+    Info: Total CPU time (on all processors): 00:03:14
 
 
 +------------------------------------------+
