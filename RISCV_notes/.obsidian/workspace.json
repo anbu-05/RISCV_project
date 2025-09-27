@@ -8,49 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "33430c75ca1df184",
+            "id": "fe35cb4244406e65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progress before hiatus.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Progress before hiatus"
-            }
-          },
-          {
-            "id": "0118f503c076e43a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Progress.md",
+                "file": "progress/Progress.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Progress"
             }
-          },
-          {
-            "id": "b99f46e58a4bba8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RISCV_core/core specs/core specifications Rev2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "core specifications Rev2"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,15 +169,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0118f503c076e43a",
+  "active": "fe35cb4244406e65",
   "lastOpenFiles": [
-    "Team/MoM 13 Sep.md",
-    "Progress.md",
-    "Team/notes.md",
+    "progress/gpt/SRAM implementation verification.md",
+    "progress/Progress.md",
+    "images/RISCV_core_datapath.png",
+    "images/rtl view 1-1.png",
+    "images/rtl view 1.pdf",
     "RISCV_core/core specs/core specifications Rev2.md",
+    "progress/gpt",
+    "progress",
+    "progress/Progress before hiatus.md",
+    "Instruction set.md",
+    "Untitled.md",
+    "Team/MoM 13 Sep.md",
+    "Team/notes.md",
     "material/DE2_115_User_manual.pdf",
     "material/DE2_115_User_manual.pdf.crdownload",
-    "Instruction set.md",
     "rulebook rev 1/rover guidelines.md",
     "rulebook rev 1",
     "rulebook rev 1",
@@ -215,15 +194,9 @@
     "RISCV_core/core specs/core specifications Rev3.pdf",
     "RISCV_core/core specs",
     "RISCV_core/core specs/core specifications Rev3.md",
-    "RISCV_core/core specs/core specifications Rev2.pdf",
     "RISCV_core/Testcases.md",
-    "Progress before hiatus.md",
     "IAC.md",
-    "material/~$3. Synthesizable-coding-style.pptx",
-    "material/3. Synthesizable-coding-style.pptx",
     "images/WhatsApp Image 2025-05-10 at 02.02.47_7d830a6c.jpg",
-    "images/rtl view 1-1.png",
-    "images/RISCV_core_datapath.png",
     "images/program 2 modelsim.jpg",
     "images/program 1 modelsim.jpg",
     "pictures/RISCV_core_datapath.png",

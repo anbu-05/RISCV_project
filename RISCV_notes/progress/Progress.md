@@ -134,7 +134,35 @@ tomorrow:
 	- read: i will implement both sync and async, and have a compiler directive to pick between the two.
 	- read during write: write-through
 	- it will have 32-bit aligned addresses. a 13 bit address line, but also a 4 bit wstrb.
+	- here's about writestrobes: [RISCV_core - ELI5 SRAM behavior](https://chatgpt.com/c/68cbf088-0d80-8322-92fd-6f1e1352348d)
 	- the data itself will be in a hex file and we will load it onto memory using `$readmemh`
 - started work on the sram.sv file
 	- made async mem read behavior -need to verify using chatgpt
 	- working on mem write behavior
+
+#### 26 Sep
+- **few questions for prof: why do we use write strobes instead of just direct addresses?**
+- [[SRAM implementation verification]]
+- writing new sram behavior referred to this: https://chatgpt.com/s/t_68d7695722f481918379c2fe7a6f6adf
+### 27 Sep
+- ive decided async read would be too complicated to implement because of write through. i am gonna implement only sync read -the mem block will return data 1 cycle after the address is received.
+- i made the first iteration, and ik for a fact it's full of misunderstandings. i need to go through [this](https://chatgpt.com/s/t_68d7d3f468a48191bc7ec89bfa873d01) to find required changes
+- i read through chatgpt, made some more changes.
+- ive realised that i need to make a testbench for this sram.sv module if i wanna develop it any further -because im at a point where everything seems like it will work right, but chatgpt tells me that it will work right logically, even in simulation, but it wont work right on sillicon.
+https://chatgpt.com/s/t_68d8366faaa0819195eae2e6e3fca33e
+
+>Nice — you’re very close. Your instinct (make the writes happen into a buffer, then write that into memory, then read memory) is reasonable _in simulation_, but it relies on implementation details and blocking-assignment behaviour that are fragile and can badly mismatch real hardware or synthesis tools. Below I’ll walk through the exact problems (ELI15), why they matter, and give a clean, robust replacement pattern you can drop in.
+
+> ## Quick test ideas to convince yourself
+> 
+> - Write byte 1 only (`wstrb = 4'b0010`) to address A with data D. Immediately read address A in the same cycle. Expect read to return old_word with byte1 replaced by D[15:8] (merged result) — your testbench should assert this.
+>     
+> - Try halfword write (`wstrb = 4'b0011`) and verify both bytes changed.
+>     
+> - Try no-write (`wstrb = 4'b0000`) and ensure read returns the old memory.
+>     
+> - Run the tests both with the simulator and on FPGA (or with vendor memory model) if possible — behavior should match.
+
+---
+- i need to make a testbench for the sram module
+- i need to recreate the github repo for this project properly (referring to how i did it for vyadh)
