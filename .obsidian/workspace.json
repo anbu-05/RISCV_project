@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "89753760733b7170",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e19b37e3dac92d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe35cb4244406e65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "progress/Progress.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Progress"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "59f174fab5cde3e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "790f3222d0b06ff3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dadf29520750b8cc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5815ab3163df1350",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7bee6911119f8132",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b75cf02a5f7515b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a8aa2b39e27008c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "251d27e1d74c1244",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Progress.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Progress"
+            }
+          },
+          {
+            "id": "f43a3e1d25c475d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Progress.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Progress"
+            }
+          },
+          {
+            "id": "1bdb3a32f39b8e3f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a2d821cfdb141a22",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Progress.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Progress"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "fe35cb4244406e65",
+  "lastOpenFiles": [
+    "progress/gpt/SRAM implementation verification.md",
+    "material/random findings.md",
+    "progress/Progress.md",
+    "images/RISCV_core_datapath.png",
+    "images/rtl view 1-1.png",
+    "images/rtl view 1.pdf",
+    "RISCV_core/core specs/core specifications Rev2.md",
+    "progress/gpt",
+    "progress",
+    "progress/Progress before hiatus.md",
+    "Instruction set.md",
+    "Untitled.md",
+    "Team/MoM 13 Sep.md",
+    "Team/notes.md",
+    "material/DE2_115_User_manual.pdf",
+    "material/DE2_115_User_manual.pdf.crdownload",
+    "rulebook rev 1/rover guidelines.md",
+    "rulebook rev 1",
+    "rulebook rev 1",
+    "Team",
+    "RISCV_core/core specs/core specifications.md",
+    "RISCV_core/core specs/core specifications Rev3.pdf",
+    "RISCV_core/core specs",
+    "RISCV_core/core specs/core specifications Rev3.md",
+    "RISCV_core/Testcases.md",
+    "IAC.md",
+    "images/WhatsApp Image 2025-05-10 at 02.02.47_7d830a6c.jpg",
+    "images/program 2 modelsim.jpg",
+    "images/program 1 modelsim.jpg",
+    "pictures/RISCV_core_datapath.png",
+    "RISCV_core_datapath.png",
+    "pictures/WhatsApp Image 2025-05-10 at 02.02.47_7d830a6c.jpg",
+    "pictures/rtl view 1-1.png",
+    "pictures/program 2 modelsim.jpg",
+    "notes/branch and jump instructions.md",
+    "Parts of the core.md",
+    "Welcome.md"
+  ]
+}
