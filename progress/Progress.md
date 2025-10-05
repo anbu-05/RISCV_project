@@ -166,3 +166,7 @@ https://chatgpt.com/s/t_68d8366faaa0819195eae2e6e3fca33e
 ---
 - i need to make a testbench for the sram module
 - i need to recreate the github repo for this project properly (referring to how i did it for vyadh)
+
+### Oct 5
+- reformated the RISCV github page (didnt check the README tho)
+	- discovered about worktrees, finally understood how branches work on the directory.
