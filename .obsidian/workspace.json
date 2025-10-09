@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "others/UART-Timer-Interrupt_Rev2.md",
+                "file": "others/UART-Timer-Interrupt_Rev3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UART-Timer-Interrupt_Rev2"
+              "title": "UART-Timer-Interrupt_Rev3"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "others/UART-Timer-Interrupt_Rev2.md",
+                "file": "others/UART-Timer-Interrupt_Rev3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UART-Timer-Interrupt_Rev2"
+              "title": "UART-Timer-Interrupt_Rev3"
             }
           }
         ]
@@ -186,7 +186,7 @@
   "active": "b90689310f7b41b3",
   "lastOpenFiles": [
     "progress/Progress.md",
-    "others/UART-Timer-Interrupt_Rev2.md",
+    "others/UART-Timer-Interrupt_Rev3.md",
     "others/attachments/Pasted image 20251009210101.png",
     "others/attachments",
     "Pasted image 20251009210038.png",

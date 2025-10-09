@@ -185,7 +185,7 @@ had a meeting with jayakrishnan sir
 - he needs this for his a CDAC meeting which he has tomorrow afternoon
 
 - this CPU probably needs a bus of sorts -everything is connected to everything, there is no bus in the top module
-- checkout for the research work done on this: [[UART-Timer-Interrupt_Rev2]]
+- checkout for the research work done on this: [[UART-Timer-Interrupt_Rev3]]
 
 ---
 - note: there's this snippet of code in simpleuart.sv that might be useful in making the SRAM:

@@ -2,6 +2,7 @@
 - `baud ≈ clk_freq / (cfg_divider + 1)`
 - "`uart_wrap` gives software two registers: a **divider** (at `addr==8`) that sets the baud clock, and a **data** register (at `addr==C`) you write to to transmit a byte or read from to receive a byte. The `simpleuart` module does the actual bit-level sending and sampling using those registers."
 - "`cfg_divider` is the timing divider. The transmit and receive counters compare against it."
+- Grug’s top-level explicitly says his UART is a “wrapper around the simpleuart from … picorv32.”
 #### Timer
 - there is a built in timer in the picoRV32 core 
 - [picorv32/README.md at main · YosysHQ/picorv32](https://github.com/YosysHQ/picorv32/blob/main/README.md#timer)
@@ -47,3 +48,8 @@
 - picorv32's interrupt processing flow: ![[Pasted image 20251009210101.png]]
 - there is some confusing/incorrect working in the documentation, refer to around 10:20 in the video
 - grug huhler adds an additional library to his software side (the gcc compiler) that extends to his custom interrupt instructions
+
+- PicoRV32 uses custom IRQ instructions instead of the full privileged interrupt mechanism so that it's compact for small SoCs
+	- Toolchain/ABI assumptions: normal C code compiled with an ordinary toolchain won’t automatically include support for q-registers or `retirq`. Grug and the picoRV32 project provide assembler macros and samples so software can use them, but be careful if you try to compile arbitrary OS code or toolchain-generated ISR stubs.
+    
+	- If you expect standard RISC-V trap behaviour (M-mode / S-mode vectors, etc.), it won’t match -picoRV32’s approach is different by design.
