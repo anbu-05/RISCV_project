@@ -170,3 +170,36 @@ https://chatgpt.com/s/t_68d8366faaa0819195eae2e6e3fca33e
 ### Oct 5
 - reformated the RISCV github page (didnt check the README tho)
 	- discovered about worktrees, finally understood how branches work on the directory.
+
+### Oct 9
+- reading through chipverify to learn how to make testbenches
+	- [SystemVerilog TestBench](https://www.chipverify.com/systemverilog/systemverilog-simple-testbench)
+	- [SystemVerilog Testbench Example 1](https://www.chipverify.com/systemverilog/systemverilog-testbench-example-1)
+	- [UVM Testbench Example 1](https://www.chipverify.com/uvm/uvm-testbench-example-1)
+- taking reference from chatgpt on what files and code blocks to make [RISCV_core - Testbench example guidance](https://chatgpt.com/g/g-p-68c2b3f837f88191bf603055f1e243ba-riscv-core/c/68e6df5e-b3fc-8324-ad5b-657852e18a87)
+---
+had a meeting with jayakrishnan sir
+- he needs to know the specs and usage of UART and timer
+- needs to remove modules like LED controller, CDT (probably not CDT)
+- needs to add a timer and an interrupt module
+- he needs this for his a CDAC meeting which he has tomorrow afternoon
+
+- this CPU probably needs a bus of sorts -everything is connected to everything, there is no bus in the top module
+- checkout for the research work done on this: [[UART-Timer-Interrupt_Rev2]]
+
+---
+- note: there's this snippet of code in simpleuart.sv that might be useful in making the SRAM:
+```
+    always @(posedge clk) begin
+        if (!resetn) begin
+            cfg_divider <= DEFAULT_DIV;
+        end else begin
+            if (reg_div_we[0]) cfg_divider[ 7: 0] <= reg_div_di[ 7: 0];
+            if (reg_div_we[1]) cfg_divider[15: 8] <= reg_div_di[15: 8];
+            if (reg_div_we[2]) cfg_divider[23:16] <= reg_div_di[23:16];
+            if (reg_div_we[3]) cfg_divider[31:24] <= reg_div_di[31:24];
+        end
+    end
+```
+- note: need to get to this point (seeing that command list -which i assume is the cpu displaying all of it's available commands in the sample program) using an FPGA: https://youtu.be/49mK_JVVM_0?list=PL7bIsDBNgNWsOMSPGQcaWWmu-4CNgrxn_&t=447
+- 

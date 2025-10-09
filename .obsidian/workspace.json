@@ -8,17 +8,31 @@
         "type": "tabs",
         "children": [
           {
+            "id": "b90689310f7b41b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "others/UART-Timer-Interrupt_Rev2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UART-Timer-Interrupt_Rev2"
+            }
+          },
+          {
             "id": "fe35cb4244406e65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "progress/Progress.md",
+                "file": "others/UART-Timer-Interrupt_Rev2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Progress"
+              "title": "UART-Timer-Interrupt_Rev2"
             }
           }
         ]
@@ -169,11 +183,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe35cb4244406e65",
+  "active": "b90689310f7b41b3",
   "lastOpenFiles": [
+    "progress/Progress.md",
+    "others/UART-Timer-Interrupt_Rev2.md",
+    "others/attachments/Pasted image 20251009210101.png",
+    "others/attachments",
+    "Pasted image 20251009210038.png",
+    "others/Untitled",
     "progress/gpt/SRAM implementation verification.md",
     "material/random findings.md",
-    "progress/Progress.md",
     "images/RISCV_core_datapath.png",
     "images/rtl view 1-1.png",
     "images/rtl view 1.pdf",
@@ -192,8 +211,6 @@
     "rulebook rev 1",
     "Team",
     "RISCV_core/core specs/core specifications.md",
-    "RISCV_core/core specs/core specifications Rev3.pdf",
-    "RISCV_core/core specs",
     "RISCV_core/core specs/core specifications Rev3.md",
     "RISCV_core/Testcases.md",
     "IAC.md",
@@ -203,8 +220,6 @@
     "pictures/RISCV_core_datapath.png",
     "RISCV_core_datapath.png",
     "pictures/WhatsApp Image 2025-05-10 at 02.02.47_7d830a6c.jpg",
-    "pictures/rtl view 1-1.png",
-    "pictures/program 2 modelsim.jpg",
     "notes/branch and jump instructions.md",
     "Parts of the core.md",
     "Welcome.md"
