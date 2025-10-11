@@ -93,7 +93,7 @@ module top #(
 
    // Select which slave's output data is to be fed to core.
    assign mem_rdata = sram_sel ? sram_data_o :
-                      leds_sel ? leds_data_o :
+                     //  leds_sel ? leds_data_o :
                       uart_sel ? uart_data_o :
                       cdt_sel  ? cdt_data_o  : 32'h0;
 
@@ -141,17 +141,17 @@ module top #(
       .sram_data_o(sram_data_o)
    );
 
-   // FPGA LEDs wrapper
-   fpga_leds #(.LED_COUNT(LED_COUNT), .ACTIVE_LOW(1'b0)) soc_leds (
-      .clk(clk),
-      .reset_n(reset_n),
-      .leds_sel(leds_sel),
-      .leds_data_i(mem_wdata),
-      .we(mem_wstrb[0]),
-      .leds_ready(leds_ready),
-      .leds_data_o(leds_data_o),
-      .led_pins(leds)
-   );
+   // // FPGA LEDs wrapper
+   // fpga_leds #(.LED_COUNT(LED_COUNT), .ACTIVE_LOW(1'b0)) soc_leds (
+   //    .clk(clk),
+   //    .reset_n(reset_n),
+   //    .leds_sel(leds_sel),
+   //    .leds_data_i(mem_wdata),
+   //    .we(mem_wstrb[0]),
+   //    .leds_ready(leds_ready),
+   //    .leds_data_o(leds_data_o),
+   //    .led_pins(leds)
+   // );
 
    // picorv32 core
    picorv32 #(
