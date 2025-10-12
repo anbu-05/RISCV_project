@@ -202,4 +202,18 @@ had a meeting with jayakrishnan sir
     end
 ```
 - note: need to get to this point (seeing that command list -which i assume is the cpu displaying all of it's available commands in the sample program) using an FPGA: https://youtu.be/49mK_JVVM_0?list=PL7bIsDBNgNWsOMSPGQcaWWmu-4CNgrxn_&t=447
-- 
+
+
+---
+### Oct 12
+- we have to look into whether picorv32 is pipelined
+- if it is we have to look for alternatives/make our own riscv core
+- we need to look into alternatives but oct 13 (monday), if we're modifying by oct 18 (end of the week), and if we're building from scratch -by oct 25 (2 weeks)
+- we'll use the comp arch DA
+	- we'll have to modify it to boot from the sram, instead of hardcoding the data onto the sram module, i.e, create an sram module
+	- let the multiplication be multicycle, instead of making a combinational model
+		- afrath and vikas have a multipler already -it takes 18 cycles.
+		- few people have done division
+	- we'll explore division later
+	- we'll need to make an APB bus
+- to be done: include SRAM (teusday) > multiplication (teusday) > APB
