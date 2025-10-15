@@ -217,3 +217,6 @@ had a meeting with jayakrishnan sir
 	- we'll explore division later
 	- we'll need to make an APB bus
 - to be done: include SRAM (teusday) > multiplication (teusday) > APB
+
+### Oct 14
+- researched about bootloaders -their point. [[Bootloader]]
