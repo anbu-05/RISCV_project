@@ -1,86 +1,421 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
+Z0 !s12c _opt2
+Z1 !s99 nomlopt
+R0
+R1
+!s12c _opt1
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Z/projects/RISCV_project/RISCV_core/sim
-vInstructionMemory
-Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1757147116
-!i10b 1
-!s100 ^`lN=LamEbeFLjE_RY7CT3
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I8O_kMm@j6_K:d@0nWfWDT2
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-S1
-R0
-w1756915572
-8../rtl/InstructionMemory.sv
-F../rtl/InstructionMemory.sv
-!i122 0
-L0 1 12
-Z5 OV;L;2020.1;71
-r1
-!s85 0
-31
-Z6 !s108 1757147116.000000
-Z7 !s107 ../rtl/RISCV_core.sv|../rtl/ProgramCounter.sv|../rtl/InstructionMemory.sv|
-Z8 !s90 ../rtl/InstructionMemory.sv|../rtl/ProgramCounter.sv|../rtl/RISCV_core.sv|
-!i113 1
-Z9 tCvgOpt 0
-n@instruction@memory
-vProgramCounter
+Z3 dD:/Z/projects/RISCV_project/RISCV_core/sim
+T_opt
+!s110 1760598516
+V2MWUAFTJbE@AMS7V3KIdM2
+Z4 04 3 4 work top fast 0
+=1-74d4ddbd96fb-68f099f3-f3-90e4
 R1
-R2
-!i10b 1
-!s100 29]Iz8120[dZOV843lRXZ3
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM10U7 
+Z8 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z9 tCvgOpt 0
+n@_opt
+Z10 OL;O;2024.3;79
 R3
-I6Nn[9bME7R<R599@BYeb22
+T_opt1
+!s110 1760606553
+VL?k2X6<WkS9XR91E3f=U<0
 R4
-S1
-R0
-w1756817510
-8../rtl/ProgramCounter.sv
-F../rtl/ProgramCounter.sv
-!i122 0
-L0 1 25
+=1-74d4ddbd96fb-68f0b958-24e-7a1c
+R1
 R5
-r1
-!s85 0
-31
 R6
 R7
 R8
-!i113 1
+Z11 o-quiet -auto_acc_if_foreign -work work +acc
 R9
-n@program@counter
-vProgramCounter_tb
-R1
-R2
-!i10b 1
-!s100 :i09eYzBQaE1oPXL8_T2M2
+n@_opt1
+R10
 R3
-IMnjZZD<@:e88`UGdJmGII0
-R4
-S1
-R0
-w1757146744
-8../tb/ProgramCounter_tb.sv
-F../tb/ProgramCounter_tb.sv
-!i122 1
-L0 34 77
+T_opt2
+!s110 1760608987
+VVM_Qi]Bz?6?g`fOkO;9?U0
+04 6 4 work top_tb fast 0
+=1-74d4ddbd96fb-68f0c2da-28f-9c18
+R1
 R5
+R6
+!s124 OEM10U8 
+R8
+R11
+R9
+n@_opt2
+R10
+R3
+vALU
+Z12 2../rtl/ALU.sv|../rtl/Decoder.sv|../rtl/InstructionMemory.sv|../rtl/ProgramCounter.sv|../rtl/RegisterFile.sv|../rtl/TypesPkg.sv|../rtl/top.sv
+Z13 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z14 DXx4 work 8 TypesPkg 0 22 kDG1bL7QL6CadZ8PkVkHg1
+DXx4 work 11 ALU_sv_unit 0 22 @RG>AfNI`Bi26zdm9>lhh1
+Z15 !s110 1760609338
+Z16 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 d;QOG[Rae<WU5?]Eo1mac3
+IG:4Ed5=[4=Zd3g:kfCVVk2
+!s105 ALU_sv_unit
+S1
+Z17 dD:/Z/projects/RISCV_project/Basic_RISCV_core/RISCV_core/sim
+Z18 w1760564138
+Z19 8../rtl/ALU.sv
+Z20 F../rtl/ALU.sv
+!i122 41
+L0 4 35
+Z21 OL;L;2024.3;79
+31
+Z22 !s108 1760609338.000000
+Z23 !s107 ../rtl/top.sv|../rtl/TypesPkg.sv|../rtl/RegisterFile.sv|../rtl/ProgramCounter.sv|../rtl/InstructionMemory.sv|../rtl/Decoder.sv|../rtl/ALU.sv|
+Z24 !s90 -reportprogress|300|-sv|../rtl/ALU.sv|../rtl/Decoder.sv|../rtl/InstructionMemory.sv|../rtl/ProgramCounter.sv|../rtl/RegisterFile.sv|../rtl/TypesPkg.sv|../rtl/top.sv|
+!i113 0
+o-sv
+R9
+n@a@l@u
+XALU_sv_unit
+R12
+R13
+R14
+R15
+V@RG>AfNI`Bi26zdm9>lhh1
+r1
+!s85 0
+!i10b 1
+!s100 jEPlG2PI?@M;W9D]=AHjW0
+I@RG>AfNI`Bi26zdm9>lhh1
+!i103 1
+S1
+R17
+R18
+R19
+R20
+!i122 41
+Z25 L0 1 0
+R21
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+n@a@l@u_sv_unit
+vDecoder
+R12
+R13
+R14
+DXx4 work 15 Decoder_sv_unit 0 22 aa8>9Gi7U;?`=[djnXNBV3
+R15
+R16
+r1
+!s85 0
+!i10b 1
+!s100 :?k`o60^MUfjzkW;k36aQ2
+IAYX7^6AHlE1^VFiVL7h]D3
+!s105 Decoder_sv_unit
+S1
+R17
+Z26 w1760596743
+Z27 8../rtl/Decoder.sv
+Z28 F../rtl/Decoder.sv
+!i122 41
+L0 4 151
+R21
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+n@decoder
+XDecoder_sv_unit
+R12
+R13
+R14
+R15
+Vaa8>9Gi7U;?`=[djnXNBV3
+r1
+!s85 0
+!i10b 1
+!s100 S]zG77z8FgU=YjX37^G^Q2
+Iaa8>9Gi7U;?`=[djnXNBV3
+!i103 1
+S1
+R17
+R26
+R27
+R28
+!i122 41
+R25
+R21
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+n@decoder_sv_unit
+vInstructionMemory
+R12
+R13
+R15
+!i10b 1
+!s100 f=2oFLoSnFi`Y3@;WooIl2
+I2`9g>?;7UQ@li>=kY[2FX3
+S1
+R17
+w1760608126
+8../rtl/InstructionMemory.sv
+F../rtl/InstructionMemory.sv
+!i122 41
+L0 1 12
+R16
+R21
 r1
 !s85 0
 31
-R6
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+n@instruction@memory
+vProgramCounter
+R12
+R13
+R15
+!i10b 1
+!s100 Hh0Ed44A8N<<PYJ:L`nMS0
+I_6QoOdHfO<`0W;A:hB[Xz1
+S1
+R17
+w1760597510
+8../rtl/ProgramCounter.sv
+F../rtl/ProgramCounter.sv
+!i122 41
+L0 1 42
+R16
+R21
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+n@program@counter
+vProgramCounter_tb
+2../tb/ProgramCounter_tb.sv
+R13
+!s110 1760598512
+!i10b 1
+!s100 :i09eYzBQaE1oPXL8_T2M2
+IkM4<YzLBk:dFlP@RbG1>V2
+S1
+R17
+Z29 w1760564074
+8../tb/ProgramCounter_tb.sv
+F../tb/ProgramCounter_tb.sv
+!i122 21
+L0 34 77
+R16
+R21
+r1
+!s85 0
+31
+!s108 1760598512.000000
 !s107 ../tb/ProgramCounter_tb.sv|
-!s90 ../tb/ProgramCounter_tb.sv|
-!i113 1
+!s90 -reportprogress|300|../tb/ProgramCounter_tb.sv|
+!i113 0
 R9
 n@program@counter_tb
+vRegisterFile
+R12
+R13
+R15
+!i10b 1
+!s100 :3Hi2GVI;l>J5Aa@DGR[;2
+IX=R[8GLUCoS8^2W^hKMm_3
+S1
+R17
+w1760598191
+8../rtl/RegisterFile.sv
+F../rtl/RegisterFile.sv
+!i122 41
+L0 1 35
+R16
+R21
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+n@register@file
+vtop
+R12
+R13
+R14
+Z30 DXx4 work 11 top_sv_unit 0 22 AF7N1OG3c4J_57UlR5A?U0
+R15
+R16
+r1
+!s85 0
+!i10b 1
+!s100 4A2QmQValiLK8z>[Y8eW50
+IbR>`mDWb@La1H>J]6HBES0
+Z31 !s105 top_sv_unit
+S1
+R17
+Z32 w1760607300
+Z33 8../rtl/top.sv
+Z34 F../rtl/top.sv
+!i122 41
+L0 3 78
+R21
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+Xtop_sv_unit
+R12
+R13
+R14
+R15
+VAF7N1OG3c4J_57UlR5A?U0
+r1
+!s85 0
+!i10b 1
+!s100 46fLIe[F[CC7Rigi98;km0
+IAF7N1OG3c4J_57UlR5A?U0
+!i103 1
+S1
+R17
+R32
+R33
+R34
+!i122 41
+R25
+R21
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+vtop_tb
+2../tb/top_tb.sv
+R13
+!s110 1760609339
+!i10b 1
+!s100 fShFC@9`:KOO9m]@L`GWP3
+ICY2VdzGKL0@cO[hAY`0<O0
+S1
+R17
+w1760608756
+8../tb/top_tb.sv
+F../tb/top_tb.sv
+!i122 42
+L0 3 60
+R16
+R21
+r1
+!s85 0
+31
+R22
+!s107 ../tb/top_tb.sv|
+!s90 -reportprogress|300|-sv|../tb/top_tb.sv|
+!i113 0
+o-sv
+R9
+XTypesPkg
+R12
+R13
+R15
+!i10b 1
+!s100 _7o3Vf9i]NGHE4:`GRobA1
+IkDG1bL7QL6CadZ8PkVkHg1
+S1
+R17
+R29
+8../rtl/TypesPkg.sv
+F../rtl/TypesPkg.sv
+!i122 41
+R25
+VkDG1bL7QL6CadZ8PkVkHg1
+R21
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9
+n@types@pkg
+vwr_data_mux
+R12
+R13
+R14
+R30
+R15
+R16
+r1
+!s85 0
+!i10b 1
+!s100 7=1Q`2Y`dzn<IlM_aGSO03
+IzgzAbAOf5W04Vg?:5mX4_0
+R31
+S1
+R17
+R32
+R33
+R34
+!i122 41
+L0 82 14
+R21
+31
+R22
+R23
+R24
+!i113 0
+o-sv
+R9

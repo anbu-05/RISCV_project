@@ -1,0 +1,1 @@
+C:/intelFPGA_lite/24.1std/questa_fse/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 737568 work.top -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt -id 1-74d4ddbd96fb-68f099f3-f3-90e4

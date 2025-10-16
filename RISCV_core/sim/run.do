@@ -2,12 +2,17 @@ vlib work
 vmap work work
 
 # Compile design RTL
-vlog ../rtl/*.sv
+vlog -sv ../rtl/*.sv
 
 # Compile testbench
-vlog ../tb/*_tb.sv
+vlog -sv ../tb/*_tb.sv
 
 # Simulate
-vsim ProgramCounter_tb
+# need the args to make sure questa doesnt optimize the run and hide certain variables.
+vsim work.top_tb -voptargs="+acc" 
+
 add wave *
-run 200ps
+
+# add wave top_tb/clk top_tb/reset top_tb/enable top_tb/DUT/addr top_tb/DUT/PC1/*
+
+run 100ns

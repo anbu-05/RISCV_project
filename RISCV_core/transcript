@@ -1,0 +1,558 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 win64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+pwd
+# D:/Z/projects/RISCV_project/Basic_RISCV_core/RISCV_core
+cd sim
+# reading modelsim.ini
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 14:27:54 on Oct 16,2025
+# vlog -reportprogress 300 ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 14:27:55 on Oct 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim top 
+# Start time: 14:27:55 on Oct 16,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.TypesPkg(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.Decoder_sv_unit(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 67400
+#           Attempting to use alternate WLF file "./wlftzwea6a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftzwea6a
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 14:52:29 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 14:52:29 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:52:31 on Oct 16,2025, Elapsed time: 0:24:36
+# Errors: 0, Warnings: 2
+# vsim work.top -voptargs=""+acc"" 
+# Start time: 14:52:31 on Oct 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.TypesPkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.Decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 67400
+#           Attempting to use alternate WLF file "./wlftghw27y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftghw27y
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:06:09 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 15:06:10 on Oct 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:06:10 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../tb/top_tb.sv 
+# -- Compiling module top_tb
+# ** Error: (vlog-13069) ../tb/top_tb.sv(10): near "top": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 15:06:10 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 8
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog -sv ../tb/*_tb.sv"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:06:22 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 15:06:22 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:06:23 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../tb/top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 15:06:23 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:06:25 on Oct 16,2025, Elapsed time: 0:13:54
+# Errors: 1, Warnings: 3
+# vsim work.top_tb -voptargs=""+acc"" //need the args to make sure questa doesnt optimize the run and hide certain variables. 
+# Start time: 15:06:25 on Oct 16,2025
+# ** Error (suppressible): (vsim-19) Failed to access library 'variables' at "variables".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 11
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:17:47 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 15:17:48 on Oct 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:17:48 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../tb/top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 15:17:48 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.top_tb -voptargs=""+acc"" 
+# Start time: 15:06:25 on Oct 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.Decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 67400
+#           Attempting to use alternate WLF file "./wlftxm6zn2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxm6zn2
+# [0.0 ns] TESTBENCH: start
+# [20.0 ns] TESTBENCH: asserting reset (active-low)
+# [40.0 ns] TESTBENCH: releasing reset
+# [50.0 ns] TESTBENCH: enabling DUT
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:21:49 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 15:21:49 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:21:49 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../tb/top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 15:21:49 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:21:51 on Oct 16,2025, Elapsed time: 0:15:26
+# Errors: 1, Warnings: 3
+# vsim work.top_tb -voptargs=""+acc"" 
+# Start time: 15:21:52 on Oct 16,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.Decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 67400
+#           Attempting to use alternate WLF file "./wlftxeb3gb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxeb3gb
+# [0.0 ns] TESTBENCH: start
+# [20.0 ns] TESTBENCH: asserting reset (active-low)
+# [40.0 ns] TESTBENCH: releasing reset
+# [50.0 ns] TESTBENCH: enabling DUT
+wave add top_tb/DUT/PC1
+wave add top_tb/DUT/PC1/*
+add wave top_tb/DUT/PC1/*
+# Saving layout as "Simulate_RISCV"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:33:02 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 15:33:02 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:33:03 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../tb/top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 15:33:03 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:33:05 on Oct 16,2025, Elapsed time: 0:11:13
+# Errors: 0, Warnings: 2
+# vsim work.top_tb -voptargs=""+acc"" 
+# Start time: 15:33:05 on Oct 16,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.Decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 67400
+#           Attempting to use alternate WLF file "./wlftgzdav7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgzdav7
+# ** Error: (vish-4014) No objects found matching 'top_tb/clk,'.
+# (vish-4014) No objects found matching 'top_tb/reset,'.
+# (vish-4014) No objects found matching 'top_tb/enable,'.
+# (vish-4014) No objects found matching 'top_tb/DUT/addr,'.
+# Error in macro ./run.do line 14
+# (vish-4014) No objects found matching 'top_tb/clk,'.
+# (vish-4014) No objects found matching 'top_tb/reset,'.
+# (vish-4014) No objects found matching 'top_tb/enable,'.
+# (vish-4014) No objects found matching 'top_tb/DUT/addr,'.
+#     while executing
+# "add wave top_tb/clk, top_tb/reset, top_tb/enable, top_tb/DUT/addr, top_tb/DUT/PC1/*"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:33:59 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 15:33:59 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:34:00 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../tb/top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 15:34:00 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:34:02 on Oct 16,2025, Elapsed time: 0:00:57
+# Errors: 1, Warnings: 3
+# vsim work.top_tb -voptargs=""+acc"" 
+# Start time: 15:34:02 on Oct 16,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.Decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 67400
+#           Attempting to use alternate WLF file "./wlft18ii0t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft18ii0t
+# ** Error: (vish-4014) No objects found matching 'top_tb.clk,'.
+# (vish-4014) No objects found matching 'top_tb.reset,'.
+# (vish-4014) No objects found matching 'top_tb.enable,'.
+# (vish-4014) No objects found matching 'top_tb/DUT.addr,'.
+# Error in macro ./run.do line 14
+# (vish-4014) No objects found matching 'top_tb.clk,'.
+# (vish-4014) No objects found matching 'top_tb.reset,'.
+# (vish-4014) No objects found matching 'top_tb.enable,'.
+# (vish-4014) No objects found matching 'top_tb/DUT.addr,'.
+#     while executing
+# "add wave top_tb.clk, top_tb.reset, top_tb.enable, top_tb/DUT.addr, top_tb/DUT/PC1.*"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:35:40 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 15:35:40 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:35:41 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../tb/top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 15:35:41 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:35:43 on Oct 16,2025, Elapsed time: 0:01:41
+# Errors: 1, Warnings: 2
+# vsim work.top_tb -voptargs=""+acc"" 
+# Start time: 15:35:43 on Oct 16,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.Decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 67400
+#           Attempting to use alternate WLF file "./wlfts3gyc6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts3gyc6
+# [0.0 ns] TESTBENCH: start
+# [20.0 ns] TESTBENCH: asserting reset (active-low)
+# [40.0 ns] TESTBENCH: releasing reset
+# [50.0 ns] TESTBENCH: enabling DUT
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:38:58 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../rtl/ALU.sv ../rtl/Decoder.sv ../rtl/InstructionMemory.sv ../rtl/ProgramCounter.sv ../rtl/RegisterFile.sv ../rtl/TypesPkg.sv ../rtl/top.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package TypesPkg
+# -- Compiling module ALU
+# -- Compiling package Decoder_sv_unit
+# -- Compiling module Decoder
+# -- Compiling module InstructionMemory
+# -- Compiling module ProgramCounter
+# -- Compiling module RegisterFile
+# -- Compiling package TypesPkg
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# -- Compiling module wr_data_mux
+# 
+# Top level modules:
+# 	top
+# End time: 15:38:58 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 15:38:58 on Oct 16,2025
+# vlog -reportprogress 300 -sv ../tb/top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 15:38:59 on Oct 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
