@@ -1,54 +1,46 @@
-# RISCV cpu core
+# RISC-V CPU Core
 
-this is a personal project of mine where i try to make a RISCV cpu core. it started off from a assignment my professor gave me -and it's come a long way.
+This is a personal project where I’ve been building a RISC-V CPU core from scratch in SystemVerilog. It started as a class assignment and has evolved into a complete custom RISC-V core with both simulation and FPGA implementations.
 
-#### the progress so far
+---
 
-### note: the project is undergoing major restructuring
+## Current Status
 
-i've made a cpu core using SystemVerilog, based on the RISCV32E ISA (future plans to use RISCV32I). it includes a program counter, decoder, registerfile, ALU, instruction memory, and data memory.
+The main development for this project has now moved to a dedicated branch focused entirely on the custom RISC-V core. The documentation there is more detailed and up to date.
 
-i've simulated everything on intel modelsim. there are a few bugs to fix, more tests to run, but it works pretty well
+**If you want to build, simulate, or modify the RISC-V core, switch to the following branch:**
 
-i've also implemented it on an FPGA. i used an altera DE2-115 (my university allows me to use them (big W honestly)), and intel quartus prime lite. -so all of my code is synthesizable.
+```
+branch: Basic_RISCV_core
+```
 
+You can find full setup instructions, simulation steps, compiler usage, and FPGA build notes directly in that branch’s `README.md` file.
 
+---
 
-## the core
+## Overview (Main Branch)
 
-![dataflow diagram](RISCV_notes/images/RISCV_core_datapath.png)
+This main branch currently contains the legacy setup and earlier work before the restructuring. It includes partial implementations and test versions from the original ModelSim and Quartus builds.
 
-#### RISCV_notes:
-there are a few differences between the simulation (modelsim) and FPGA (quartus) implementations. I am however trying to unify the modelsim and quartus implementations as much as possible (a few problems with quartus prime).
+If you’re just exploring the history or earlier iterations of the design, you can browse the older directories here. For actual development or testing, use the **Basic_RISCV_core** branch.
 
-- data memory is not implemented in the quartus version -essentially the simuation has memory instructions, while the implementation doesnt, yet
-- the instruction memory is different in the two versions. modelsim has an un-synthesizable instruction memory
+---
 
-## simulation
+## Migration Notes
 
-i use intel modelsim to simulate the CPU.
-you can find it [here](before_hiatus\RISCV_core_modelsim)
+* All new design files (`rtl`, `tb`, and compiler scripts) are maintained in the `Basic_RISCV_core` branch.
+* This branch may still contain older non-synthesizable test modules and experimental code.
+* The new branch unifies simulation and FPGA codebases, with a clear workflow using QuestaSim and Quartus.
 
-#### example programs:
+---
 
-1. [basic instructions](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/programs/instructions.txt)
-![basic instructions](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/program%201%20modelsim.jpg)
+## Quick Links
 
-2. [up counter at x31](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/programs/example_program_1.txt)
-![upcounter at x31](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/program%202%20modelsim.jpg)
+* Active development: [`Basic_RISCV_core` branch](https://github.com/anbu-05/RISCV_project/tree/Basic_RISCV_core)
+* Old simulation example: [`others` branch](https://github.com/anbu-05/RISCV_project/tree/others)
 
+---
 
-## FPGA implementation
+## Summary
 
-the FPGA implementation was made using Quartus prime on an altera DE2-115.
-
-mostly all the components are the same in the implementation compared to the simulation, except for a few:
-- the [core testbench](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_modelsim/TB_Core.sv) has been replaced with a synthesizable [core](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_quartus/RISCV_core/RISCV_core.sv)
-- in the implentation, the [instruction memory](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_quartus/InstructionMemory.sv) loads the instructions from a [hex file](https://github.com/boneman420/RISCV-CPU-core-project/tree/main/RISCV_core_quartus/programs)
-
-
-
-
-#### example programs
-1. up counter at x31 [[instruction]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/programs/example_program_1.txt) [[hex file]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/RISCV_core_quartus/programs/example_program_1.hex)
-[[video]](https://github.com/boneman420/RISCV-CPU-core-project/blob/main/pictures/WhatsApp%20Video%202025-05-01%20at%2018.03.59_71232f9a.mp4)
+This branch is considered legacy. For all current and future development, please use the `Basic_RISCV_core` branch — it contains the latest README with updated setup instructions, directory structure, compiler details, and FPGA guidance.
