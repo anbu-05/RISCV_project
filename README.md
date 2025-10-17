@@ -4,15 +4,22 @@ This is a custom RISC-V core I built. The goal is to implement all the base inst
 
 ## Overview
 
-Main directory: `/Basic_RISCV_core/RISCV_core/`
+Main directory: `/Basic_RISCV_core/`
 
-It contains:
+Folder structure:
 
-- `rtl/` – design files
-- `tb/` – testbench files
-- `sim/` – simulator files (and `run.do`)
+```
+/Basic_RISCV_core/
+├─ program_compiler/ 
+│  └─ programs/          # storage for files
+├─ RISCV_core/           # Main CPU design
+│  ├─ rtl/               # Design (ALU, RegisterFile, Decoder, etc.)
+│  ├─ tb/                # Testbench files
+│  └─ sim/               # Questa simulation setup (run.do and configs)
+└─ README.md
+```
 
-The core is designed to work with Intel/Altera Questa sim.
+The core is designed to work with Intel/Altera QuestaSim.
 
 ## Running the Core
 
