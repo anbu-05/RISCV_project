@@ -556,3 +556,30 @@ do run.do
 # 	top_tb
 # End time: 15:38:59 on Oct 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+# End time: 15:39:00 on Oct 16,2025, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 2
+# vsim work.top_tb -voptargs=""+acc"" 
+# Start time: 15:39:01 on Oct 16,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# Loading work.TypesPkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ProgramCounter(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.Decoder_sv_unit(fast)
+# Loading work.Decoder(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ALU_sv_unit(fast)
+# Loading work.ALU(fast)
+# Loading work.wr_data_mux(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 67400
+#           Attempting to use alternate WLF file "./wlftrq7t1x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrq7t1x
+# [0.0 ns] TESTBENCH: start
+# [20.0 ns] TESTBENCH: asserting reset (active-low)
+# [40.0 ns] TESTBENCH: releasing reset
+# [50.0 ns] TESTBENCH: enabling DUT
