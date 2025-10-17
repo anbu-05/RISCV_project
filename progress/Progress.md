@@ -220,3 +220,12 @@ had a meeting with jayakrishnan sir
 
 ### Oct 14
 - researched about bootloaders -their point. [[Bootloader]]
+
+### Oct 16
+- fixed and ran the Basic RISCV32I implementation that i was working on since the beginning. paused picorv32 for a while
+- got everything working, but now ive realised that the compiler for the thing broke. im guessing the library im using to compile it has depreciated
+- im gonna use an online compiler. but i need to fix this manual compiler somehow
+
+### Oct 17
+- updated readme and pushed the changes
+- ive realised that the riscv-assembler library is dogshit. i am going to make my own riscv-assembler program.
