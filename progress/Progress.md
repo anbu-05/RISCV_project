@@ -239,3 +239,19 @@ had a meeting with jayakrishnan sir
 - so i made resetn wait only for 10 clock cycles to go high, and viola, it worked.
 - the simple program in testbench_ez worked and showed an output perfectly.
 - next step is to try out the regular testbench and get that working too
+---
+- i took a guess on what the real testbench does. and apparently, im right:
+>here's my guess: you can write a program in C, compile it, assemble it to a hex file, and load it into the testbench (prolly through a destination defined in the makefile). and then the testbench will take it and run the program and probably save the results in the memory in the test bench. and then the memory of the test bench gets dumped into a file that we can read later
+
+> # Your guess — is it correct?
+> 
+> Yes, essentially:
+> - You **write a program** (C or assembly), compile it into a `.hex` (the Makefile does that) and the testbench **loads that hex into simulated memory** (`$readmemh` into `mem.memory`).
+> - The testbench runs the core on that memory image.
+> - The program can print characters by writing to `0x10000000` (the bench prints them to STDOUT), and can signal success by writing `123456789` to `0x20000000`.
+> - The testbench does **not** automatically dump the whole simulated memory to disk by default — but you can add a line to do that (I'll show how).
+>
+> So your high-level idea is right. The testbench runs the program and provides a memory+IO environment, then reports results.
+
+- here's the progress report im making for the profs [[Progress report]]
+- 
