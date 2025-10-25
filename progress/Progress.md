@@ -229,3 +229,13 @@ had a meeting with jayakrishnan sir
 ### Oct 17
 - updated readme and pushed the changes
 - ive realised that the riscv-assembler library is dogshit. i am going to make my own riscv-assembler program.
+
+### Oct 26
+- i copy pasted the picrorv32.v file into a folder and decided to blindly start working with it
+- i was sick of trying to install linux (for now), so i decided to make my own testbench
+- i used testbench_ez.v as a reference and created testbench_0
+- after working with testbench_0, i understood the cpu pins (the memory pins mostly) and went back to see how to use testbench_ez
+- apparently i just wasnt simulating it long enough. the resetn will wait for 100 clock cycles to go high, and i was simulating for exactly 100 clock cycles.
+- so i made resetn wait only for 10 clock cycles to go high, and viola, it worked.
+- the simple program in testbench_ez worked and showed an output perfectly.
+- next step is to try out the regular testbench and get that working too
