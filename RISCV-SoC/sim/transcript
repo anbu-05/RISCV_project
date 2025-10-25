@@ -1,0 +1,1895 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 win64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+do run.do
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Copying C:/intelFPGA_lite/24.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:23:53 on Oct 26,2025
+# vlog -reportprogress 300 -sv ../rtl/*.sv 
+# ** Error: (vlog-7) Failed to open design unit file "../rtl/*.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 01:23:54 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 5
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog -sv ../rtl/*.sv"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:10 on Oct 26,2025
+# vlog -reportprogress 300 -sv ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:24:10 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:10 on Oct 26,2025
+# vlog -reportprogress 300 -sv ../tb/*_tb.v 
+# ** Error: (vlog-7) Failed to open design unit file "../tb/*_tb.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 01:24:10 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 8
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog -sv ../tb/*_tb.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:29 on Oct 26,2025
+# vlog -reportprogress 300 ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:24:29 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:29 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/*_tb.v 
+# ** Error: (vlog-7) Failed to open design unit file "../tb/*_tb.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 01:24:29 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 8
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../tb/*_tb.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:48 on Oct 26,2025
+# vlog -reportprogress 300 ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:24:48 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:49 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 01:24:49 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench_ez.v -voptargs=""+acc"" 
+# Start time: 01:24:49 on Oct 26,2025
+# ** Error (suppressible): (vsim-19) Failed to access library 'work.testbench_ez' at "work.testbench_ez".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 12
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:25:13 on Oct 26,2025
+# vlog -reportprogress 300 ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:25:13 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:25:13 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 01:25:13 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -voptargs=""+acc"" 
+# Start time: 01:24:49 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "picorv32(fast)".
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 10.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=19.
+# Loading work.testbench(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:32:57 on Oct 26,2025
+# vlog -reportprogress 300 ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:32:57 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:32:57 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v ../tb/testbench_ez.v 
+# -- Compiling module testbench_0
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench_0
+# 	testbench
+# End time: 01:32:57 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:32:59 on Oct 26,2025, Elapsed time: 0:08:10
+# Errors: 1, Warnings: 19
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 01:32:59 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "picorv32(fast)".
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 10.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=19.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:37:10 on Oct 26,2025
+# vlog -reportprogress 300 ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:37:10 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:37:10 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v ../tb/testbench_ez.v 
+# -- Compiling module testbench_0
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench_0
+# 	testbench
+# End time: 01:37:10 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:37:11 on Oct 26,2025, Elapsed time: 0:04:12
+# Errors: 0, Warnings: 19
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 01:37:12 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 10.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=19.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+run.do
+# couldn't execute ".\run.do": no such file or directory
+ls
+# modelsim.ini
+# run.do
+# transcript
+# vsim.wlf
+# work
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:48:00 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:48:00 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:48:00 on Oct 26,2025
+# vlog -reportprogress 300 tb_simple.v 
+# ** Error: (vlog-7) Failed to open design unit file "tb_simple.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 01:48:00 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 10
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog tb_simple.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:48:25 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:48:25 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:48:25 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 01:48:25 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:48:26 on Oct 26,2025, Elapsed time: 0:11:14
+# Errors: 1, Warnings: 19
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 01:48:26 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Error (suppressible): ../tb/testbench_0.v(19): (vopt-8884) Illegal output port connection for 'mem_valid' (3rd connection) to reg type. 
+# ** Error (suppressible): ../tb/testbench_0.v(19): (vopt-8884) Illegal output port connection for 'mem_instr' (4th connection) to reg type. 
+# ** Error (suppressible): ../tb/testbench_0.v(19): (vopt-8884) Illegal output port connection for 'mem_addr' (6th connection) to reg type. 
+# ** Error (suppressible): ../tb/testbench_0.v(19): (vopt-8884) Illegal output port connection for 'mem_wdata' (7th connection) to reg type. 
+# ** Error (suppressible): ../tb/testbench_0.v(19): (vopt-8884) Illegal output port connection for 'mem_wstrb' (8th connection) to reg type. 
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=5, Warnings=1.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 13
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:49:26 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:49:26 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:49:26 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# ** Error: ../tb/testbench_0.v(38): (vlog-2110) Illegal reference to net "mem_valid".
+# ** Error: ../tb/testbench_0.v(39): (vlog-2110) Illegal reference to net "mem_instr".
+# ** Error: ../tb/testbench_0.v(40): (vlog-2110) Illegal reference to net "mem_addr".
+# ** Error: ../tb/testbench_0.v(41): (vlog-2110) Illegal reference to net "mem_wdata".
+# ** Error: ../tb/testbench_0.v(42): (vlog-2110) Illegal reference to net "mem_wstrb".
+# End time: 01:49:26 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 10
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../tb/testbench_0.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:50:20 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:50:20 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:50:20 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# ** Error: ../tb/testbench_0.v(38): (vlog-2110) Illegal reference to net "mem_valid".
+# ** Error: ../tb/testbench_0.v(39): (vlog-2110) Illegal reference to net "mem_instr".
+# ** Error: ../tb/testbench_0.v(40): (vlog-2110) Illegal reference to net "mem_addr".
+# ** Error: ../tb/testbench_0.v(41): (vlog-2110) Illegal reference to net "mem_wdata".
+# ** Error: ../tb/testbench_0.v(42): (vlog-2110) Illegal reference to net "mem_wstrb".
+# End time: 01:50:20 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 10
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../tb/testbench_0.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:52:40 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:52:40 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:52:41 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 01:52:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 01:48:26 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "picorv32(fast)".
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=7, Warnings=21.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'testbench_0' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_0/uut File: ../rtl/picorv32.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 13
+run.do
+# couldn't execute ".\run.do": no such file or directory
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:54:48 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:54:49 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:54:49 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 01:54:49 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 01:48:26 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=8, Warnings=41.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:21 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:55:21 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:21 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 01:55:21 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:55:22 on Oct 26,2025, Elapsed time: 0:06:56
+# Errors: 8, Warnings: 41
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 01:55:22 on Oct 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:41 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:55:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:41 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 01:55:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:55:42 on Oct 26,2025, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 01:55:42 on Oct 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:59:02 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 01:59:02 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:59:02 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 01:59:02 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:59:03 on Oct 26,2025, Elapsed time: 0:03:21
+# Errors: 0, Warnings: 0
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 01:59:03 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:00:15 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:00:15 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:00:16 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# ** Error: ../tb/testbench_0.v(38): (vlog-2730) Undefined variable: 'resetn'.
+# End time: 02:00:16 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 10
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../tb/testbench_0.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:01:11 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:01:11 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:01:11 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:01:11 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:01:12 on Oct 26,2025, Elapsed time: 0:02:09
+# Errors: 1, Warnings: 20
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:01:12 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench_0/rst'.
+# Error in macro ./run.do line 26
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench_0/rst'.
+#     while executing
+# "add wave sim:/testbench_0/clk"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:01:34 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:01:34 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:01:34 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:01:34 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:01:35 on Oct 26,2025, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 20
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:01:35 on Oct 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:05:03 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:05:03 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:05:03 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:05:04 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 02:05:05 on Oct 26,2025, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 0
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:05:05 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:06:26 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:06:26 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:06:26 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:06:26 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:06:27 on Oct 26,2025, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 20
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:06:27 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+# Causality operation skipped due to absence of debug database file
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:08:18 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:08:18 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:08:18 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:08:18 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:08:19 on Oct 26,2025, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 20
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:08:19 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "picorv32(fast)".
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:09:24 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:09:24 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:09:24 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# ** Error: ../tb/testbench_0.v(1): Error in the specified time literal value of 500.  Expected value of 1, 10, or 100.
+# -- Compiling module testbench_0
+# End time: 02:09:24 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 10
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../tb/testbench_0.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:09:39 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:09:40 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:09:40 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:09:40 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:09:41 on Oct 26,2025, Elapsed time: 0:01:22
+# Errors: 1, Warnings: 20
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:09:41 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "picorv32(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:11:35 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:11:35 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:11:35 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:11:35 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:11:36 on Oct 26,2025, Elapsed time: 0:01:55
+# Errors: 0, Warnings: 1
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:11:36 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:12:25 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:12:25 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:12:25 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:12:25 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:12:26 on Oct 26,2025, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 20
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:12:27 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:46:22 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:46:22 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:46:22 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:46:22 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:46:23 on Oct 26,2025, Elapsed time: 0:33:56
+# Errors: 0, Warnings: 20
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:46:23 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:49:13 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:49:13 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:49:13 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:49:13 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:49:14 on Oct 26,2025, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 20
+# vsim work.testbench_0 -voptargs=""+acc"" 
+# Start time: 02:49:14 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 9.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: ../tb/testbench_0.v(20): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
+# Loading work.testbench_0(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:50:55 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:50:55 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:50:55 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench.v 
+# ** Error: (vlog-7) Failed to open design unit file "../tb/testbench.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 02:50:55 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run.do line 10
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../tb/testbench.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:51:41 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:51:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:51:41 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:51:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:51:41 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench_ez
+# 
+# Top level modules:
+# 	testbench_ez
+# End time: 02:51:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:51:42 on Oct 26,2025, Elapsed time: 0:02:28
+# Errors: 1, Warnings: 20
+# vsim work.testbench_ez -voptargs=""+acc"" 
+# Start time: 02:51:43 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Error (suppressible): ../tb/testbench_ez.v(20): (vopt-7063) Failed to find 'testbench' in hierarchical name 'testbench'.
+#         Region: testbench_ez
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 14
+restart
+# No Design Loaded!
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:52:06 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:52:07 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:52:07 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:52:07 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:52:07 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench_ez
+# 
+# Top level modules:
+# 	testbench_ez
+# End time: 02:52:07 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench_ez -voptargs=""+acc"" 
+# Start time: 02:51:43 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Error (suppressible): ../tb/testbench_ez.v(20): (vopt-7063) Failed to find 'testbench' in hierarchical name 'testbench'.
+#         Region: testbench_ez
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 14
+restart
+# No Design Loaded!
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:52:23 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:52:23 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:52:23 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:52:23 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:52:23 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench_ez
+# 
+# Top level modules:
+# 	testbench_ez
+# End time: 02:52:23 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench_ez -voptargs=""+acc"" 
+# Start time: 02:51:43 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "picorv32(fast)".
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 10.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=21.
+# Loading work.testbench_ez(fast)
+# Loading work.picorv32(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench_0/uut/mem_valid'.
+# Error in macro ./run.do line 17
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench_0/uut/mem_valid'.
+#     while executing
+# "add wave sim:/testbench_0/uut/mem_valid"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:53:44 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:53:44 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:53:44 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:53:44 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:53:44 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench_ez
+# 
+# Top level modules:
+# 	testbench_ez
+# End time: 02:53:45 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 02:53:45 on Oct 26,2025, Elapsed time: 0:02:02
+# Errors: 2, Warnings: 21
+# vsim work.testbench_ez -voptargs=""+acc"" 
+# Start time: 02:53:46 on Oct 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.testbench_ez(fast)
+# Loading work.picorv32(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench_0/clk'.
+# Error in macro ./run.do line 17
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench_0/clk'.
+#     while executing
+# "add wave sim:/testbench_0/clk"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:55:32 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:55:32 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:55:32 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:55:32 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:55:32 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench_ez
+# 
+# Top level modules:
+# 	testbench_ez
+# End time: 02:55:32 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:55:34 on Oct 26,2025, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 0
+# vsim work.testbench_ez -voptargs=""+acc"" 
+# Start time: 02:55:34 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 10.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_ez.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=19.
+# Loading work.testbench_ez(fast)
+# Loading work.picorv32(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench_0/clk'.
+# Error in macro ./run.do line 17
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench_0/clk'.
+#     while executing
+# "add wave sim:/testbench_0/clk"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:56:34 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 02:56:34 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:56:34 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 02:56:34 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:56:34 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench_ez
+# 
+# Top level modules:
+# 	testbench_ez
+# End time: 02:56:34 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:56:35 on Oct 26,2025, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 19
+# vsim work.testbench_ez -voptargs=""+acc"" 
+# Start time: 02:56:35 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 10.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: ../tb/testbench_ez.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=19.
+# Loading work.testbench_ez(fast)
+# Loading work.picorv32(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:01:21 on Oct 26,2025
+# vlog -reportprogress 300 "+define+COMPRESSED_ISA" ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 03:01:21 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:01:21 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 03:01:21 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 03:01:22 on Oct 26,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench_ez
+# 
+# Top level modules:
+# 	testbench_ez
+# End time: 03:01:22 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
