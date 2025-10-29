@@ -1279,3 +1279,18 @@ do run.do
 # 	testbench_1
 # End time: 13:12:00 on Oct 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vsim work.testbench_1 -voptargs=""+acc"" 
+# Start time: 13:09:38 on Oct 29,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=6, Warnings=22.
+# Loading sv_std.std
+# Loading work.testbench_1(fast)
+# Loading work.top(fast)
+# Loading work.picorv32(fast)
+# Loading work.simple_mem(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anbu  Hostname: NITRO  ProcessID: 24956
+#           Attempting to use alternate WLF file "./wlftj6csmg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj6csmg
