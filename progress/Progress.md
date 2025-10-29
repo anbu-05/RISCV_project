@@ -254,4 +254,17 @@ had a meeting with jayakrishnan sir
 > So your high-level idea is right. The testbench runs the program and provides a memory+IO environment, then reports results.
 
 - here's the progress report im making for the profs [[Progress report]]
-- 
+- the next step is gonna be to find a way to compile C programs into RISCV assembly
+
+### Oct 29
+- made a minimal memory module
+- put everything in a top module and im creating a slightly bigger assembly file
+- im gonna use this online linker for now: [Online RISC-V Assembler](https://riscvasm.lucasteske.dev/)
+
+- i guess i will be using this online linker for a while. no riscv gcc toolkit for now
+- making testbench_1, which will run this file
+
+- the more i work with this the more i realize that everything in HDL is made for linux.
+
+- i finally made the hex file, fixed all problems and compiled
+- there seems to be another problem with 
