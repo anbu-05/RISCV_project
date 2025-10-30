@@ -268,3 +268,52 @@ had a meeting with jayakrishnan sir
 
 - i finally made the hex file, fixed all problems and compiled
 - there seems to be another problem with 
+
+---
+- ive realised that it broke probably because i wasnt proper in writing the .data part of the hex file 
+- what if it's because im using RV32IC? (`vlog +define+COMPRESSED_ISA ../rtl/picorv32.v`)
+
+- im removing the pseudo instructions to make the code more readable
+
+### Oct 30
+- i just realised one thing when i was analysing the waveforms and the linker
+```
+  MEMORY
+  {
+    ROM (rwx) : ORIGIN = 0x00000000, LENGTH = 0x10000
+    RAM (rwx) : ORIGIN = 0x00010000, LENGTH = 0x08000
+  }
+```
+
+the memory expects addresses till 8000 -which is a byte address. there are 8000 bytes, so 2000 words
+
+i think the problem all along has been that ive only given it memory till address FFFF. my data is written at 10000. that's what's creating problems. that register doesnt exist. bruh
+
+---
+that was an issue, but I'M AN IDIOT, 
+
+```
+    always @(posedge clk) begin
+        mem_ready <= 0;
+        if (mem_valid && !mem_ready) begin
+            if (mem_addr < 1024) begin
+                mem_ready <= 1;
+                mem_rdata <= memory[mem_addr >> 2];
+                if (mem_wstrb[0]) memory[mem_addr >> 2][ 7: 0] <= mem_wdata[ 7: 0];
+                if (mem_wstrb[1]) memory[mem_addr >> 2][15: 8] <= mem_wdata[15: 8];
+                if (mem_wstrb[2]) memory[mem_addr >> 2][23:16] <= mem_wdata[23:16];
+                if (mem_wstrb[3]) memory[mem_addr >> 2][31:24] <= mem_wdata[31:24];
+            end
+            /* add memory-mapped IO here */
+        end
+    end
+```
+
+`if (mem_addr < 1024) begin` -the simple_mem module doesnt respond to addresses past 400. bruh. i copied this code block and forgot to change that
+
+>**Short answer:** your program is linked to run at `0x10000` (that's the usual PICORV32 firmware entry/ROM area), but your simple testbench memory only responds to low addresses (`mem_addr < 1024`). The core issues a store to `0x10000`, your testbench ignores that address so `mem_ready` never goes high, and the CPU waits forever (appears to “hang”). The PicoRV32 native memory mapping and reset/start address behaviour are documented in the PicoRV32 README. The mini-SoC example in the repo also expects code/data at `0x10000`.
+
+---
+something is wrong. my memory module doesnt take sw instructions. as in it doesnt write when told to.
+
+i need to make a seperate testbench for simple_memory to test it.
