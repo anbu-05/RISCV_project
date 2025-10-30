@@ -2,7 +2,7 @@
 RISCV-SoC/sim/**
 
 # ...except the run script
-!RISCV-SoC/sim/run.do
+!RISCV-SoC/sim/*.do
 
 # (optional) keep the folder even when empty
 !RISCV-SoC/sim/.gitkeep

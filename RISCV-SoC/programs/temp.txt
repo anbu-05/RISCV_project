@@ -1,0 +1,93 @@
+
+file.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <_start>:
+   0:	00010137          	lui	sp,0x10
+   4:	7ff10113          	addi	sp,sp,2047 # 107ff <_eheap+0x5ff>
+   8:	00110113          	addi	sp,sp,1
+   c:	000101b7          	lui	gp,0x10
+  10:	00700293          	li	t0,7
+  14:	00500313          	li	t1,5
+  18:	006283b3          	add	t2,t0,t1
+  1c:	0071a023          	sw	t2,0(gp) # 10000 <_sheap>
+  20:	40628433          	sub	s0,t0,t1
+  24:	0081a223          	sw	s0,4(gp)
+  28:	0000f4b7          	lui	s1,0xf
+  2c:	0f048493          	addi	s1,s1,240 # f0f0 <__stack_size+0xe8f0>
+  30:	00001537          	lui	a0,0x1
+  34:	f0f50513          	addi	a0,a0,-241 # f0f <__stack_size+0x70f>
+  38:	00a4c5b3          	xor	a1,s1,a0
+  3c:	00b1a423          	sw	a1,8(gp)
+  40:	00a4e633          	or	a2,s1,a0
+  44:	00c1a623          	sw	a2,12(gp)
+  48:	00a4f6b3          	and	a3,s1,a0
+  4c:	00d1a823          	sw	a3,16(gp)
+  50:	00100713          	li	a4,1
+  54:	00a717b3          	sll	a5,a4,a0
+  58:	00f1aa23          	sw	a5,20(gp)
+  5c:	00008837          	lui	a6,0x8
+  60:	00080813          	mv	a6,a6
+  64:	00e858b3          	srl	a7,a6,a4
+  68:	0111ac23          	sw	a7,24(gp)
+  6c:	ff800913          	li	s2,-8
+  70:	40295993          	srai	s3,s2,0x2
+  74:	0131ae23          	sw	s3,28(gp)
+  78:	00500a13          	li	s4,5
+  7c:	00500a93          	li	s5,5
+  80:	015a0863          	beq	s4,s5,90 
+  84:	00000b13          	li	s6,0
+  88:	0361a023          	sw	s6,32(gp)
+  8c:	00c0006f          	j	98 
+
+0000000000000090 :
+  90:	00100b13          	li	s6,1
+  94:	0361a023          	sw	s6,32(gp)
+
+0000000000000098 :
+  98:	00700b93          	li	s7,7
+  9c:	00700c13          	li	s8,7
+  a0:	018b9863          	bne	s7,s8,b0 
+  a4:	00000c93          	li	s9,0
+  a8:	0391a223          	sw	s9,36(gp)
+  ac:	00c0006f          	j	b8 
+
+00000000000000b0 :
+  b0:	00100c93          	li	s9,1
+  b4:	0391a223          	sw	s9,36(gp)
+
+00000000000000b8 :
+  b8:	08000d13          	li	s10,128
+  bc:	03a18423          	sb	s10,40(gp)
+  c0:	00100d93          	li	s11,1
+  c4:	03b184a3          	sb	s11,41(gp)
+  c8:	ffe00e13          	li	t3,-2
+  cc:	03c18523          	sb	t3,42(gp)
+  d0:	07f00e93          	li	t4,127
+  d4:	03d185a3          	sb	t4,43(gp)
+  d8:	02818f03          	lb	t5,40(gp)
+  dc:	03e1a623          	sw	t5,44(gp)
+  e0:	0281cf83          	lbu	t6,40(gp)
+  e4:	03f1a823          	sw	t6,48(gp)
+  e8:	02819283          	lh	t0,40(gp)
+  ec:	0251aa23          	sw	t0,52(gp)
+  f0:	0281d303          	lhu	t1,40(gp)
+  f4:	0261ac23          	sw	t1,56(gp)
+  f8:	02a18383          	lb	t2,42(gp)
+  fc:	0271ae23          	sw	t2,60(gp)
+ 100:	02a1c403          	lbu	s0,42(gp)
+ 104:	0481a023          	sw	s0,64(gp)
+ 108:	00100073          	ebreak
+ 10c:	0000006f          	j	10c 
+
+Disassembly of section .heap:
+
+0000000000010000 <_sheap>:
+	...
+
+Disassembly of section .stack:
+
+0000000000010200 <_estack>:
+	...

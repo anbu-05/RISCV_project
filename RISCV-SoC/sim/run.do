@@ -47,8 +47,4 @@ add wave sim:/testbench_1/dut/mem_wdata
 add wave sim:/testbench_1/dut/mem_wstrb
 add wave sim:/testbench_1/dut/mem_rdata
 
-# Optionally also show the top-level signals in testbench
-
-
-# run for 100ns (same as your original)
 run 5us

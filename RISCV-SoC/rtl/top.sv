@@ -4,13 +4,13 @@ module top #(
     input logic resetn
 );
 
-    logic mem_valid;
-    logic mem_instr;
-    logic mem_ready;
-    logic [31:0] mem_addr;
-    logic [31:0] mem_wdata;
-    logic [3:0] mem_wstrb;
-    logic [31:0] mem_rdata;
+	wire mem_valid;
+	wire mem_instr;
+	reg mem_ready;
+	wire [31:0] mem_addr;
+	wire [31:0] mem_wdata;
+	wire [3:0] mem_wstrb;
+	reg  [31:0] mem_rdata;
 
     picorv32 #(
     ) core (
