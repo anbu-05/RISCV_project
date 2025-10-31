@@ -1,0 +1,350 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 win64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+do run_mem.do
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Copying C:/intelFPGA_lite/24.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:19:34 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# 
+# Top level modules:
+# 	simple_mem
+# End time: 05:19:35 on Oct 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:19:35 on Oct 31,2025
+# vlog -reportprogress 300 ../tb/testbench_mem.sv 
+# -- Compiling module testbench_mem
+# ** Error: ../tb/testbench_mem.sv(28): (vlog-2110) Illegal reference to net "mem_valid".
+# ** Error: ../tb/testbench_mem.sv(29): (vlog-2110) Illegal reference to net "mem_instr".
+# ** Error: ../tb/testbench_mem.sv(30): (vlog-2110) Illegal reference to net "mem_addr".
+# ** Error: ../tb/testbench_mem.sv(31): (vlog-2110) Illegal reference to net "mem_wdata".
+# ** Error: ../tb/testbench_mem.sv(32): (vlog-2110) Illegal reference to net "mem_wstrb".
+# ** Error: ../tb/testbench_mem.sv(39): (vlog-2110) Illegal reference to net "mem_addr".
+# ** Error: ../tb/testbench_mem.sv(40): (vlog-2110) Illegal reference to net "mem_wdata".
+# ** Error: ../tb/testbench_mem.sv(41): (vlog-2110) Illegal reference to net "mem_wstrb".
+# ** Error: ../tb/testbench_mem.sv(42): (vlog-2110) Illegal reference to net "mem_valid".
+# ** Error: ../tb/testbench_mem.sv(45): (vlog-2110) Illegal reference to net "mem_valid".
+# ** Error: ../tb/testbench_mem.sv(46): (vlog-2110) Illegal reference to net "mem_wstrb".
+# End time: 05:19:35 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run_mem.do line 10
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../tb/testbench_mem.sv"
+do run_mem.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:21:03 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# 
+# Top level modules:
+# 	simple_mem
+# End time: 05:21:03 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:21:04 on Oct 31,2025
+# vlog -reportprogress 300 ../tb/testbench_mem.sv 
+# -- Compiling module testbench_mem
+# 
+# Top level modules:
+# 	testbench_mem
+# End time: 05:21:04 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench_mem -voptargs=""+acc"" 
+# Start time: 05:21:04 on Oct 31,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mem(fast)
+# Loading work.simple_mem(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_mem/mem_ready', driven via a port connection, is multiply driven. See ../tb/testbench_mem.sv(52).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_mem File: ../tb/testbench_mem.sv Line: 13
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_mem.do PAUSED at line 13
+do run_mem.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:22:06 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# 
+# Top level modules:
+# 	simple_mem
+# End time: 05:22:07 on Oct 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:22:07 on Oct 31,2025
+# vlog -reportprogress 300 ../tb/testbench_mem.sv 
+# -- Compiling module testbench_mem
+# 
+# Top level modules:
+# 	testbench_mem
+# End time: 05:22:07 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench_mem -voptargs=""+acc"" 
+# Start time: 05:21:04 on Oct 31,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testbench_mem(fast)
+# Loading work.simple_mem(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_mem/mem_ready', driven via a port connection, is multiply driven. See ../tb/testbench_mem.sv(52).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_mem File: ../tb/testbench_mem.sv Line: 13
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_mem.do PAUSED at line 13
+do run_mem.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:22:29 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# 
+# Top level modules:
+# 	simple_mem
+# End time: 05:22:29 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:22:29 on Oct 31,2025
+# vlog -reportprogress 300 ../tb/testbench_mem.sv 
+# -- Compiling module testbench_mem
+# 
+# Top level modules:
+# 	testbench_mem
+# End time: 05:22:29 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench_mem -voptargs=""+acc"" 
+# Start time: 05:21:04 on Oct 31,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Loading sv_std.std
+# Loading work.testbench_mem(fast)
+# Loading work.simple_mem(fast)
+do run_mem.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:29:58 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# ** Error: ../rtl/simple_mem.sv(49): (vlog-2730) Undefined variable: 'MEM_BASE'.
+# End time: 05:29:58 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run_mem.do line 7
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../rtl/simple_mem.sv"
+do run_mem.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:30:31 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# ** Error: ../rtl/simple_mem.sv(50): (vlog-13161) unexpected '$readmemh', expecting elaboration system task $fatal/$error/$warning/$info.
+# End time: 05:30:31 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run_mem.do line 7
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../rtl/simple_mem.sv"
+do run_mem.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:31:35 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# ** Error: ../rtl/simple_mem.sv(58): (vlog-13161) unexpected '$readmemh', expecting elaboration system task $fatal/$error/$warning/$info.
+# End time: 05:31:35 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run_mem.do line 7
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../rtl/simple_mem.sv"
+do run_mem.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:32:13 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# 
+# Top level modules:
+# 	simple_mem
+# End time: 05:32:13 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:32:13 on Oct 31,2025
+# vlog -reportprogress 300 ../tb/testbench_mem.sv 
+# -- Compiling module testbench_mem
+# 
+# Top level modules:
+# 	testbench_mem
+# End time: 05:32:14 on Oct 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 05:32:15 on Oct 31,2025, Elapsed time: 0:11:11
+# Errors: 5, Warnings: 2
+# vsim work.testbench_mem -voptargs=""+acc"" 
+# Start time: 05:32:15 on Oct 31,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mem(fast)
+# Loading work.simple_mem(fast)
+do run_1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:40:38 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 05:40:38 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:40:38 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# ** Error: (vlog-13069) ../rtl/simple_mem.sv(46): near "ROM_ORIGIN": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: ../rtl/simple_mem.sv(52): (vlog-13205) Syntax error found in the scope following 'rom_index'. Is there a missing '::'?
+# End time: 05:40:38 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+# Error in macro ./run_1.do line 8
+# C:/intelFPGA_lite/24.1std/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog ../rtl/simple_mem.sv"
+do run_1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:41:11 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 05:41:11 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:41:11 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/simple_mem.sv 
+# -- Compiling module simple_mem
+# 
+# Top level modules:
+# 	simple_mem
+# End time: 05:41:11 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:41:11 on Oct 31,2025
+# vlog -reportprogress 300 ../rtl/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 05:41:11 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:41:11 on Oct 31,2025
+# vlog -reportprogress 300 ../tb/testbench_0.v 
+# -- Compiling module testbench_0
+# 
+# Top level modules:
+# 	testbench_0
+# End time: 05:41:11 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:41:11 on Oct 31,2025
+# vlog -reportprogress 300 ../tb/testbench_ez.v 
+# -- Compiling module testbench_ez
+# 
+# Top level modules:
+# 	testbench_ez
+# End time: 05:41:11 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 05:41:12 on Oct 31,2025
+# vlog -reportprogress 300 ../tb/testbench_1.sv 
+# -- Compiling module testbench_1
+# 
+# Top level modules:
+# 	testbench_1
+# End time: 05:41:12 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
