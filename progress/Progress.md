@@ -317,3 +317,19 @@ that was an issue, but I'M AN IDIOT,
 something is wrong. my memory module doesnt take sw instructions. as in it doesnt write when told to.
 
 i need to make a seperate testbench for simple_memory to test it.
+
+### Oct 31
+i made a simple testbench for the `simple_mem`.
+
+it puts `0xdeadbeef` onto mem address `0x00010000`
+
+but then when i open the memory map and search for it, i am finding it at memory address 0x00004000
+
+this is some sort of translation error in some module
+
+---
+NAH. i got it. 0x10000 / 4 = 0x4000. 
+
+the memory address types out the byte address. the addresses im seeing in questa sim are word addresses. im getting confused between the two. there's nothing wrong with the core nor the memory module.
+
+which means there is no error
