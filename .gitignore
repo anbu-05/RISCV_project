@@ -1,8 +1,8 @@
 # ignore everything under sim/
-picorv32_SoC/sim/**
+RISCV_SoC/sim/**
 
 # ...except the run script
-!picorv32_SoC/sim/*.do
+!RISCV_SoC/sim/*.do
 
 # (optional) keep the folder even when empty
-!picorv32_SoC/sim/.gitkeep
+!RISCV_SoC/sim/.gitkeep
