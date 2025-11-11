@@ -1,5 +1,5 @@
 # ignore everything under sim/
-RISCV_SoC/sim/**
+RISCV_SoC/sim/*
 
 # ...except the run script
 !RISCV_SoC/sim/*.do
