@@ -2,7 +2,7 @@ module top_axi (
     input  logic clk,
     input  logic resetn
 );
-
+//---------declarations---------
     // Native PicoRV32 memory interface
     wire        mem_valid;
     wire        mem_instr;
@@ -35,21 +35,9 @@ module top_axi (
     wire        mem_axi_rready;
     wire [31:0] mem_axi_rdata;
 
+//---------instantiations---------
     // PicoRV32 core
     picorv32 core (
-        .clk        (clk),
-        .resetn     (resetn),
-        .mem_valid  (mem_valid),
-        .mem_instr  (mem_instr),
-        .mem_ready  (mem_ready),
-        .mem_addr   (mem_addr),
-        .mem_wdata  (mem_wdata),
-        .mem_wstrb  (mem_wstrb),
-        .mem_rdata  (mem_rdata)
-    );
-
-    // Simple memory model
-    simple_mem mem (
         .clk        (clk),
         .resetn     (resetn),
         .mem_valid  (mem_valid),
@@ -97,7 +85,35 @@ module top_axi (
         .mem_axi_rvalid  (mem_axi_rvalid),
         .mem_axi_rready  (mem_axi_rready),
         .mem_axi_rdata   (mem_axi_rdata)
-            //a few mismatches ig? https://www.realdigital.org/doc/a9fee931f7a172423e1ba73f66ca4081
+    );
+
+    simple_mem_axi mem (
+        .clk        (clk),
+        .resetn     (resetn),
+
+        // AXI interface
+            //Write Address Channel
+        .mem_axi_awvalid (mem_axi_awvalid),
+        .mem_axi_awready (mem_axi_awready),
+        .mem_axi_awaddr  (mem_axi_awaddr),
+        .mem_axi_awprot  (mem_axi_awprot),
+            //Write Data Channel
+        .mem_axi_wvalid  (mem_axi_wvalid),
+        .mem_axi_wready  (mem_axi_wready),
+        .mem_axi_wdata   (mem_axi_wdata),
+        .mem_axi_wstrb   (mem_axi_wstrb),
+            //Write Response Channel
+        .mem_axi_bvalid  (mem_axi_bvalid),
+        .mem_axi_bready  (mem_axi_bready),
+            //Read Address Channel
+        .mem_axi_arvalid (mem_axi_arvalid),
+        .mem_axi_arready (mem_axi_arready),
+        .mem_axi_araddr  (mem_axi_araddr),
+        .mem_axi_arprot  (mem_axi_arprot),
+            //Read Data Channel
+        .mem_axi_rvalid  (mem_axi_rvalid),
+        .mem_axi_rready  (mem_axi_rready),
+        .mem_axi_rdata   (mem_axi_rdata)
     );
 
 endmodule
