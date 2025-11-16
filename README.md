@@ -19,3 +19,16 @@ Folder structure:
 ```
 
 The core is designed to work with Intel/Altera QuestaSim.
+
+## Memory mapping
+    - ROM = 32'h00000000 to 32'h0000FFFF, (64 KiB) -Data memory
+    - RAM = 32'h00010000 to 32'h00017FFF (32 KiB) -Instruction memory
+    - UART = 32'h00018000 to 32'h00018008 -simpleuart control registers
+    - GPIO = 32'h00018100
+
+note: uart control registers:
+```
+0x00 : (unused / reserved)
+0x04 : CLKDIV (32-bit)
+0x08 : DATA   (32-bit)
+```

@@ -43,6 +43,11 @@ add wave sim:/testbench_2_axi/resetn
 
 add wave -divider "write signals"
 add wave sim:/testbench_2_axi/dut/mem/write_fsm
+add wave sim:/testbench_2_axi/dut/mem/write_word_index
+add wave sim:/testbench_2_axi/dut/mem/mem_write_addr_buffer
+add wave sim:/testbench_2_axi/dut/mem/debug
+
+
 add wave -divider "   - Write Address Channel"
 add wave sim:/testbench_2_axi/dut/mem_axi_awvalid
 add wave sim:/testbench_2_axi/dut/mem_axi_awready
@@ -68,4 +73,4 @@ add wave sim:/testbench_2_axi/dut/mem_axi_bready
 #add wave -radix binary sim:/testbench_2_axi/dut/mem_wstrb
 #add wave sim:/testbench_2_axi/dut/mem_rdata
 
-run 10us
+run 1us
