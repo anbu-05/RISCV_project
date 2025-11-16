@@ -333,3 +333,95 @@ NAH. i got it. 0x10000 / 4 = 0x4000.
 the memory address types out the byte address. the addresses im seeing in questa sim are word addresses. im getting confused between the two. there's nothing wrong with the core nor the memory module.
 
 which means there is no error
+
+---
+### Nov 3
+instead of APB bus, we can use AXI bus, since it's already supported by picorv32
+
+>A separate core `picorv32_axi_adapter` is provided to bridge between the native memory interface and AXI4. This core can be used to create custom cores that include one or more PicoRV32 cores together with local RAM, ROM, and memory-mapped peripherals, communicating with each other using the native interface, and communicating with the outside world via AXI4.
+
+-picorv32 documentation
+
+so we'll use the picorv32 core + the axi adapter.
+
+---
+or so i thought. AXI seems very complex for our use case. but there's another bus protocol called wishbone which is also included in the picorv32 core.
+
+but with wishbone, instead of a memory bus adapter like axi, there is only a direct core implementation of it.
+
+could this overcomplicate things? what even is wishbone master interface?
+
+---
+
+i looked into wb, and:
+- wb is much much simpler than axi -and is suitable for
+- but the axi implementation is axi4-lite, which is much simpler
+
+- wb would probably be easier to implement as a simple SoC we're making
+- but axi would give us much better expansion
+
+essentially, i'd guess wb is kinda analogous to ubuntu, and axi analogous to arch. i think im gonna stick with axi4-lite.
+
+but i do want to look into contributing the the picorv32 project by making a wb adapter. wb itself is an open source protocol unlike axi (made by arm). i wanna start work with axi, learn how it works, and improve on wb
+
+---
+following this for axi4-lite: [Welcome to Real Digital](https://www.realdigital.org/doc/a9fee931f7a172423e1ba73f66ca4081)
+
+---
+i found a repo with a gpio controller + axi lite wrapper: [pulp-platform/gpio: Parametric GPIO Peripheral](https://github.com/pulp-platform/gpio)
+
+i'm not gonna copy it as it is, since it seems pretty different from the picorv32 project, but ill take inspiration from it
+
+### Nov 8
+im working on makin the memory AXI based -partially to learn how to create an AXI device
+seems like ill have to relearn FSM to do this the best way
+
+~~[Finite State Machine Explained | Mealy Machine and Moore Machine | What is State Diagram ?](https://www.youtube.com/watch?v=kb-Ww8HaHuE)
+
+~~i think i found a goldmine on axi interface (and wishbone too): [Upcoming topics](https://zipcpu.com/topics.html)
+
+~~and in that site, especially this: [Buidilng an AXI-Lite slave the easy way](https://zipcpu.com/blog/2020/03/08/easyaxil.html)~~
+
+this explains: [What is AXI Lite?](https://www.youtube.com/watch?v=okiTzvihHRA)
+
+everything from dillon huff seems pretty intuitive to learn from. especially the video above. it's very intuitive to learn from. it also explains a bit about write strobes
+
+(a playlist for learning about AXI [What is AXI (Part 1)](https://www.youtube.com/watch?v=1zw1HBsjDH8&list=PLaSdxhHqai2_7WZIhCszu5PLSbZURmibN))
+
+### Nov 11
+started work on trying to understand AXI handshake logic: [[AXI]]
+
+i can finally comprehend the read handshake now
+### Nov 12
+implemented the read logic, and chatgpt says it's error free
+
+tested it with the smoke program and after a small bug fix, it's mostly working
+
+but my program starts off with a write instruction. i can either make a new write program which feels like a pain in the ass. i'll instead implement the write logic and then just run the program as a whole
+
+the logic im following for it: capture -> store -> respond
+
+im gonna develop the write logic independently, as if read logic doesnt exist
+
+then solve the issues like write-through
+
+### Nov 13
+picorv32 does not have bresp channel: https://chatgpt.com/share/6915bd24-6818-8007-a167-6cbcdd87d11a
+
+it works. implemented both read and write functionality, fixed a few bugs, and now the memory module works the same as it did with the direct memory bus.
+
+### Nov 14
+im gonna implement UART controller now
+ill start with making/finding the raw module, and then just connecting it using axi lite
+
+im gonna use the simpleuart.v module from picorv32 only -since it's the simplest to implement
+
+now that im making the axi adapter, i realize that there soooo much optimization to be done
+
+check page 12: [Gowin PicoRV32 Software Programming](https://cdn.gowinsemi.com.cn/IPUG911E.pdf?utm_source=chatgpt.com)
+https://chatgpt.com/share/691662a7-3478-8007-ab7a-5b0039cada30
+
+---
+bad news: the write function is not working with axi memory. i dont see the data written in 0x00010000
+
+
