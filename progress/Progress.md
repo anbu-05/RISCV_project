@@ -424,4 +424,26 @@ https://chatgpt.com/share/691662a7-3478-8007-ab7a-5b0039cada30
 ---
 bad news: the write function is not working with axi memory. i dont see the data written in 0x00010000
 
+### Nov 18
+the culprit was `write_word_index <= (mem_write_addr_buffer - RAM_ORIGIN) >> 2;`
+
+where RAM_ORIGIN is 10000, so when read addr buffer has 10000 in it, it subtracts and word index stays zero, that's why my data gets written in 0x0000
+
+mostly fixed it, but there's still a small problem where the first write happens in 0x0000 instead of 0x4000, and the second write happens in 0x4000 instead of 0x4001 etc.
+
+fixed that also by changing it to a blocking operator so the write word index gets update in this cycle instead of the next cycle
+
+`write_word_index = (mem_write_addr_buffer - RAM_ORIGIN) >> 2;`
+
+---
+ive connected up the uart module, made the assembly program and everything is ready. now im finding another issue: BUS connections
+
+>In `top_uart_axi` you connect **two AXI slaves** (`simple_mem_axi` and `simpleuart_axi_adapter`) **directly to the same AXI master wires** coming from `picorv32_axi_adapter` (the `mem_axi_*` signals). That means both slaves see the same AW/AR/W transactions and both may try to drive `*_ready`, `bvalid`, `rvalid`, `rdata`, etc. — bus contention / protocol break. In the working `top_axi` you only hook a single AXI slave (`simple_mem_axi`) to the master, so no conflict.
+
+> Use an off-the-shelf lightweight AXI crossbar / interconnect IP (preferred for clean scaling).
+
+basically two modules are driving the same pins. one module is pulling it high and the other is pulling it low resulting in this: 
+![[Pasted image 20251118164156.png]]
+
+
 
