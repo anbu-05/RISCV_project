@@ -59,6 +59,12 @@ add wave sim:/testbench_3_uart_axi/resetn
 
 add wave -divider "write signals"
 add wave sim:/testbench_3_uart_axi/dut/mem/write_fsm
+add wave sim:/testbench_3_uart_axi/dut/mem/write_word_index
+add wave sim:/testbench_3_uart_axi/dut/mem/mem_write_addr_buffer
+add wave sim:/testbench_3_uart_axi/dut/mem/debug
+
+add wave -divider "write signals"
+add wave sim:/testbench_3_uart_axi/dut/mem/write_fsm
 add wave -divider "   - Write Address Channel"
 add wave sim:/testbench_3_uart_axi/dut/mem_axi_awvalid
 add wave sim:/testbench_3_uart_axi/dut/mem_axi_awready
@@ -75,13 +81,4 @@ add wave -divider "   - Write Response Channel"
 add wave sim:/testbench_3_uart_axi/dut/mem_axi_bvalid
 add wave sim:/testbench_3_uart_axi/dut/mem_axi_bready
 
-#add wave -divider "memory bus signals"
-#add wave sim:/testbench_3_uart_axi/dut/mem_valid
-#add wave sim:/testbench_3_uart_axi/dut/mem_instr
-#add wave sim:/testbench_3_uart_axi/dut/mem_ready
-#add wave sim:/testbench_3_uart_axi/dut/mem_addr
-#add wave sim:/testbench_3_uart_axi/dut/mem_wdata
-#add wave -radix binary sim:/testbench_3_uart_axi/dut/mem_wstrb
-#add wave sim:/testbench_3_uart_axi/dut/mem_rdata
-
-run 10us
+run 2us

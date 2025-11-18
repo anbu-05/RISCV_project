@@ -1,4 +1,4 @@
-// testbench for the first axi implementation
+// testbench for the first axi simpleuart adapter + simpleuart implementation
 
 `timescale 1 ns / 1 ps
 

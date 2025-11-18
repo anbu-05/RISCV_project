@@ -24,7 +24,7 @@ module simpleuart #(parameter integer DEFAULT_DIV = 1) (
 	output ser_tx,
 	input  ser_rx,
 
-	input   [3:0] reg_div_we,
+	input  [ 3:0] reg_div_we,
 	input  [31:0] reg_div_di,
 	output [31:0] reg_div_do,
 

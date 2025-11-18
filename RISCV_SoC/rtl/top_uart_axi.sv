@@ -101,7 +101,9 @@ module top_uart_axi (
         .mem_axi_rdata   (mem_axi_rdata)
     );
 
-    simple_mem_axi mem (
+    simple_mem_axi #(
+        .PROGRAM_HEX("../programs/uart_smoke_test.hex")
+    ) mem (
         .clk        (clk),
         .resetn     (resetn),
 

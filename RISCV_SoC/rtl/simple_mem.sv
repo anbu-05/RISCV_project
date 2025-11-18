@@ -3,7 +3,8 @@ module simple_mem #(
     parameter ROM_ORIGIN = 32'h00000000,
     parameter ROM_LENGTH = 32'h00010000, // 64 KiB
     parameter RAM_ORIGIN = 32'h00010000,
-    parameter RAM_LENGTH = 32'h00008000 // 32 KiB
+    parameter RAM_LENGTH = 32'h00008000, // 32 KiB
+    parameter string PROGRAM_HEX = "../programs/smoke_test.hex"
 ) (
     input logic clk,
     input logic resetn,
@@ -46,11 +47,11 @@ module simple_mem #(
     // if ROM_ORIGIN is non-zero, load hex starting at that offset in the array
     initial begin
         if (ROM_ORIGIN == MEM_BASE)
-            $readmemh("../programs/smoke_test.hex", memory);
+            $readmemh(PROGRAM_HEX, memory);
         else begin
             integer rom_index;
             rom_index = (ROM_ORIGIN - MEM_BASE) >> 2;
-            $readmemh("../programs/smoke_test.hex", memory, rom_index);
+            $readmemh(PROGRAM_HEX, memory, rom_index);
         end
     end
     

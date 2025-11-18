@@ -73,4 +73,4 @@ add wave sim:/testbench_2_axi/dut/mem_axi_bready
 #add wave -radix binary sim:/testbench_2_axi/dut/mem_wstrb
 #add wave sim:/testbench_2_axi/dut/mem_rdata
 
-run 1us
+run 10us

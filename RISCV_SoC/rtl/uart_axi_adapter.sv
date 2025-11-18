@@ -47,6 +47,10 @@ module simpleuart_axi_adapter #(
 
     reg [31:0] memory [0:MEM_WORDS-1];
 
+//---------uart module buffers---------
+logic [31:0] uart_div_do_buffer;
+logic [31:0] uart_dat_do_buffer;
+
 //---------axi read logic---------
 
 	logic [31:0] mem_read_buffer;
@@ -86,7 +90,7 @@ module simpleuart_axi_adapter #(
 
 					if ((mem_read_addr_buffer >= REG_ORIGIN && mem_read_addr_buffer < REG_ORIGIN + REG_LENGTH)) begin
 
-						read_word_index = (mem_read_addr_buffer - REG_ORIGIN) >> 2;
+						read_word_index = (mem_read_addr_buffer) >> 2;
 
 						if (read_word_index < MEM_WORDS) begin 
 							mem_read_buffer <= memory[read_word_index];
@@ -154,7 +158,7 @@ module simpleuart_axi_adapter #(
 						if (mem_axi_wvalid && mem_axi_wready) begin
 							if ((mem_write_addr_buffer >= REG_ORIGIN && mem_write_addr_buffer < REG_ORIGIN + REG_LENGTH)) begin
 
-								write_word_index = (mem_write_addr_buffer - REG_ORIGIN) >> 2;
+								write_word_index = (mem_write_addr_buffer) >> 2;
 
 								if (write_word_index < MEM_WORDS) begin 
                                     if (!reg_dat_wait) begin

@@ -3,7 +3,8 @@ module simple_mem_axi #(
     parameter ROM_ORIGIN = 32'h00000000,
     parameter ROM_LENGTH = 32'h00010000, // 64 KiB
     parameter RAM_ORIGIN = 32'h00010000,
-    parameter RAM_LENGTH = 32'h00008000 // 32 KiB
+    parameter RAM_LENGTH = 32'h00008000, // 32 KiB
+	parameter string PROGRAM_HEX = "../programs/smoke_test.hex"
 ) (
 	input logic clk, resetn,
 
@@ -78,7 +79,7 @@ module simple_mem_axi #(
 
 					if ((mem_read_addr_buffer >= ROM_ORIGIN && mem_read_addr_buffer < ROM_ORIGIN + ROM_LENGTH)) begin
 
-						read_word_index = (mem_read_addr_buffer - ROM_ORIGIN) >> 2;
+						read_word_index = (mem_read_addr_buffer) >> 2;
 
 						if (read_word_index < MEM_WORDS) begin 
 							mem_read_buffer <= memory[read_word_index];
@@ -89,7 +90,7 @@ module simple_mem_axi #(
 					end
 					else if ((mem_read_addr_buffer >= RAM_ORIGIN && mem_read_addr_buffer < RAM_ORIGIN + RAM_LENGTH)) begin
 
-						read_word_index = (mem_read_addr_buffer - RAM_ORIGIN) >> 2;
+						read_word_index = (mem_read_addr_buffer) >> 2;
 
 						if (read_word_index < MEM_WORDS) begin 
 							mem_read_buffer <= memory[read_word_index];
@@ -134,6 +135,7 @@ module simple_mem_axi #(
 		if (!resetn) begin 
 			mem_write_buffer <= 0;
 			mem_write_addr_buffer <= 0;
+			write_word_index <= 0;
 			mem_axi_awready <= 1;
 			mem_axi_wready <= 0;
 			write_fsm <= write_capture;
@@ -150,37 +152,34 @@ module simple_mem_axi #(
 				end
 
 				store: begin
+					if ((mem_write_addr_buffer >= ROM_ORIGIN && mem_write_addr_buffer < ROM_ORIGIN + ROM_LENGTH)) begin
+						write_word_index = (mem_write_addr_buffer >> 2);
+
 						if (mem_axi_wvalid && mem_axi_wready) begin
-							debug <= 1;
-							if ((mem_write_addr_buffer >= ROM_ORIGIN && mem_write_addr_buffer < ROM_ORIGIN + ROM_LENGTH)) begin
-
-								write_word_index <= ((mem_write_addr_buffer - ROM_ORIGIN) >> 2);
-
-								if (write_word_index < MEM_WORDS) begin 
-									if (mem_axi_wstrb[0]) memory[write_word_index][ 7: 0] <= mem_axi_wdata[ 7: 0];
-									if (mem_axi_wstrb[1]) memory[write_word_index][15: 8] <= mem_axi_wdata[15: 8];
-									if (mem_axi_wstrb[2]) memory[write_word_index][23:16] <= mem_axi_wdata[23:16];
-									if (mem_axi_wstrb[3]) memory[write_word_index][31:24] <= mem_axi_wdata[31:24];
-									write_fsm <= respond;
-								end else write_fsm <= write_capture;
-							end
-							else if ((mem_write_addr_buffer >= RAM_ORIGIN && mem_write_addr_buffer < RAM_ORIGIN + RAM_LENGTH)) begin
-
-								write_word_index <= ((mem_write_addr_buffer - RAM_ORIGIN) >> 2);
-
-								if (write_word_index < MEM_WORDS) begin 
-									if (mem_axi_wstrb[0]) memory[write_word_index][ 7: 0] <= mem_axi_wdata[ 7: 0];
-									if (mem_axi_wstrb[1]) memory[write_word_index][15: 8] <= mem_axi_wdata[15: 8];
-									if (mem_axi_wstrb[2]) memory[write_word_index][23:16] <= mem_axi_wdata[23:16];
-									if (mem_axi_wstrb[3]) memory[write_word_index][31:24] <= mem_axi_wdata[31:24];
-									write_fsm <= respond;
-								end else write_fsm <= write_capture;
-							end
-							else begin 
-								write_fsm <= write_capture;
-							end
+							if (write_word_index < MEM_WORDS) begin 
+								if (mem_axi_wstrb[0]) memory[write_word_index][ 7: 0] <= mem_axi_wdata[ 7: 0];
+								if (mem_axi_wstrb[1]) memory[write_word_index][15: 8] <= mem_axi_wdata[15: 8];
+								if (mem_axi_wstrb[2]) memory[write_word_index][23:16] <= mem_axi_wdata[23:16];
+								if (mem_axi_wstrb[3]) memory[write_word_index][31:24] <= mem_axi_wdata[31:24];
+								write_fsm <= respond;
+							end else write_fsm <= write_capture;
 						end else if (mem_axi_awvalid && mem_axi_awready) write_fsm <= store;
 						else write_fsm <= write_capture;
+					end else if ((mem_write_addr_buffer >= RAM_ORIGIN && mem_write_addr_buffer < RAM_ORIGIN + RAM_LENGTH)) begin
+						write_word_index = (mem_write_addr_buffer >> 2);
+
+						if (mem_axi_wvalid && mem_axi_wready) begin
+							if (write_word_index < MEM_WORDS) begin 
+								debug <= 1;
+								if (mem_axi_wstrb[0]) memory[write_word_index][ 7: 0] <= mem_axi_wdata[ 7: 0];
+								if (mem_axi_wstrb[1]) memory[write_word_index][15: 8] <= mem_axi_wdata[15: 8];
+								if (mem_axi_wstrb[2]) memory[write_word_index][23:16] <= mem_axi_wdata[23:16];
+								if (mem_axi_wstrb[3]) memory[write_word_index][31:24] <= mem_axi_wdata[31:24];
+								write_fsm <= respond;
+							end else write_fsm <= write_capture;
+						end else if (mem_axi_awvalid && mem_axi_awready) write_fsm <= store;
+						else write_fsm <= write_capture;
+					end else write_fsm <= write_capture;
 					end
 
 				respond: begin
@@ -199,6 +198,6 @@ module simple_mem_axi #(
 //---------loading program into memory---------
 	// if ROM_ORIGIN is non-zero, load hex starting at that offset in the array
     initial begin
-		$readmemh("../programs/smoke_test.hex", memory, ROM_ORIGIN);
+		$readmemh(PROGRAM_HEX, memory, ROM_ORIGIN);
     end
 endmodule
